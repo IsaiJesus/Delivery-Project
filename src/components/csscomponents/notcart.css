@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box-not-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-not-cart i{
+    font-size: 4rem;
+    color: #0dbb33;
+    padding: 10px;
+    margin: 15px 0px;
+}
+
+.box-not-cart h1{
+    margin: 5px 0px;
+    padding: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.box-not-cart p{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}

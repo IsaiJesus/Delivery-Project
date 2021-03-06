@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-departamentos{
+    padding-top: 12vh;
+}
+
+@media(max-width: 700px){
+    .container-departamentos{
+        padding-top: 119px;
+    }
+}

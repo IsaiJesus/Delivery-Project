@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-shop{
+    padding-top: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFF;
+}
+
+.division-shop{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 700px){
+    .container-shop{
+        padding-top: 119px;
+    }
+}

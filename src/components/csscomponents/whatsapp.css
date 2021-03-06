@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-whatsapp{
+    position: fixed;
+    background: #00BB2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 11px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container-whatsapp a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #FFF;
+}
