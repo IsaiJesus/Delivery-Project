@@ -63,18 +63,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 5px;
 }
 
 .ul-search-on li a{
-    padding: 8px;
     margin: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+}
+.ul-search-on li a img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.ul-search-on li a p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 5px;
 }
 
 .ul-search-off{

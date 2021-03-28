@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../csscomponents/producto.css';
 import Info from './info';
 import Add from './add';
@@ -23,28 +23,37 @@ function Producto() {
       mar: '20px 0px',
       ancho: 'auto'
     }
+    const producto = {
+        nombre: 'Costilla de cerdo',
+        img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
+        precio: '100',
+        unidad: 'kg',
+        ntienda: 'Carnicería Doña Eva',
+        descripcion: 'Costilla de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $100. Puedes pedir desde 1/4kg hasta lo que tu quieras.'
+    }
+    const [cantidad, setCantidad] = useState(1);
 
     return(
       <div className="container-producto">
         <div className="division-producto">
           <div className="container-img-producto">
             <div className="box-img-producto">
-              <img src="https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg"/>
+              <img src={producto.img}/>
             </div>
             <Info props={info1}/>
           </div>
           <div className="container-info-producto">
             <div className="info-producto">
-              <b className="nombre-producto">Nombre del producto</b>
-              <b className="precio-producto">$Precio$</b>
-              <p>Nombre de la tienda</p>
+              <b className="nombre-producto">{producto.nombre}</b>
+              <b className="precio-producto">${producto.precio} {producto.unidad}</b>
+              <p>{producto.ntienda}</p>
             </div>
             <div className="description-producto">
-              <p>Descripción del producto, este es un ejemplo de la descripción del producto, donde se describirá las características del producto, específicamente de la calidad.</p>
+              <p>{producto.descripcion}</p>
             </div>
             <div className="cantidad-producto">
-              <input type="number"/>
-              <p>Kg/$precio$</p>
+              <input type="number" min="1" defaultValue={cantidad} onChange={c => setCantidad(c.target.value)}/>
+              <p>{producto.unidad} / ${cantidad * producto.precio}</p>
             </div>
             <div className="add-to-cart">
               <Add props={espacio}/>

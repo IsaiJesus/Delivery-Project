@@ -90,7 +90,7 @@
 
 .description-producto{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    max-width: 95%;
+    width: 95%;
 }
 
 .description-producto p{

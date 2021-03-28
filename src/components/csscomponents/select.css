@@ -4,8 +4,8 @@
 }
 
 .container-select{
-    /*margin: 15px 4% 15px 0px;
-    align-self: flex-end;*/
+    margin: 15px 4% 15px 0px;
+    align-self: flex-end;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -8,7 +8,6 @@ function Free() {
     const envios = {
         title: 'Envíos gratis en Amayuca'
     }
-
     const costilla = {
         img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
         product: 'Costilla de cerdo',

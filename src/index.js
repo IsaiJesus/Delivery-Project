@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './app';
+import App from './App';
+import { CartProvider } from './reducerandcontext/cartStates';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <CartProvider>
+      <App/>
+    </CartProvider>
   </React.StrictMode>,
   document.getElementById('index')
 );

@@ -1,19 +1,16 @@
 import React, { Fragment } from 'react';
 import '../csscomponents/select.css';
 
-const Select = ({props}) => {
+const Select = ({props, valor, handleChange}) => {
+
     return ( 
         <Fragment>
-            <div className="container-select" style={{alignSelf:props.align, margin:props.mar}}>
-                <p>{props.text}</p>
-                <select>
-                    <option value="0">{props.option1}</option>
-                    <option value="1">{props.option2}</option>
-                    <option value="2">{props.option3}</option>
-                    <option value="3">{props.option4}</option>
-                    <option value="4">{props.option5}</option>
-                    <option value="5">{props.option6}</option>
-                    <option value="6">{props.option7}</option>
+            <div className="container-select">
+                <p>Filtrar por:</p>
+                <select value={valor} onChange={handleChange}>
+                    {props.map(filter => {
+                        return <option key={filter.id} value={filter.category}>{filter.text}</option>
+                    })}
                 </select>
             </div>
         </Fragment>

@@ -30,20 +30,20 @@ function Departaments() {
         text: 'Lácteos',
         link: '/departamentos/carne-de-cerdo'
     }
-    const bebidas = {
-        img: 'http://www.neolifeclinic.com/blog/wp-content/uploads/2015/12/Evitar-bebidas-azucaradas1.jpeg',
-        text: 'Bebidas',
+    const res = {
+        img: 'https://www.cremadelechealqueria.com/sites/alqueria-dev/files/styles/650_x_350/public/los-cortes-de-la-carne-de-res-y-para-que-sirve-cada-uno.jpg?itok=mZeISSJj',
+        text: 'Carne de res',
         link: '/departamentos/carne-de-cerdo'
     }
     const comida = {
-        img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg',
-        text: 'Comida',
-        link: '/departamentos/carne-de-cerdo'
+        text: "Comida",  
+        img: "https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg",
+        link: "/departamentos/carne-de-cerdo"
     }
-    const despensa = {
-        img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2018/03/despensa.jpg',
-        text: 'Despensa',
-        link: '/departamentos/carne-de-cerdo'
+    const helado = {
+        text: "Congelados",  
+        img: "https://heladitos.com/wp-content/uploads/2018/01/helado_extravagante.jpg",
+        link: "/departamentos/carne-de-cerdo"
     }
     const departamentos = {
         title: 'Departamentos'
@@ -62,9 +62,9 @@ function Departaments() {
                 <Prodep props={fruta}/>
                 <Prodep props={pescado}/>
                 <Prodep props={lacteos}/>
-                <Prodep props={bebidas}/>
+                <Prodep props={res}/>
+                <Prodep props={helado}/>
                 <Prodep props={comida}/>
-                <Prodep props={despensa}/>
             </div>
             <Todo props={btn}/>
         </section>

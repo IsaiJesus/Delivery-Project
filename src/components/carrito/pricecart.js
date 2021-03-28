@@ -1,21 +1,8 @@
 import React, { Fragment } from 'react';
 import '../csscomponents/pricecart.css';
-import Select from '../global/select';
 import Info from '../global/info';
 
-const Pricecart = () => {
-    const options = {
-        text: 'Enviar a:',
-        option1: 'Amayuca',
-        option2: 'Jantetelco',
-        option3: 'Jonacatepec',
-        option4: 'Chalca',
-        option5: 'Temoac',
-        option6: 'Zacualpan',
-        option7: 'Huazulco',
-        align: 'center',
-        mar: '0'
-    }
+const Pricecart = ({price}) => {
     const comprar1 = {
         info: 'Puedes hacer tu pedido llamando a 7351234578 o mándando un Whatsapp al mismo número.'
     }
@@ -29,7 +16,18 @@ const Pricecart = () => {
     return (
         <Fragment>
             <div className="box-price-cart">
-                <Select props={options}/>
+                <div className="container-select-envio">
+                    <p>Enviar a:</p>
+                    <select>
+                        <option value="0">Amayuca</option>
+                        <option value="1">Jantetelco</option>
+                        <option value="2">Jonacatepec</option>
+                        <option value="3">Chalca</option>
+                        <option value="4">Temoac</option>
+                        <option value="5">Zacualpan</option>
+                        <option value="6">Huazulco</option>
+                    </select>
+                </div>
                 <h2>Resumen de tu pedido</h2>
                 <div className="prices-cart">
                     <div className="price-list">
@@ -46,7 +44,7 @@ const Pricecart = () => {
                     </div>
                     <div className="price-list">
                         <b>Total</b>
-                        <p>$0.00</p>
+                        <p>{price.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
                     </div>
                 </div>
                 <div className="btn-cart">

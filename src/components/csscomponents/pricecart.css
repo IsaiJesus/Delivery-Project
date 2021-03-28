@@ -11,6 +11,34 @@
     flex-direction: column;
 }
 
+.container-select-envio{
+    /*margin: 15px 4% 15px 0px;
+    align-self: flex-end;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-select-envio p{
+    padding: 2px;
+    font-size: 14px;
+}
+
+.container-select-envio select{
+    padding: 3px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-size: 15px;
+}
+
+.container-select-envio option{
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
 .box-price-cart h2{
     font-size: 22px;
     padding: 10px 0px;

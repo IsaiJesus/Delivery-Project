@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './app.css';
+import './App.css';
 import Header from './components/global/header';
 import Inicio from './components/inicio/inicio';
 import Producto from './components/global/producto';
@@ -13,10 +13,11 @@ import Comida from './components/comida/comida';
 import Carrito from './components/carrito/carrito';
 
 function App() {
+
   return(
     <Router>
       <Header/>
-
+  
       <Route exact path="/" component={Inicio}/>
       <Route exact path="/departamentos" component={Departamentos}/>
       <Route path="/departamentos/carne-de-cerdo" component={Carnec}/>

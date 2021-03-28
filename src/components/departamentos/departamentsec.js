@@ -29,20 +29,30 @@ function Departamentsec() {
         text: 'Lácteos',
         link: '/departamentos/carne-de-cerdo'
     }
-    const bebidas = {
-        img: 'http://www.neolifeclinic.com/blog/wp-content/uploads/2015/12/Evitar-bebidas-azucaradas1.jpeg',
-        text: 'Bebidas',
+    const res = {
+        img: 'https://www.cremadelechealqueria.com/sites/alqueria-dev/files/styles/650_x_350/public/los-cortes-de-la-carne-de-res-y-para-que-sirve-cada-uno.jpg?itok=mZeISSJj',
+        text: 'Carne de res',
         link: '/departamentos/carne-de-cerdo'
     }
-    const tortas = {
-        img: 'https://cdn.kiwilimon.com/recetaimagen/35450/th5-640x426-42522.jpg',
-        text: 'Tortas',
-        link: '/departamentos/carne-de-cerdo'
+    const helado = {
+        text: "Congelados",  
+        img: "https://heladitos.com/wp-content/uploads/2018/01/helado_extravagante.jpg",
+        link: "/departamentos/carne-de-cerdo"
     }
-    const tacos = {
-        img: 'https://www.pequerecetas.com/wp-content/uploads/2020/10/tacos-mexicanos.jpg',
-        text: 'Tacos',
-        link: '/departamentos/carne-de-cerdo'
+    const comida = {
+        text: "Comida",  
+        img: "https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg",
+        link: "/departamentos/carne-de-cerdo"
+    }
+    const despensa = {
+        text: "Abarrotes",  
+        img: "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/despensa-apoyo-covid-fondo.jpg",
+        link: "/departamentos/carne-de-cerdo"
+    }
+    const pan = {
+        text: "Panadería",  
+        img: "http://admin.municipiospuebla.mx/sites/default/files/pandulce.jpg?up=1587753714",
+        link: "/departamentos/carne-de-cerdo"
     }
     const departamentos = {
         title: 'Departamentos'
@@ -57,9 +67,11 @@ function Departamentsec() {
                 <Prodep props={fruta}/>
                 <Prodep props={pescado}/>
                 <Prodep props={lacteos}/>
-                <Prodep props={bebidas}/>
-                <Prodep props={tortas}/>
-                <Prodep props={tacos}/>
+                <Prodep props={res}/>
+                <Prodep props={helado}/>
+                <Prodep props={comida}/>
+                <Prodep props={despensa}/>
+                <Prodep props={pan}/>
             </div>
         </section>
     );

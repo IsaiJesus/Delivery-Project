@@ -18,11 +18,11 @@ const Product = ({props}) => {
                         <img src={props.img}/>
                         <div className="text-product">
                             <p id="pro-product">{props.product}</p>
-                            <p id="price-product">{props.price}</p>
+                            <p id="price-product">${props.price}/kg</p>
                             <p id="store-product">{props.store}</p>
                         </div>
                     </Link>
-                    <Add props={espacio}/>
+                    <Add props={espacio} product={props}/>
                 </div>
             </div>
         </Fragment>
