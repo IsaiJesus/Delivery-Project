@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../csscomponents/footer.css';
+import departments from '../../data/data';
 
 function Footer() {
 
@@ -34,7 +35,9 @@ function Footer() {
                     <Link to="/departamentos">Departamentos</Link>
                     <Link to="/tiendas">Tiendas</Link>
                     <Link to="/envios">Envíos</Link>
-                    <Link to="/comida">Comida</Link>
+                    {departments.filter(data => data.link === 'comida').map(data => (
+                        <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
+                    ))}
                 </div>
             </div>
             <div className="container-info-footer">

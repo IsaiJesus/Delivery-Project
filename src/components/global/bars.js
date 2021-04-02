@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import departments from '../../data/data';
 import '../csscomponents/bars.css';
 
 function Bars() {
@@ -23,14 +24,9 @@ function Bars() {
             <button className={toggledep ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={handleToggleD}></button>
           </div>
           <div className={toggledep ? "btn-nav-bars-section-on" : "btn-nav-bars-section-off"}>
-            <Link to="/departamentos/carne-de-cerdo">Carne de cerdo</Link>
-            <Link to="/departamentos/carne-de-cerdo">Carne de pollo</Link>
-            <Link to="/departamentos/carne-de-cerdo">Frutería</Link>
-            <Link to="/departamentos/carne-de-cerdo">Pescado</Link>
-            <Link to="/departamentos/carne-de-cerdo">Lácteos</Link>
-            <Link to="/departamentos/carne-de-cerdo">Bebidas</Link>
-            <Link to="/departamentos/carne-de-cerdo">Tortas</Link>
-            <Link to="/departamentos/carne-de-cerdo">Tacos</Link>
+            {departments.map(data => (
+              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
+            ))}
           </div>
           <div className="box-nav-bars">
             <NavLink to="/tiendas" activeClassName="bars-active">Tiendas</NavLink>
@@ -39,7 +35,9 @@ function Bars() {
             <NavLink to="/envios" activeClassName="bars-active">Envíos</NavLink>
           </div>
           <div className="box-nav-bars">
-            <NavLink to="/comida" activeClassName="bars-active">Comida</NavLink>
+            {departments.filter(data => data.link === 'comida').map(data => (
+              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
+            ))}
           </div>
         </div>
       </div>

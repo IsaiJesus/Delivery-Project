@@ -1,36 +1,49 @@
 import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { useState } from 'react';
+import departments, { products, tiendas } from '../../data/data';
 import '../csscomponents/search.css';
 
 function Search() {
-    const itemsList = [
-        {
-            id: '1',
-            img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg',
-            text: 'Comida'
-        },
-        {
-            id: '2',
-            img: 'https://cdn.cienradios.com/wp-content/uploads/sites/3/2019/10/hamburguesa.jpg',
-            text: 'Hamburguesa con papas'
-        },
-        {
-            id: '3',
-            img: 'https://cdn.shopify.com/s/files/1/0469/3193/articles/negocio_carniceria_1024x1024.jpg?v=1582731730',
-            text: 'Carnicería Doña Eva'
-        }
-    ];
     const [filter, setFilter] = useState('');
+
+    let history = useHistory();
+    const handleClick = () => {
+        products.filter(data => {
+            if(data.product.toLowerCase() == filter.toLowerCase()){
+                history.push(`/productos/${data.link}`);
+            }
+        })
+        departments.filter(data => {
+            if(data.departamento.toLowerCase() == filter.toLowerCase()){
+                history.push(`/departamentos/${data.link}`);
+            }
+        })
+        tiendas.filter(data => {
+            if(data.text.toLowerCase() == filter.toLowerCase()){
+                history.push(`/tiendas/${data.link}`);
+            }
+        })
+    }
 
     return(
         <div className="container-search">
-            <a href="#" className="fas fa-search"></a>
+            <button onClick={() => handleClick()} className="fas fa-search"></button>
             <input type="search" placeholder="Buscar" autoComplete="off" value={filter} onChange={e => setFilter(e.target.value)}/>
             <ul className={filter ? "ul-search-on" : "ul-search-off"}>
-                {itemsList.map(search => {
+                {products.map(search => {
                 if(filter.length !== ""){
-                    if(search.text.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-                        return <li key={search.id}><a href="#"><img src={search.img}/><p>{search.text}</p></a></li>;
+                    if(search.product.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+                        return <li key={search.id}><Link to={`/productos/${search.link}`}><img src={search.img}/><p>{search.product}</p></Link></li>;
+                    }else{
+                        return null;
+                    }
+                }
+                })}
+                {departments.map(search => {
+                if(filter.length !== ""){
+                    if(search.departamento.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+                        return <li key={search.id}><Link to={`/departamentos/${search.link}`}><img src={search.img}/><p>{search.departamento}</p></Link></li>;
                     }else{
                         return null;
                     }

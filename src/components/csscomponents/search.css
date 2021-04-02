@@ -14,19 +14,23 @@
     background: #FFF;
 }
 
-.container-search a{
+.container-search button{
+    cursor: pointer;
+    background: none;
+    border: none;
     height: 100%;
     width: 8%;
     margin: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
     font-size: 16px;
     color: #000;
     text-decoration: none;
 }
 
-.container-search a:hover{
+.container-search button:hover{
     color: #0dbb33;
 }
 
@@ -73,6 +77,7 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+    text-decoration: none;
 }
 .ul-search-on li a img{
     height: 50px;
@@ -82,9 +87,14 @@
 
 .ul-search-on li a p{
     text-overflow: ellipsis;
+    color: #000;
     overflow: hidden;
     white-space: nowrap;
     margin-left: 5px;
+}
+
+.ul-search-on li a p:hover{
+    color: #0dbb33;
 }
 
 .ul-search-off{

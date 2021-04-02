@@ -1,0 +1,17 @@
+.container-busqueda{
+    padding-top: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFF;
+}
+
+.division-busqueda{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

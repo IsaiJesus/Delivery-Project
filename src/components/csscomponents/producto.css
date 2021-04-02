@@ -52,10 +52,6 @@
     justify-content: center;
 }
 
-.box-ad-producto img{
-    width: 100%;
-}
-
 .container-info-producto{
     width: 50%;
     display: flex;

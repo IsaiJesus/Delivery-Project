@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import departments from '../../data/data';
 import '../csscomponents/nav.css';
 
 function Nav() {
@@ -9,9 +10,9 @@ function Nav() {
         <NavLink to="/departamentos" id="hover-departaments" activeClassName="nav-active">
           <p>Departamentos</p>
           <div className="division-nav-section">
-            <Link to="/departamentos/carne-de-cerdo">Carne de cerdo</Link>
-            <Link to="/departamentos/carne-de-cerdo">Carne de pollo</Link>
-            <Link to="/departamentos/carne-de-cerdo">Comida</Link>
+            {departments.map(data => (
+              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
+            ))}
           </div>
         </NavLink>
         <NavLink to="/tiendas" activeClassName="nav-active">

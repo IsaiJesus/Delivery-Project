@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 import '../csscomponents/select.css';
 
-const Select = ({props, valor, handleChange}) => {
+const Select = ({props, initialId, finalId, valor, handleChange}) => {
 
     return ( 
         <Fragment>
             <div className="container-select">
                 <p>Filtrar por:</p>
                 <select value={valor} onChange={handleChange}>
-                    {props.map(filter => {
-                        return <option key={filter.id} value={filter.category}>{filter.text}</option>
-                    })}
+                    {props.slice(initialId, finalId).map(filter => (
+                        <option key={filter.id} value={filter.category}>{filter.text}</option>
+                    ))}
                 </select>
             </div>
         </Fragment>

@@ -3,9 +3,7 @@ import '../csscomponents/inicio.css';
 import Ad from './ad';
 import Departaments from './departaments';
 import Food from './food';
-import Free from './free';
-import Whatsapp from '../global/whatsapp';
-import Footer from '../global/footer';
+import Stores from './stores';
 
 function Inicio() {
 
@@ -14,9 +12,7 @@ function Inicio() {
         <Ad/>  
         <Departaments/>
         <Food/>
-        <Free/>
-        <Whatsapp/>
-        <Footer/>
+        <Stores/>
       </div>
     );
 }

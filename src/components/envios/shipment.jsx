@@ -6,8 +6,8 @@ const Shipment = ({props}) => {
         <Fragment>
             <div className="box-shipment">
                 <p>Envíos a</p>
-                <p>{props.lugar}</p>
-                <p>{props.precio}</p>
+                <p>{props.place}</p>
+                <p>{props.minprice} - {props.maxprice}</p>
             </div>
         </Fragment>
     )

@@ -1,78 +1,60 @@
-import React, { useState } from 'react';
+import React, { Fragment } from 'react';
+import { useParams } from 'react-router-dom';
 import '../csscomponents/producto.css';
 import Info from './info';
 import Add from './add';
-import Whatsapp from './whatsapp';
-import Footer from './footer';
+import { products, information } from '../../data/data';
 
-function Producto() {
-    const info1 = {
-        info: 'Este producto se agota muy rápido, puedes preguntar si aún está disponible llamando al 7351234567 o mandando un mensaje al Whatsapp.'
-    }
-    const info2 = {
-        info: 'Al terminar de agregar todos los productos al carrito podrás ver el costo total de tus compras en la sección del carrito.'
-    }
-    const info3 = {
-        info: 'Puedes hacer tu pedido llamando a 7351234567 o mandándo un Whatsapp al mismo número.'
-    }
-    const info4 = {
-        info: 'Si tienes alguna duda puedes preguntar al chatbot, mándando un mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
-    }
+function Producto({data}) {
+    const { producto } = useParams();
     const espacio = {
       padd: '8px 20px',
       mar: '20px 0px',
       ancho: 'auto'
     }
-    const producto = {
-        nombre: 'Costilla de cerdo',
-        img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
-        precio: '100',
-        unidad: 'kg',
-        ntienda: 'Carnicería Doña Eva',
-        descripcion: 'Costilla de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $100. Puedes pedir desde 1/4kg hasta lo que tu quieras.'
-    }
-    const [cantidad, setCantidad] = useState(1);
 
     return(
-      <div className="container-producto">
+      <Fragment>
+        {products.filter(data => data.link === producto).map(data => (
+        <div key={data.id} className="container-producto">
         <div className="division-producto">
           <div className="container-img-producto">
             <div className="box-img-producto">
-              <img src={producto.img}/>
+              <img src={data.img}/>
             </div>
-            <Info props={info1}/>
+            {information.filter(data => data.id === 9).map(data => (
+              <Info key={data.id} props={data}/>
+            ))}
           </div>
           <div className="container-info-producto">
             <div className="info-producto">
-              <b className="nombre-producto">{producto.nombre}</b>
-              <b className="precio-producto">${producto.precio} {producto.unidad}</b>
-              <p>{producto.ntienda}</p>
+              <b className="nombre-producto">{data.product}</b>
+              <b className="precio-producto">{data.price} {data.unity}</b>
+              <p>{data.store}</p>
             </div>
             <div className="description-producto">
-              <p>{producto.descripcion}</p>
+              <p>{data.description}</p>
             </div>
             <div className="cantidad-producto">
-              <input type="number" min="1" defaultValue={cantidad} onChange={c => setCantidad(c.target.value)}/>
-              <p>{producto.unidad} / ${cantidad * producto.precio}</p>
+              <input type="number" min={data.quantity} defaultValue={data.quantity}/>
+              <p>{data.unity} / ${data.price}</p>
             </div>
             <div className="add-to-cart">
-              <Add props={espacio}/>
+              <Add props={espacio} product={data}/>
               <div className="redes-producto">
-                  <a href="#" id="facebook-producto" className="fab fa-facebook"></a>
-                  <a href="#" id="instagram-producto" className="fab fa-instagram"></a>
+                  <a target="_blanck" href="#" id="facebook-producto" className="fab fa-facebook"></a>
+                  <a target="_blanck" href="#" id="instagram-producto" className="fab fa-instagram"></a>
               </div>
-              <Info props={info2}/>
-              <Info props={info3}/>
-              <Info props={info4}/>
-              <a href="#" className="box-ad-producto">
-                <img src="https://image.freepik.com/vector-gratis/mejor-anuncio-comida-pasta-italiana_23-2148455391.jpg"/>
-              </a>
+              {information.filter(data => data.id === 4 || data.id === 6 || data.id === 8).map(data => (
+                <Info key={data.id} props={data}/>
+              ))}
+              <img className="box-ad-producto" src="https://image.freepik.com/vector-gratis/mejor-anuncio-comida-pasta-italiana_23-2148455391.jpg"/>
             </div>
           </div>
         </div>
-        <Whatsapp/>
-        <Footer/>
       </div>
+      ))}
+      </Fragment>
     );
 }
 

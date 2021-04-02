@@ -5,8 +5,7 @@ import Section from '../global/section';
 import Notcart from './notcart';
 import Procart from './procart';
 import Pricecart from './pricecart';
-import Footer from '../global/footer';
-import Whatsapp from '../global/whatsapp';
+import { titles } from '../../data/data';
 
 function Carrito() {
     const items = useCart();
@@ -16,20 +15,12 @@ function Carrito() {
     const handleRemove = (index) => {
         dispatch({ type: "REMOVE", index });
     };
-    const title = {
-        title: 'Carrito'
-    }
-    const procart1 = {
-        img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
-        product: 'Costilla de cerdo',
-        price: '100',
-        unit: 'Kg',
-        store: 'Carnicería Doña Eva'
-    }
 
     return(
       <div className="container-carrito">
-        <Section props={title}/>
+        {titles.filter(data => data.title === 'Carrito').map(data => (
+            <Section key={data.id} props={data}/>
+        ))}
         <div className="division-carrito">
             <div className="container-products-cart">
                 {items.length === 0 ? <Notcart/> : items.map((item, index) => (
@@ -40,8 +31,6 @@ function Carrito() {
                 <Pricecart price={totalPrice}/>
             </div>
         </div>
-        <Whatsapp/>
-        <Footer/>
       </div>
     );
 }

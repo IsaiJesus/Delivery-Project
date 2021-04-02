@@ -14,11 +14,11 @@ const Product = ({props}) => {
         <Fragment>
             <div className="container-product">
                 <div className="box-product">
-                    <Link to="/producto" className="btn-product">
+                    <Link to={`/productos/${props.link}`} className="btn-product">
                         <img src={props.img}/>
                         <div className="text-product">
                             <p id="pro-product">{props.product}</p>
-                            <p id="price-product">${props.price}/kg</p>
+                            <p id="price-product">{props.price}</p>
                             <p id="store-product">{props.store}</p>
                         </div>
                     </Link>

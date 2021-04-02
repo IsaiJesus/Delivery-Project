@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import '../csscomponents/procart.css';
 
 const Procart = ({product, index, handleRemove}) => {
+    
     return (
         <Fragment>
             <div className="box-pro-cart">
@@ -16,8 +17,8 @@ const Procart = ({product, index, handleRemove}) => {
                     </div>
                 </div>
                 <div className="cantidad-pro-cart">
-                    <input type="number"/>
-                    <p>${product.price.toLocaleString("en", {style: "currency", currency: "USD"})}/kg</p>
+                    <input type="number" min="1" defaultValue={product.quantity}/>
+                    <p>{product.price}/kg</p>
                 </div>
                 <div className="trash-pro-cart">
                     <button className="fas fa-trash-alt" onClick={() => handleRemove(index)}></button>

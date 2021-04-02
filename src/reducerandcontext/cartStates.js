@@ -6,16 +6,29 @@ const CartDispatchContext = createContext();
 const reducer = (state, action) => {
     switch (action.type) {
 
-      case "ADD":
-        return [
-            ...state,
-            action.item
+      case "ADD": {
+        const newProduct = action.item;
+        const cartContainProduct = state.find(
+          product => product.id === newProduct.id
+        )
+        return cartContainProduct 
+        ? [...state,
+          state.map(product => 
+            product.id === newProduct.id
+            ? {...product, quantity: product.quantity + 1}
+            : product
+            )
         ]
+        : [
+          ...state,
+          {...action.item, quantity: 1}
+        ]
+      }
 
       case "REMOVE": 
-      const newArr = [...state];
-      newArr.splice(action.index, 1);
-      return newArr;
+        const newArr = [...state];
+        newArr.splice(action.index, 1);
+        return newArr;
 
       default:
         return state;

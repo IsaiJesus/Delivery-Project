@@ -6,7 +6,7 @@ const Info = ({props}) => {
         <Fragment>
             <div className="box-info">
                 <i className="fas fa-info-circle"></i>
-                <p>{props.info}</p>
+                <p>{props.text}</p>
             </div>
         </Fragment>
     )
