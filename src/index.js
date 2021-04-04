@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { CartProvider } from './reducerandcontext/cartStates';
+import { CartProvider } from './reducerAndContext/cartStates';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Header from './components/global/header';
-import Inicio from './components/inicio/inicio';
-import Producto from './components/global/producto';
-import Departamentos from './components/departamentos/departamentos';
-import Carnec from './components/departamentos/carniceriac';
-import Tiendas from './components/tiendas/tiendas';
-import Carniceriaeva from './components/tiendas/tiendaeva';
-import Envios from './components/envios/envios';
-import Carrito from './components/carrito/carrito';
+import Header from './components/header';
+import Inicio from './pages/inicio';
+import Producto from './pages/producto';
+import Departamentos from './pages/departamentos';
+import Carnec from './pages/carniceriac';
+import Tiendas from './pages/tiendas';
+import Carniceriaeva from './pages/tiendaeva';
+import Envios from './pages/envios';
+import Carrito from './pages/carrito';
 import { products, tiendas } from './data/data';
-import Whatsapp from './components/global/whatsapp';
-import Footer from './components/global/footer';
-import NotFound from './components/global/notFound';
+import Whatsapp from './components/whatsapp';
+import Footer from './components/footer';
+import NotFound from './pages/notFound';
 import ScrollToTop from './scrollToTop';
 
 function App() {
