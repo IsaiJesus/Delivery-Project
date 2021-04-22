@@ -1,15 +1,12 @@
-import React, { Fragment } from 'react';
-import '../css/info.css';
+import React from 'react';
+import '../styles/info.css';
 
 const Info = ({props}) => {
-    return ( 
-        <Fragment>
-            <div className="box-info">
-                <i className="fas fa-info-circle"></i>
-                <p>{props.text}</p>
-            </div>
-        </Fragment>
-    )
+  return ( 
+    <div className="box-info">
+      <p className="mb-2"><i className="fas fa-info-circle"></i>{props.text}</p>
+    </div>
+  );
 }
 
 export default Info;

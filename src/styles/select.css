@@ -1,0 +1,28 @@
+.container-select{
+    margin: 12px 2.5% 12px 0px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-select p{
+    margin-bottom: 10px;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.container-select select{
+    padding: 3px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-size: 15px;
+}
+
+.container-select option{
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}

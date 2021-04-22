@@ -1,25 +1,25 @@
 import React from 'react';
-import '../css/food.css';
+import '../styles/inicio.css';
 import Section from '../components/section';
-import Product from '../components/product';
+import CardProduct from './cardProduct';
 import Todo from '../components/todo';
 import { titles, products, links } from '../data/data';
 
 function Food() {
 
   return(
-    <section className="container-food">
-        {titles.filter(data => data.title === 'Comida').map(data => (
-                <Section key={data.id} props={data}/>
+    <section className="container-section w-100">
+      {titles.filter(data => data.title === 'Comida').map(data => (
+        <Section key={data.id} props={data}/>
+      ))}
+      <div className="container-xl row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 p-0 division-section">
+        {products.filter(data => data.category === 'comida').slice(0, 10).map(product => (
+          <CardProduct key={product.id} props={product}/>
         ))}
-        <div className="division-food">
-            {products.filter(data => data.category === 'comida').slice(0, 8).map(product => (
-                <Product key={product.id} props={product}/>
-            ))}
-        </div>
-        {links.filter(link => link.id === 3).map(link => (
-            <Todo key={link.id} props={link}/>
-        ))}
+      </div>
+      {links.filter(link => link.link === '/departamentos/comida').map(link => (
+        <Todo key={link.id} props={link}/>
+      ))}
     </section>
   );
 }

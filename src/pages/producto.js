@@ -1,63 +1,66 @@
-import React, { Fragment } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../css/producto.css';
+import '../styles/producto.css';
 import Info from '../components/info';
 import Add from '../components/add';
 import { products, information } from '../data/data';
+import { Helmet } from 'react-helmet';
 
 function Producto({data}) {
-    const { producto } = useParams();
-    const espacio = {
-      padd: '8px 20px',
-      mar: '20px 0px',
-      ancho: 'auto'
-    }
+  const { producto } = useParams();
+  const [counter, setCounter] = useState(1);
 
-    return(
-      <Fragment>
-        {products.filter(data => data.link === producto).map(data => (
-        <div key={data.id} className="container-producto">
-        <div className="division-producto">
-          <div className="container-img-producto">
-            <div className="box-img-producto">
-              <img src={data.img}/>
+  const title = products.filter(data => data.link === producto).map(data => data.product);
+
+  return(
+    <div className="container-fluid p-0">
+      <Helmet>
+        <title>{`${title} | ORDEEM`}</title>
+      </Helmet>
+      {products.filter(data => data.link === producto).map(data => (
+        <div key={data.id} className="container-producto d-flex flex-column align-items-center justify-content-center">
+        <div className="division-producto container-xl row row-cols-1 row-cols-md-2 p-0 my-4">
+          <div className="col p-0 d-flex flex-column align-items-center">
+            <div className="box-img-producto d-flex align-items-center justify-content-center m-3 p-2">
+              <img src={data.img} alt={data.product}/>
             </div>
-            {information.filter(data => data.id === 9).map(data => (
+            {information.filter(data => data.id === 3).map(data => (
               <Info key={data.id} props={data}/>
             ))}
           </div>
-          <div className="container-info-producto">
-            <div className="info-producto">
+          <div className="d-flex flex-column align-items-center justify-content-center col p-3">
+            <div className="info-producto w-100 d-flex flex-column p-2">
               <b className="nombre-producto">{data.product}</b>
-              <b className="precio-producto">{data.price} {data.unity}</b>
-              <p>{data.store}</p>
+              <b className="precio-producto">{data.price}/{data.unity}</b>
+              <p className="m-0">{data.store}</p>
             </div>
-            <div className="description-producto">
-              <p>{data.description}</p>
+            <div className="description-producto w-100">
+              <p className="m-0 p-2">{data.description}</p>
             </div>
-            <div className="cantidad-producto">
-              <button>-</button>
-              <input readOnly type="number" min="1" defaultValue={data.quantity}/>
-              <button>+</button>
-              <p>{data.unity} / ${data.price}</p>
+            <div className="cantidad-producto w-100 text-center py-3">
+              <div className="d-flex justify-content-center">
+                <button className="btn-quantity" onClick={() => setCounter(counter - 1)}>-</button>
+                <input readOnly type="number" min="1" value={counter}/>
+                <button className="btn-quantity" onClick={() => setCounter(counter + 1)}>+</button>
+              </div>  
+              <p className="m-0">{data.unity}/{(data.price*counter).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
             </div>
-            <div className="add-to-cart">
-              <Add props={espacio} product={data}/>
-              <div className="redes-producto">
-                  <a target="_blanck" href="#" id="facebook-producto" className="fab fa-facebook"></a>
-                  <a target="_blanck" href="#" id="instagram-producto" className="fab fa-instagram"></a>
+            <div className="d-flex flex-column align-items-center justify-content-center">
+              <Add product={data}/>
+              <div className="redes-producto my-2">
+                  <a target="_blanck" href="#" id="facebook-producto" className="fab fa-facebook m-3"></a>
+                  <a target="_blanck" href="#" id="instagram-producto" className="fab fa-instagram m-3"></a>
               </div>
-              {information.filter(data => data.id === 4 || data.id === 6 || data.id === 8).map(data => (
+              {information.filter(data => data.id === 4 || data.id === 6 || data.id === 8  || data.id === 9).map(data => (
                 <Info key={data.id} props={data}/>
               ))}
-              <img className="box-ad-producto" src="https://image.freepik.com/vector-gratis/mejor-anuncio-comida-pasta-italiana_23-2148455391.jpg"/>
             </div>
           </div>
         </div>
       </div>
       ))}
-      </Fragment>
-    );
+    </div>
+  );
 }
 
 export default Producto;

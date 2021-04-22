@@ -1,13 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/todo.css';
+import '../styles/todo.css';
 
 const Todo = ({props}) => {
-    return ( 
-        <Fragment>
-            <Link to={props.link} className="container-todo">{props.text}</Link>
-        </Fragment>
-    )
+  return ( 
+    <Link to={props.link} className="btn todo">{props.text}</Link>
+  );
 }
 
 export default Todo;

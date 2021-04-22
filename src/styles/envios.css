@@ -1,0 +1,33 @@
+.container-envios{
+  padding-top: 100px;
+}
+
+.division-envios{
+  width: 95%;
+}
+
+/*SHIPMENT*/
+
+.box-shipment{
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0px;
+  margin: 5px 0px;
+}
+
+.box-shipment p{
+  font-size: 20px;
+  margin: 0;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 767px){
+  .container-envios{
+    padding-top: 136px;
+  }
+
+  .box-shipment p{
+    font-size: 18px;
+  }
+}

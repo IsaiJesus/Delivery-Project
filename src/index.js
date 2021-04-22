@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "jquery/dist/jquery";
+import "bootstrap/dist/js/bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { CartProvider } from './reducerAndContext/cartStates';
 

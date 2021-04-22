@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import departments from '../data/data';
-import '../css/bars.css';
+import '../styles/navbar.css';
 
 function Bars() {
   const [togglebars, setTogglebars] = useState(false);
@@ -16,8 +16,10 @@ function Bars() {
 
   return(
     <div className="container-bars">
-      <button className="fas fa-bars" onClick={handleToggle}></button>
-      <div className={togglebars ? "container-nav-bars-on" : "container-nav-bars-off"}>
+      <button className="navbar-toggler px-0" onClick={handleToggle}>
+        <span className="fas fa-bars"></span>
+      </button>
+      <div className={togglebars ? "container-nav-bars-on " : "container-nav-bars-off"}>
         <div className="division-nav-bars">
           <div className="box-nav-bars">
             <NavLink to="/departamentos" id="btn-nav-bars-arrow" activeClassName="bars-active">Departamentos</NavLink>
@@ -29,15 +31,13 @@ function Bars() {
             ))}
           </div>
           <div className="box-nav-bars">
+            <Link to="/departamentos/comida">Comida</Link>
+          </div>
+          <div className="box-nav-bars">
             <NavLink to="/tiendas" activeClassName="bars-active">Tiendas</NavLink>
           </div>
           <div className="box-nav-bars">
             <NavLink to="/envios" activeClassName="bars-active">Envíos</NavLink>
-          </div>
-          <div className="box-nav-bars">
-            {departments.filter(data => data.link === 'comida').map(data => (
-              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
-            ))}
           </div>
         </div>
       </div>

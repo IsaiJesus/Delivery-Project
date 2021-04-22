@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useCart } from '../reducerAndContext/cartStates';
-import '../css/cart.css';
+import '../styles/navbar.css';
 
 function Cart() {
     const items = useCart();

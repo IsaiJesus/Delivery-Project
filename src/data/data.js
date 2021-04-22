@@ -272,21 +272,21 @@ const products = [
 const tiendas = [
     {
         id: 1,
-        color: '#8338EC',
+        img: 'https://bichosdecampo.com/wp-content/uploads/2018/03/carnicer%C3%ADa-600x375.jpg',
         text: 'Carnicería Doña Eva',
         link: 'carniceria-doña-eva',
         category: 'carne-de-cerdo'
     },
     {
         id: 2,
-        color: '#3A86FF',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8L1ZYbOoowi_W7cbWZOSEnGUS80VGus_BPQ&usqp=CAU',
         text: 'Hamburguesas Doña Evo',
         link: 'hamburguesas-doña-evo',
         category: 'comida'
     },
     {
         id: 3,
-        color: '#00BBF9',
+        img: 'https://www.elsoldetoluca.com.mx/incoming/fu4d39-polleria-2.jpg/ALTERNATES/FREE_768/Poller%C3%ADa%20(2).jpg',
         text: 'Pollería Doña Eva',
         link: 'polleria-doña-eva',
         category: 'carne-de-pollo'
@@ -296,13 +296,11 @@ const tiendas = [
 const titles = [
     {
         id: 1,
-        title: 'Departamentos',
-        category: '/departamentos'
+        title: 'Departamentos'
     },
     {
         id: 2,
-        title: 'Carrito',
-        category: '/carrito'
+        title: 'Carrito'
     },
     {
         id: 2,
@@ -321,13 +319,11 @@ const titles = [
     },
     {
         id: 5,
-        title: 'Costo de envíos',
-        category: '/envios'
+        title: 'Costo de envíos'
     },
     {
         id: 6,
-        title: 'Tiendas',
-        category: '/tiendas'
+        title: 'Tiendas'
     },
     {
         id: 7,
@@ -343,11 +339,6 @@ const titles = [
         id: 9,
         title: 'Pollería Doña Eva',
         category: 'polleria-doña-eva'
-    },
-    {
-        id: 10,
-        title: 'Resultados de la busqueda:',
-        category: '/busqueda'
     }
 ];
 
@@ -478,7 +469,7 @@ const information = [
     },
     {
         id: 3,
-        text: 'Este producto se agota muy rápido, puedes preguntar si aún está disponible llamando al 7351234567 o mandando un mensaje al Whatsapp.'
+        text: 'Este producto se puede agotar en una hora específica, puedes preguntar si aún está disponible enviando un mensaje directo a nuestras redes sociales.'
     },
     {
         id: 4,
@@ -490,7 +481,7 @@ const information = [
     },
     {
         id: 6,
-        text: 'Puedes hacer tu pedido llamando a 7351234567 o mandándo un Whatsapp al mismo número.'
+        text: 'Puedes hacer tu pedido llamando a 735 123 4567 o mandando un Whatsapp al mismo número.'
     },
     {
         id: 7,
@@ -498,11 +489,15 @@ const information = [
     },
     {
         id: 8,
-        text: 'Si tienes alguna duda puedes preguntar al chatbot, mándando un mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
+        text: 'Si tienes alguna duda puedes preguntar mandando mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
     },
     {
         id: 9,
-        text: 'Este producto se agota muy rápido, puedes preguntar si aún está disponible llamando al 7351234567 o mandando un mensaje al Whatsapp.'
+        text: 'Los botones de sumar o restar la cantidad de un producto aún están en modo de prueba.'
+    },
+    {
+        id: 10,
+        text: '"Copiar contenido el carrito" copia tus productos y pégalos en nuestra conversación de WhatsApp.'
     }
 ]
 

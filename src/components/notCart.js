@@ -1,22 +1,20 @@
-import React, { Fragment } from 'react';
-import '../css/notcart.css';
+import React from 'react';
+import '../styles/carrito.css';
 import Todo from './todo';
 import { links } from '../data/data';
 
-const Notcart = () => {
+const NotCart = () => {
 
-    return (
-        <Fragment>
-            <div className="box-not-cart">
-                <i className="fas fa-shopping-cart"></i>
-                <h1>No hay productos en tu carrito.</h1>
-                <p>Puedes ver los productos y agregarlos al carrito para ver el total del precio.</p>
-                {links.filter(data => data.link === '/').map(data => (
-                    <Todo key={data.id} props={data}/>
-                ))}
-            </div>
-        </Fragment>
-    )
+  return (
+    <div className="box-not-cart d-flex flex-column align-items-center justify-content-center">
+      <i className="fas fa-shopping-cart"></i>
+      <h1 className="m-0 p-2">No hay productos en tu carrito.</h1>
+      <p className="p-3 m-0">Puedes ver los productos y agregarlos al carrito para ver el total del precio.</p>
+      {links.filter(data => data.link === '/').map(data => (
+        <Todo key={data.id} props={data}/>
+      ))}
+    </div>
+  );
 }
 
-export default Notcart;
+export default NotCart;

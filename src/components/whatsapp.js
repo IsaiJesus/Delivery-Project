@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/whatsapp.css';
+import '../styles/whatsapp.css';
 
 function Whatsapp() {
 

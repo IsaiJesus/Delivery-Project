@@ -1,14 +1,12 @@
-import React, { Fragment } from 'react';
-import '../css/section.css';
+import React from 'react';
+import '../styles/section.css';
 
 const Section = ({props}) => {
-    return ( 
-        <Fragment>
-            <div className="title-departament">
-                <h1>{props.title}</h1>
-            </div>
-        </Fragment>
-    )
+  return ( 
+    <div className="section h-100 text-center">
+      <h1>{props.title}</h1>
+    </div>
+  );
 }
 
 export default Section;
