@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart, useDispatchCart } from '../reducerAndContext/cartStates';
 import '../styles/carrito.css';
-import Section from '../components/section';
+import TitleSection from '../components/titleSection';
 import NotCart from '../components/notCart';
 import ProductCart from '../components/productCart';
 import PriceCart from '../components/priceCart';
@@ -11,14 +11,17 @@ import { Helmet } from 'react-helmet';
 function Carrito() {
   const items = useCart();
   const dispatch = useDispatchCart();
-  const totalPrice = items.reduce((total, b) => total + b.price, 0);
-  const resumen = items.map(data => data.product +" $" + data.price +" "+ data.store);
+  const totalPrice = items.reduce((total, b) => total + (b.price*b.quantity), 0);
+  const resumen = items.map(data => data.quantity + " " + data.nameProduct + " $" + data.price +" "+ data.store);
 
-  const addToCart = (item) => {
-    dispatch({ type: "ADD", item });
+  const handleIncrement = (productInCart) => {
+    dispatch({ type: "INCREMENT", productInCart });
   }
-  const handleRemove = (index) => {
-    dispatch({ type: "REMOVE", index });
+  const handleDecrement = (productInCart) => {
+    dispatch({ type: "DECREMENT", productInCart });
+  }
+  const handleRemove = (productInCart) => {
+    dispatch({ type: "REMOVE", productInCart });
   };
 
   return(
@@ -27,20 +30,27 @@ function Carrito() {
         <title>Carrito | ORDEEM</title>
       </Helmet>
       {titles.filter(data => data.title === 'Carrito').map(data => (
-        <Section key={data.id} props={data}/>
+        <TitleSection key={data.id} title={data.title}/>
       ))}
       <div className="division-carrito container-xl row row-cols-1 row-cols-md-2 p-0 mb-4">
         <div className="col col-md-8 p-3">
-          {items.length === 0 ? <NotCart/> : items.map((item, index) => (
+          {items.length === 0 ? <NotCart/> : items.map((productInCart, index) => (
             <ProductCart key={index} 
-            product={item} 
+            productInCart={productInCart} 
+            img={productInCart.img}
+            nameProduct={productInCart.nameProduct}
+            price={productInCart.price}
+            store={productInCart.store}
+            quantity={productInCart.quantity}
+            unity={productInCart.unity}
             index={index} 
-            addToCart={addToCart}
+            handleIncrement={handleIncrement}
+            handleDecrement={handleDecrement}
             handleRemove={handleRemove}/>
           ))}
         </div>
         <div className="col col-md-4 p-3">
-          <PriceCart price={totalPrice} resumen={resumen}/>
+          <PriceCart totalPrice={totalPrice} resumen={resumen}/>
         </div>
       </div>
     </div>

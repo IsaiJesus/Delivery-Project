@@ -3,7 +3,7 @@ import '../styles/navbar.css';
 import Bars from './bars';
 import Brand from './brand';
 import Nav from './nav';
-import Main from './main';
+import SearchCart from './searchAndCart';
 
 function Header() {
     
@@ -13,7 +13,7 @@ function Header() {
         <Bars/>
         <Brand/>
         <Nav/>
-        <Main/>
+        <SearchCart/>
       </div>
     </nav>
   );

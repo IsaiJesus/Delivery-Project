@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import '../styles/carrito.css';
 import { places, information } from '../data/data';
 import { useCart } from '../reducerAndContext/cartStates';
-import Info from './info';
+import Alert from './alert';
 
-const PriceCart = ({price, resumen}) => {
+const PriceCart = ({totalPrice, resumen}) => {
   const items = useCart();
+  const totalQuantity = items.reduce((total, b) => total + b.quantity, 0);
   const [checked, setChecked] = useState(5);
 
   return (
@@ -14,7 +15,7 @@ const PriceCart = ({price, resumen}) => {
         <p className="m-0 pb-2">Enviar a:</p>
         <select onChange={e => setChecked(e.target.value)}>
           {places.map(data => (
-            <option key={data.id} value={data.minprice}>{data.place}</option>
+            <option key={data.id} value={data.minPrice}>{data.place}</option>
           ))}
         </select>
       </div>
@@ -22,11 +23,11 @@ const PriceCart = ({price, resumen}) => {
       <div className="prices-cart">
         <div className="price-list">
           <p>Productos</p>
-          <p>{items.length}</p>
+          <p>{totalQuantity}</p>
         </div>
         <div className="price-list">
           <p>Subtotal</p>
-          <p>{price.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+          <p>{totalPrice.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
         </div>
         <div className="price-list">
           <p>Envío</p>
@@ -34,7 +35,7 @@ const PriceCart = ({price, resumen}) => {
         </div>
         <div className="price-list">
           <b>Total</b>
-          <p>{(price + parseInt(checked)).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+          <p>{(totalPrice + parseInt(checked)).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
         </div>
       </div>
       <div className="btn-cart d-flex flex-column align-items-center justify-content-center">
@@ -42,7 +43,7 @@ const PriceCart = ({price, resumen}) => {
         type="button" 
         data-toggle="modal" 
         data-target="#exampleModal"
-        onClick={() =>  navigator.clipboard.writeText(resumen + " Total: $" + (price + parseInt(checked)))}>
+        onClick={() =>  navigator.clipboard.writeText(resumen + " Total: $" + (totalPrice + parseInt(checked)))}>
           Copiar contenido del carrito
         </button>
         <div className="modal fade p-0" 
@@ -61,16 +62,16 @@ const PriceCart = ({price, resumen}) => {
                 <h4 className="text-center">Se ha copiado el contenido del carrito al portapapeles</h4>
               </div>
               <div className="modal-footer p-3 d-flex flex-column">
-                <button type="button" className="btn carrito" data-dismiss="modal">Aceptar</button>
+                <button type="button" className="btn btn-green" data-dismiss="modal">Aceptar</button>
               </div>
             </div>
           </div>
         </div>
         {information.filter(data => data.id === 10).map(data => (
-          <Info key={data.id} props={data}/>
+          <Alert key={data.id} text={data.text}/>
         ))}
         {information.slice(4, 9).map(data => (
-          <Info key={data.id} props={data}/>
+          <Alert key={data.id} text={data.text}/>
         ))}
       </div>
     </div>

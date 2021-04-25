@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/inicio.css';
 import Ad from '../components/ad';
-import Departments from '../components/departments';
-import Food from '../components/food';
-import Stores from '../components/stores';
+import SectionDepartments from '../components/sectionDepartments';
+import SectionFood from '../components/sectionFood';
+import SectionStores from '../components/sectionStores';
 import { Helmet } from 'react-helmet';
 
 function Inicio() {
@@ -14,9 +14,9 @@ function Inicio() {
         <title>ORDEEM</title>
       </Helmet>
       <Ad/>  
-      <Departments/>
-      <Food/>
-      <Stores/>
+      <SectionDepartments/>
+      <SectionFood/>
+      <SectionStores/>
     </div>
   );
 }

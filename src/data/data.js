@@ -3,19 +3,19 @@ const departments = [
         id: 1,
         link: 'comida',
         img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg',
-        departamento: 'Comida'
+        department: 'Comida'
     },
     {
         id: 2,
         link: 'carne-de-cerdo',
         img: 'http://www.alfa-editores.com.mx/wp-content/uploads/2020/12/CA%CC%81RNICOS.jpg',
-        departamento: 'Carne de cerdo'
+        department: 'Carne de cerdo'
     },
     {
         id: 3,
         link: 'carne-de-pollo',
         img: 'https://www.aldelis.com/wp-content/uploads/2020/09/carne-de-pollo-Aldel%C3%ADs.jpg',
-        departamento: 'Carne de pollo'
+        department: 'Carne de pollo'
     }
 ];
 
@@ -24,7 +24,7 @@ const products = [
         id: 1,
         link: 'carniceria-doña-eva-costilla-de-cerdo',
         img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
-        product: 'Costilla de cerdo',
+        nameProduct: 'Costilla de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
@@ -37,7 +37,7 @@ const products = [
         id: 2,
         link: 'carniceria-doña-eva-lomo-de-cerdo',
         img: 'https://www.chedraui.com.mx/medias/2506708-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8Nzk1MTV8aW1hZ2UvanBlZ3xoZmIvaDI2Lzk4ODQ1NjAyMjgzODIuanBnfGIwNDY4NGM5MWVmODk5MDEwOTI5ZWQ5ODgxYTFkMmMzYzBmNDI0NTBkMTY1ZTA3ZWZmZWQyYjJlM2RiYzUzOGY',
-        product: 'Lomo de cerdo',
+        nameProduct: 'Lomo de cerdo',
         price: 120,
         unity: 'kg',
         quantity: 1,
@@ -50,7 +50,7 @@ const products = [
         id: 3,
         link: 'carniceria-doña-eva-chuleta-de-cerdo',
         img: 'https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg',
-        product: 'Chuleta fresca de cerdo',
+        nameProduct: 'Chuleta fresca de cerdo',
         price: 90,
         unity: 'kg',
         quantity: 1,
@@ -63,7 +63,7 @@ const products = [
         id: 4,
         link: 'carniceria-doña-eva-chuleta-ahumada-de-cerdo',
         img: 'https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2019/11/06194357/RFB-0411-3-chuletaahumada.jpg',
-        product: 'Chuleta ahumada de cerdo',
+        nameProduct: 'Chuleta ahumada de cerdo',
         price: 90,
         unity: 'kg',
         quantity: 1,
@@ -76,7 +76,7 @@ const products = [
         id: 5,
         link: 'carniceria-doña-eva-bistec-de-cerdo',
         img: 'http://cdn.kometia-static.com/despensa-facil/images/bisteccerdo-1.jpg',
-        product: 'Bistec de cerdo',
+        nameProduct: 'Bistec de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
@@ -89,7 +89,7 @@ const products = [
         id: 6,
         link: 'carniceria-doña-eva-molida-de-cerdo',
         img: 'http://guadaproducts.com/255-large_default/carne-molida-de-cerdo-kilo.jpg',
-        product: 'Molida de cerdo',
+        nameProduct: 'Molida de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
@@ -102,7 +102,7 @@ const products = [
         id: 7,
         link: 'carniceria-doña-eva-codillo-de-cerdo',
         img: 'https://www.superama.com.mx/Content/images/products/img_large/0020100500000L1.jpg',
-        product: 'Codillo de cerdo',
+        nameProduct: 'Codillo de cerdo',
         price: 60,
         unity: 'kg',
         quantity: 1,
@@ -115,7 +115,7 @@ const products = [
         id: 8,
         link: 'carniceria-doña-eva-espinazo-de-cerdo',
         img: 'https://cdn.shopify.com/s/files/1/0028/7444/1793/products/da71f47124909be6fad5b554e8c41462_2048x2048.jpg?v=1601409054',
-        product: 'Espinazo de cerdo',
+        nameProduct: 'Espinazo de cerdo',
         price: 120,
         unity: 'kg',
         quantity: 1,
@@ -128,7 +128,7 @@ const products = [
         id: 9,
         link: 'carniceria-doña-eva-manitas-de-cerdo',
         img: 'https://www.chedraui.com.mx/medias/2502598-00-CH515Wx515H?context=bWFzdGVyfHJvb3R8MzE4NzB8aW1hZ2UvanBlZ3xoNjcvaDk1Lzk4ODQ1MzYzNDA1MTAuanBnfGE3YWJiODY5NDdiNjc1YTMzMmU4N2ZlZjFlN2FlYTA2YTFjZmM4ZTBmNzE3MWIyNDhkZjA3Yjg1ZTU1MGNhYzM',
-        product: 'Manitas de cerdo',
+        nameProduct: 'Manitas de cerdo',
         price: 50,
         unity: 'kg',
         quantity: 1,
@@ -141,7 +141,7 @@ const products = [
         id: 10,
         link: 'polleria-doña-eva-pechuga-de-pollo',
         img: 'https://www.superama.com.mx/Content/images/products/img_large/0020104000000L2.jpg',
-        product: 'Pechuga de pollo',
+        nameProduct: 'Pechuga de pollo',
         price: 110,
         unity: 'kg',
         quantity: 1,
@@ -154,7 +154,7 @@ const products = [
         id: 11,
         link: 'polleria-doña-eva-muslo-de-pollo',
         img: 'https://cdn.shopify.com/s/files/1/0021/9290/0156/products/Muslo_de_pollo_1024x.png?v=1569183384',
-        product: 'Muslo de pollo',
+        nameProduct: 'Muslo de pollo',
         price: 75,
         unity: 'kg',
         quantity: 1,
@@ -167,7 +167,7 @@ const products = [
         id: 12,
         link: 'polleria-doña-eva-pollo-entero',
         img: 'https://s.cornershopapp.com/product-images/1142356.jpg?versionId=HfbJEhO8Z7MkU8Yi9xpaOjoOu9he.xve',
-        product: 'Pollo entero',
+        nameProduct: 'Pollo entero',
         price: 200,
         unity: 'kg',
         quantity: 1,
@@ -180,7 +180,7 @@ const products = [
         id: 13,
         link: 'polleria-doña-eva-pierna-de-pollo',
         img: 'https://www.granodeoro.com.mx/wp-content/uploads/2020/03/Pierna-pollo.jpg',
-        product: 'Pierna de pollo',
+        nameProduct: 'Pierna de pollo',
         price: 60,
         unity: 'kg',
         quantity: 1,
@@ -193,7 +193,7 @@ const products = [
         id: 14,
         link: 'polleria-doña-eva-molida-de-pollo',
         img: 'https://s.cornershopapp.com/product-images/919479.png?versionId=XXN9K3qZIPQOvR9CRnZEAhp1RQtRSSCf',
-        product: 'Molida de pollo',
+        nameProduct: 'Molida de pollo',
         price: 130,
         unity: 'kg',
         quantity: 1,
@@ -206,7 +206,7 @@ const products = [
         id: 15,
         link: 'polleria-doña-eva-pierna-con-muslo-de-pollo',
         img: 'https://www.superama.com.mx/Content/images/products/img_large/0020104300000L2.jpg',
-        product: 'Pierna con muslo de pollo',
+        nameProduct: 'Pierna con muslo de pollo',
         price: 65,
         unity: 'kg',
         quantity: 1,
@@ -219,7 +219,7 @@ const products = [
         id: 16,
         link: 'polleria-doña-eva-molleja-de-pollo',
         img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/11/mollejas.jpg',
-        product: 'Molleja de pollo',
+        nameProduct: 'Molleja de pollo',
         price: 30,
         unity: 'kg',
         quantity: 1,
@@ -232,7 +232,7 @@ const products = [
         id: 17,
         link: 'polleria-doña-eva-cola-de-pollo',
         img: 'https://www.lacomer.com.mx/superc/img_art/2611015000008_3.jpg',
-        product: 'Cola de pollo',
+        nameProduct: 'Cola de pollo',
         price: 20,
         unity: 'kg',
         quantity: 1,
@@ -245,7 +245,7 @@ const products = [
         id: 18,
         link: 'hamburguesas-doña-evo-hamburguesa',
         img: 'https://cdn.cienradios.com/wp-content/uploads/sites/3/2019/10/hamburguesa.jpg',
-        product: 'Hamburguesa',
+        nameProduct: 'Hamburguesa',
         price: 25,
         unity: 'pza',
         quantity: 1,
@@ -258,7 +258,7 @@ const products = [
         id: 19,
         link: 'hamburguesas-doña-evo-hot-dog',
         img: 'https://images-gmi-pmc.edge-generalmills.com/03dba6be-540b-41f6-adea-8be7ab899ef8.jpg',
-        product: 'Hot dog',
+        nameProduct: 'Hot dog',
         price: 20,
         unity: 'pza',
         quantity: 1,
@@ -269,25 +269,25 @@ const products = [
     }
 ];
 
-const tiendas = [
+const stores = [
     {
         id: 1,
         img: 'https://bichosdecampo.com/wp-content/uploads/2018/03/carnicer%C3%ADa-600x375.jpg',
-        text: 'Carnicería Doña Eva',
+        store: 'Carnicería Doña Eva',
         link: 'carniceria-doña-eva',
         category: 'carne-de-cerdo'
     },
     {
         id: 2,
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8L1ZYbOoowi_W7cbWZOSEnGUS80VGus_BPQ&usqp=CAU',
-        text: 'Hamburguesas Doña Evo',
+        store: 'Hamburguesas Doña Evo',
         link: 'hamburguesas-doña-evo',
         category: 'comida'
     },
     {
         id: 3,
         img: 'https://www.elsoldetoluca.com.mx/incoming/fu4d39-polleria-2.jpg/ALTERNATES/FREE_768/Poller%C3%ADa%20(2).jpg',
-        text: 'Pollería Doña Eva',
+        store: 'Pollería Doña Eva',
         link: 'polleria-doña-eva',
         category: 'carne-de-pollo'
     }
@@ -303,43 +303,55 @@ const titles = [
         title: 'Carrito'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Comida',
         category: 'comida'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Carne de cerdo',
         category: 'carne-de-cerdo'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Carne de pollo',
         category: 'carne-de-pollo'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Costo de envíos'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Tiendas'
     },
     {
-        id: 7,
+        id: 8,
         title: 'Carnicería Doña Eva',
         category: 'carniceria-doña-eva'
     },
     {
-        id: 8,
+        id: 9,
         title: 'Hamburguesas Doña Evo',
         category: 'hamburguesas-doña-evo'
     },
     {
-        id: 9,
+        id: 10,
         title: 'Pollería Doña Eva',
         category: 'polleria-doña-eva'
-    }
+    },
+    {
+        id: 11,
+        title: 'Términos y condiciones'
+    },
+    {
+        id: 12,
+        title: 'Nosotros'
+    },
+    {
+        id: 13,
+        title: 'Preguntas frecuentes'
+    },
 ];
 
 const links = [
@@ -369,92 +381,92 @@ const places = [
     {
         id: 1,
         place: 'Amayuca',
-        minprice: 5,
-        maxprice: 10 
+        minPrice: 5,
+        maxPrice: 10 
     },
     {
         id: 2,
         place: 'Jantetelco',
-        minprice: 5,
-        maxprice: 10 
+        minPrice: 5,
+        maxPrice: 10 
     },
     {
         id: 3,
         place: 'San Gabriel',
-        minprice: 15,
-        maxprice: 15 
+        minPrice: 15,
+        maxPrice: 15 
     },
     {
         id: 4,
         place: 'Chalca',
-        minprice: 15,
-        maxprice: 20 
+        minPrice: 15,
+        maxPrice: 20 
     },
     {
         id: 5,
         place: 'Jonacatepec',
-        minprice: 20,
-        maxprice: 25 
+        minPrice: 20,
+        maxPrice: 25 
     },
     {
         id: 6,
         place: 'Atotonilco',
-        minprice: 30,
-        maxprice: 35 
+        minPrice: 30,
+        maxPrice: 35 
     },
     {
         id: 7,
         place: 'Tepalcingo',
-        minprice: 40,
-        maxprice: 55 
+        minPrice: 40,
+        maxPrice: 55 
     },
     {
         id: 8,
         place: 'Amilcingo',
-        minprice: 10,
-        maxprice: 15 
+        minPrice: 10,
+        maxPrice: 15 
     },
     {
         id: 9,
         place: 'Temoac',
-        minprice: 20,
-        maxprice: 25 
+        minPrice: 20,
+        maxPrice: 25 
     },
     {
         id: 10,
         place: 'Popotlán',
-        minprice: 25,
-        maxprice: 25 
+        minPrice: 25,
+        maxPrice: 25 
     },
     {
         id: 11,
         place: 'Zacualpan',
-        minprice: 30,
-        maxprice: 30 
+        minPrice: 30,
+        maxPrice: 30 
     },
     {
         id: 12,
         place: 'Tlacotepec',
-        minprice: 35,
-        maxprice: 40 
+        minPrice: 35,
+        maxPrice: 40 
     },
     {
         id: 13,
         place: 'Tlayca',
-        minprice: 20,
-        maxprice: 20 
+        minPrice: 20,
+        maxPrice: 20 
     },
     {
         id: 14,
         place: 'Tlahuica',
-        minprice: 25,
-        maxprice: 30 
+        minPrice: 25,
+        maxPrice: 30 
     },
     {
         id: 15,
         place: 'Tlayecac',
-        minprice: 40,
-        maxprice: 40 
+        minPrice: 40,
+        maxPrice: 40 
     }
 ];
 
@@ -525,7 +537,7 @@ const filter = [
 ];
 
 export { products }
-export { tiendas }
+export { stores }
 export { titles }
 export { links }
 export { places }

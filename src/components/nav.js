@@ -22,7 +22,7 @@ function Nav() {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             {departments.map(data => (
               <li key={data.id}>
-                <Link to={`/departamentos/${data.link}`} className="dropdown-item">{data.departamento}</Link>
+                <Link to={`/departamentos/${data.link}`} className="dropdown-item">{data.department}</Link>
               </li>
             ))}
           </ul>

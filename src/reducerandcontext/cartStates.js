@@ -6,16 +6,52 @@ const CartDispatchContext = createContext();
 const reducer = (state, action) => {
   switch (action.type) {
 
-    case "ADD": 
-    return [
-      ...state, 
-      {...action.item}
-    ]
+    case "ADD": {
+      const newProduct = action.productInCart;
+      const cartContainProduct = state.find(
+        product => product.id === newProduct.id
+      )
+      if(cartContainProduct){
+        cartContainProduct.quantity ++;
+        return [...state];
+      }else{
+        return[...state,
+          {...action.productInCart}
+        ];
+      }
+    } 
+
+    case "INCREMENT": {
+      const newProduct = action.productInCart;
+      const cartContainProduct = state.find(
+        product => product.id === newProduct.id
+      )
+      if(cartContainProduct){
+        cartContainProduct.quantity ++;
+        return [...state];
+      }else{
+        return[...state];
+      }
+    } 
+
+    case "DECREMENT": {
+      const newProduct = action.productInCart;
+      const quitArr = [...state];
+      const cartContainProduct = state.find(
+        product => product.id === newProduct.id
+      )
+      if(cartContainProduct && cartContainProduct.quantity > 1){
+        cartContainProduct.quantity --;
+        return [...state];
+      }else{
+        return[...state];
+      }
+    } 
 
     case "REMOVE": 
-      const newArr = [...state];
-      newArr.splice(action.index, 1);
-      return newArr;
+      const quitArr = [...state];
+      quitArr.splice(action.index, 1);
+      return quitArr;
 
     default:
       return state;

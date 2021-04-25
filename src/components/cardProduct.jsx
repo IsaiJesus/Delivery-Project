@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/cardProduct.css';
-import Add from './add';
+import '../styles/cards.css';
+import ButtonAdd from './buttonAdd';
 
-const CardProduct = ({props}) => {
+const CardProduct = ({productSelected, link, img, nameProduct, price, store}) => {
     
   return ( 
     <div className="card card-product my-1">
       <div className="box-product text-center">
-          <Link to={`/productos/${props.link}`} className="text-decoration-none">
-            <img src={props.img} className="card-img-top" alt={props.product}/>
+          <Link to={`/productos/${link}`} className="text-decoration-none">
+            <img src={img} className="card-img-top" alt={nameProduct}/>
             <div className="card-body p-2">
-              <p className="card-title text-truncate">{props.product}</p>
-              <p className="card-subtitle text-muted">{props.price.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
-              <p className="card-text text-truncate">{props.store}</p>
+              <p className="card-title text-truncate">{nameProduct}</p>
+              <p className="card-subtitle text-muted">{price.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+              <p className="card-text text-truncate">{store}</p>
             </div>
           </Link>
-          <Add product={props}/>
+          <ButtonAdd productSelected={productSelected}/>
         </div>
     </div>
   );

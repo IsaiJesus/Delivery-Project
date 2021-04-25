@@ -10,7 +10,7 @@ import Tiendas from './pages/tiendas';
 import Tienda from './pages/tienda';
 import Envios from './pages/envios';
 import Carrito from './pages/carrito';
-import { products, tiendas } from './data/data';
+import { products, stores } from './data/data';
 import Whatsapp from './components/whatsapp';
 import Footer from './components/footer';
 import NotFound from './pages/notFound';
@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/envios" component={Envios}/>
         <Route exact path="/" component={Inicio}/>
         <Route path="/departamentos/:departamento" data={products} component={Departamento}/>
-        <Route path="/tiendas/:tienda" data={tiendas} component={Tienda}/>
+        <Route path="/tiendas/:tienda" data={stores} component={Tienda}/>
         <Route path="/productos/:producto" data={products} component={Producto}/>
         <Route path="*" component={NotFound}/>
       </Switch>

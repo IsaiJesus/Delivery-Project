@@ -1,0 +1,137 @@
+/*BUTTON-ADD*/ 
+
+.btn-add{
+  color: #0dbb33;
+  background: #FFF;
+  border: 1px solid #0dbb33;
+  border-radius: 0;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+}
+  
+.btn-add:focus{
+  box-shadow: none;
+}
+    
+.btn-add:hover{
+  background: #0dbb33;
+  color: #FFF;
+}
+  
+/*modal*/
+  
+.modal-header{
+  border: none;
+}
+  
+.modal-footer{
+  border: none;
+}
+
+/*ALERT*/
+
+.box-alert{
+  margin: 2px 0px;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+  
+.box-alert i{
+  font-size: 20px;
+  padding-top: 3px;
+  padding-right: 5px;
+  color: #0dcaf0;
+}
+  
+.box-alert p{
+  text-align: center;
+  margin: 0;
+}
+
+/*FILTER*/
+
+.container-select{
+  margin: 12px 2.5% 12px 0px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-select p{
+  margin-bottom: 10px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.container-select select{
+  padding: 3px;
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  font-size: 15px;
+}
+
+.container-select option{
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+/*WHATS-APP*/
+
+.container-whatsapp{
+  position: fixed;
+  background: #00BB2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  padding: 8px 11px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container-whatsapp a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFF;
+}
+
+/*BUTTON-LINK*/
+
+/*button-green*/
+
+.btn-green{
+  color: #FFF;
+  background: #0dbb33;
+  border-radius: 0;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+  
+.btn-green:hover{
+  background: #0dbb33de;
+  color: #FFF;
+}
+
+/*TITLE*/
+
+.title{
+  margin: 1rem 0px;   
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 35px;
+  background: #FFF;
+  color: #0dbb33;
+}

@@ -1,15 +1,15 @@
-.container-tienda{
-  padding-top: 100px;
+.container-page{
+    padding-top: 100px;
 }
-
-.division-tienda{
+  
+.division-page{
   width: 95%;
 }
-
+  
 /*RESPONSIVE*/
-
+  
 @media(max-width: 767px){
-  .container-tienda{
+  .container-page{
     padding-top: 136px;
   }
 }

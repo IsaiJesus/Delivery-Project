@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { useState } from 'react';
-import departments, { products, tiendas } from '../data/data';
+import departments, { products, stores } from '../data/data';
 import '../styles/navbar.css';
 
 function Search() {
@@ -10,17 +10,17 @@ function Search() {
   let history = useHistory();
   const handleClick = () => {
     products.filter(data => {
-      if(data.product.toLowerCase() == filter.toLowerCase()){
+      if(data.nameProduct.toLowerCase() == filter.toLowerCase()){
         history.push(`/productos/${data.link}`);
       }
     })
     departments.filter(data => {
-      if(data.departamento.toLowerCase() == filter.toLowerCase()){
+      if(data.department.toLowerCase() == filter.toLowerCase()){
         history.push(`/departamentos/${data.link}`);
       }
     })
-    tiendas.filter(data => {
-      if(data.text.toLowerCase() == filter.toLowerCase()){
+    stores.filter(data => {
+      if(data.store.toLowerCase() == filter.toLowerCase()){
         history.push(`/tiendas/${data.link}`);
       }
     })
@@ -28,17 +28,17 @@ function Search() {
   const handleKey = (e) => {
     if(e.key === 'Enter'){
       products.filter(data => {
-        if(data.product.toLowerCase() == filter.toLowerCase()){
+        if(data.nameProduct.toLowerCase() == filter.toLowerCase()){
           history.push(`/productos/${data.link}`);
         }
       })
       departments.filter(data => {
-        if(data.departamento.toLowerCase() == filter.toLowerCase()){
+        if(data.department.toLowerCase() == filter.toLowerCase()){
           history.push(`/departamentos/${data.link}`);
         }
       })
-      tiendas.filter(data => {
-        if(data.text.toLowerCase() == filter.toLowerCase()){
+      stores.filter(data => {
+        if(data.store.toLowerCase() == filter.toLowerCase()){
           history.push(`/tiendas/${data.link}`);
         }
       })
@@ -58,12 +58,12 @@ function Search() {
       data-toggle="dropdown" 
       aria-expanded={filter ? true : false}/>
       <ul className={filter ? "ul-search-on dropdown-menu" : "ul-search-off"} aria-labelledby="searchDropdown">
-        {products.map(search => {
+        {products.map(data => {
           if(filter.length !== ""){
-            if(search.product.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={search.id}>
-                  <Link to={`/productos/${search.link}`} className="dropdown-item">
-                    <img src={search.img}/>{search.product}
+            if(data.nameProduct.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={data.id}>
+                  <Link to={`/productos/${data.link}`} className="dropdown-item">
+                    <img src={data.img}/>{data.nameProduct}
                   </Link>
                 </li>;
             }else{
@@ -71,12 +71,12 @@ function Search() {
             }
           }
         })}
-        {departments.map(search => {
+        {departments.map(data => {
           if(filter.length !== ""){
-            if(search.departamento.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={search.id}>
-                  <Link to={`/departamentos/${search.link}`} className="dropdown-item">
-                    <img src={search.img}/><p>{search.departamento}</p>
+            if(data.department.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={data.id}>
+                  <Link to={`/departamentos/${data.link}`} className="dropdown-item">
+                    <img src={data.img}/><p>{data.department}</p>
                   </Link>
                 </li>;
             }else{
@@ -84,12 +84,12 @@ function Search() {
             }
           }
         })}
-        {tiendas.map(search => {
+        {stores.map(data => {
           if(filter.length !== ""){
-            if(search.text.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={search.id}>
-                  <Link to={`/departamentos/${search.link}`} className="dropdown-item">
-                    <img src={search.img}/><p>{search.text}</p>
+            if(data.store.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={data.id}>
+                  <Link to={`/departamentos/${data.link}`} className="dropdown-item">
+                    <img src={data.img}/><p>{data.store}</p>
                   </Link>
                 </li>;
             }else{

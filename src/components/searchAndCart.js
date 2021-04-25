@@ -3,7 +3,7 @@ import '../styles/navbar.css';
 import Search from './search';
 import Cart from './cart';
 
-function Main() {
+function SearchCart() {
 
   return(
     <div className="d-flex">
@@ -13,4 +13,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default SearchCart;

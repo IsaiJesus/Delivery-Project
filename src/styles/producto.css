@@ -26,6 +26,10 @@
   font-size: 25px;
 }
 
+.cantidad-unidad{
+  font-size: 25px;
+}
+
 .info-producto p{
   font-size: 20px;
 }
@@ -39,7 +43,7 @@
 }
 
 .cantidad-producto p{
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .cantidad-producto input{

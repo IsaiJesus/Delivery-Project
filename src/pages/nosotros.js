@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/nosotros.css';
-import Section from '../components/section';
+import TitleSection from '../components/titleSection';
 import { titles } from '../data/data';
 import { Helmet } from 'react-helmet';
 
@@ -12,7 +12,7 @@ function Nosotros() {
         <title>Nosotros | ORDEEM</title>
       </Helmet>
       {titles.filter(data => data.title === 'Nosotros').map(data => (
-        <Section key={data.id} props={data}/>
+        <TitleSection key={data.id} title={data.title}/>
       ))}
       <div className="division-terminos container-xl p-0 mb-4">
         <div className="col">

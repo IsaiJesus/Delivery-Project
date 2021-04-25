@@ -1,20 +1,20 @@
 import React, { Fragment } from 'react';
-import '../styles/add.css';
+import '../styles/littleComponents.css';
 import { useDispatchCart } from '../reducerAndContext/cartStates';
 
-const Add = ({product}) => {
+const ButtonAdd = ({productSelected}) => {
   const dispatch = useDispatchCart();
 
-  const addToCart = (item) => {
-    dispatch({ type: "ADD", item });
+  const addToCart = (productInCart) => {
+    dispatch({ type: "ADD", productInCart });
   }
   return ( 
     <Fragment>
-      <button className="btn añadir w-100" 
+      <button className="btn btn-add w-100" 
       type="button" 
       data-toggle="modal" 
       data-target="#exampleModal" 
-      onClick={() => addToCart(product)}>
+      onClick={() => addToCart(productSelected)}>
         Agregar al carrito
       </button>
       <div className="modal fade p-0" 
@@ -33,7 +33,7 @@ const Add = ({product}) => {
               <h4 className="text-center">Se ha agregado tu producto al carrito</h4>
             </div>
             <div className="modal-footer p-3 d-flex flex-column">
-              <button type="button" className="btn carrito" data-dismiss="modal">Seguir comprando</button>
+              <button type="button" className="btn btn-green" data-dismiss="modal">Seguir comprando</button>
             </div>
           </div>
         </div>
@@ -42,4 +42,4 @@ const Add = ({product}) => {
   );
 }
 
-export default Add;
+export default ButtonAdd;

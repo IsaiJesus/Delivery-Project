@@ -21,7 +21,7 @@
 }
 
 .box-not-cart h1{
-  font-size: 26px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -33,8 +33,8 @@
 /*PRODUCTCART*/
 
 .box-pro-cart{
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .img-pro-cart img{

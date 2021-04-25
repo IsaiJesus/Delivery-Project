@@ -27,7 +27,7 @@ function Bars() {
           </div>
           <div className={toggledep ? "btn-nav-bars-section-on" : "btn-nav-bars-section-off"}>
             {departments.map(data => (
-              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.departamento}</Link>
+              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.department}</Link>
             ))}
           </div>
           <div className="box-nav-bars">
