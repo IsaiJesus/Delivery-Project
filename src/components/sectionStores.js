@@ -9,16 +9,19 @@ function SectionStores() {
 
   return(
     <section className="container-section w-100">
-      {titles.filter(data => data.title === 'Tiendas').map(data => (
-        <TitleSection key={data.id} title={data.title}/>
+      {titles.filter(dataTitles => dataTitles.title === 'Tiendas').map(dataTitles => (
+        <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
       <div className="container-xl row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 p-0 division-section">
-        {stores.slice(0, 10).map(data => (
-          <CardStore key={data.id} link={data.link} img={data.img} store={data.store}/>
+        {stores.slice(0, 10).map(dataStores => (
+          <CardStore key={dataStores.id} 
+          link={dataStores.link} 
+          img={dataStores.img} 
+          store={dataStores.store}/>
         ))}
       </div>
-      {links.filter(data => data.link === '/tiendas').map(data => (
-        <ButtonLink key={data.id} link={data.link} text={data.text}/>
+      {links.filter(dataLinks => dataLinks.link === '/tiendas').map(dataLinks => (
+        <ButtonLink key={dataLinks.id} link={dataLinks.link} text={dataLinks.text}/>
       ))}
     </section>
   );

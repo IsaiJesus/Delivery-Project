@@ -2,19 +2,19 @@ const departments = [
     {
         id: 1,
         link: 'comida',
-        img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/04/comida-china-tipica.jpg',
+        img: '/images/comida-departamento.jpg',
         department: 'Comida'
     },
     {
         id: 2,
         link: 'carne-de-cerdo',
-        img: 'http://www.alfa-editores.com.mx/wp-content/uploads/2020/12/CA%CC%81RNICOS.jpg',
+        img: '/images/cerdo-departamento.jpg',
         department: 'Carne de cerdo'
     },
     {
         id: 3,
         link: 'carne-de-pollo',
-        img: 'https://www.aldelis.com/wp-content/uploads/2020/09/carne-de-pollo-Aldel%C3%ADs.jpg',
+        img: '/images/pollo-departamento.jpg',
         department: 'Carne de pollo'
     }
 ];
@@ -23,205 +23,205 @@ const products = [
     {
         id: 1,
         link: 'carniceria-doña-eva-costilla-de-cerdo',
-        img: 'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/c/o/costilla-de-cerdo-para-parrilla-1-kg392386_x1.jpg',
+        img: '/images/costilla-c-cde.jpg',
         nameProduct: 'Costilla de cerdo',
-        price: 110,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Costilla de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Costilla de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 2,
-        link: 'carniceria-doña-eva-lomo-de-cerdo',
-        img: 'https://www.chedraui.com.mx/medias/2506708-00-CH1200Wx1200H?context=bWFzdGVyfHJvb3R8Nzk1MTV8aW1hZ2UvanBlZ3xoZmIvaDI2Lzk4ODQ1NjAyMjgzODIuanBnfGIwNDY4NGM5MWVmODk5MDEwOTI5ZWQ5ODgxYTFkMmMzYzBmNDI0NTBkMTY1ZTA3ZWZmZWQyYjJlM2RiYzUzOGY',
-        nameProduct: 'Lomo de cerdo',
-        price: 120,
+        link: 'carniceria-doña-eva-filete-de-cerdo',
+        img: '/images/filete-c-cde.png',
+        nameProduct: 'Filete de cerdo',
+        price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Lomo de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $120. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Filete de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 3,
         link: 'carniceria-doña-eva-chuleta-de-cerdo',
-        img: 'https://okdiario.com/img/recetas/2017/07/25/chuletas-de-cerdo-4.jpg',
+        img: '/images/chuleta-f-c-cde.jpg',
         nameProduct: 'Chuleta fresca de cerdo',
-        price: 90,
+        price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chuleta fresca de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Chuleta fresca de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 4,
         link: 'carniceria-doña-eva-chuleta-ahumada-de-cerdo',
-        img: 'https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2019/11/06194357/RFB-0411-3-chuletaahumada.jpg',
+        img: '/images/chuleta-a-c-cde.jpg',
         nameProduct: 'Chuleta ahumada de cerdo',
-        price: 90,
+        price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chuleta de cerdo ahumada, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Chuleta de cerdo ahumada, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 5,
         link: 'carniceria-doña-eva-bistec-de-cerdo',
-        img: 'http://cdn.kometia-static.com/despensa-facil/images/bisteccerdo-1.jpg',
+        img: '/images/bistec-c-cde.jpg',
         nameProduct: 'Bistec de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Bistec de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Bistec de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/2 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 6,
         link: 'carniceria-doña-eva-molida-de-cerdo',
-        img: 'http://guadaproducts.com/255-large_default/carne-molida-de-cerdo-kilo.jpg',
+        img: '/images/molida-c-cde.jpg',
         nameProduct: 'Molida de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Molida de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Molida de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 7,
         link: 'carniceria-doña-eva-codillo-de-cerdo',
-        img: 'https://www.superama.com.mx/Content/images/products/img_large/0020100500000L1.jpg',
+        img: '/images/codillo-c-cde.jpg',
         nameProduct: 'Codillo de cerdo',
-        price: 60,
+        price: 90,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Codillo de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Codillo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 8,
         link: 'carniceria-doña-eva-espinazo-de-cerdo',
-        img: 'https://cdn.shopify.com/s/files/1/0028/7444/1793/products/da71f47124909be6fad5b554e8c41462_2048x2048.jpg?v=1601409054',
+        img: '/images/espinazo-g-c-cde.jpg',
         nameProduct: 'Espinazo de cerdo',
-        price: 120,
+        price: 100,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Espinazo de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Espinazo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 9,
         link: 'carniceria-doña-eva-manitas-de-cerdo',
-        img: 'https://www.chedraui.com.mx/medias/2502598-00-CH515Wx515H?context=bWFzdGVyfHJvb3R8MzE4NzB8aW1hZ2UvanBlZ3xoNjcvaDk1Lzk4ODQ1MzYzNDA1MTAuanBnfGE3YWJiODY5NDdiNjc1YTMzMmU4N2ZlZjFlN2FlYTA2YTFjZmM4ZTBmNzE3MWIyNDhkZjA3Yjg1ZTU1MGNhYzM',
+        img: '/images/manitas-c-cde.jpg',
         nameProduct: 'Manitas de cerdo',
-        price: 50,
+        price: 60,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Manitas de cerdo, de la carnicería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Manitas de cerdo, de la carnicería Doña Eva, puedes pedir una cantidad de piezas para después ser pesadas y sepas el precio, normalmente 3 piezas equivalen a 1 kilogramo.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 10,
         link: 'polleria-doña-eva-pechuga-de-pollo',
-        img: 'https://www.superama.com.mx/Content/images/products/img_large/0020104000000L2.jpg',
+        img: '/images/pechuga-p-pde.jpg',
         nameProduct: 'Pechuga de pollo',
-        price: 110,
-        unity: 'kg',
+        price: 80,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pechuga de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Pechuga de pollo, de la pollería Doña Eva, el precio de este puede variar por características como el tamaño, puedes pedir desde media pechuga hasta la cantidad que quieras, puedes pedirla con pellejo y/o hueso o sin pellejo y/o hueso.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
     {
         id: 11,
         link: 'polleria-doña-eva-muslo-de-pollo',
-        img: 'https://cdn.shopify.com/s/files/1/0021/9290/0156/products/Muslo_de_pollo_1024x.png?v=1569183384',
+        img: '/images/muslo-p-pde.jpg',
         nameProduct: 'Muslo de pollo',
-        price: 75,
-        unity: 'kg',
+        price: 12,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Muslo de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Muslo de pollo, de la pollería Doña Eva, puedes pedir desde mínimo 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
     {
         id: 12,
         link: 'polleria-doña-eva-pollo-entero',
-        img: 'https://s.cornershopapp.com/product-images/1142356.jpg?versionId=HfbJEhO8Z7MkU8Yi9xpaOjoOu9he.xve',
+        img: '/images/pollo-e-pde.jpg',
         nameProduct: 'Pollo entero',
-        price: 200,
-        unity: 'kg',
+        price: 160,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pollo entero, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Pollo entero, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
     {
         id: 13,
-        link: 'polleria-doña-eva-pierna-de-pollo',
-        img: 'https://www.granodeoro.com.mx/wp-content/uploads/2020/03/Pierna-pollo.jpg',
-        nameProduct: 'Pierna de pollo',
-        price: 60,
+        link: 'carniceria-doña-eva-arrachera',
+        img: '/images/arrachera-c-cde.jpg',
+        nameProduct: 'Arrachera',
+        price: 260,
         unity: 'kg',
         quantity: 1,
-        store: 'Pollería Doña Eva',
-        description: 'Pierna de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
-        category: 'carne-de-pollo',
-        categoryStore: 'polleria-doña-eva'
+        store: 'Carnicería Doña Eva',
+        description: 'Arrachera, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 14,
-        link: 'polleria-doña-eva-molida-de-pollo',
-        img: 'https://s.cornershopapp.com/product-images/919479.png?versionId=XXN9K3qZIPQOvR9CRnZEAhp1RQtRSSCf',
-        nameProduct: 'Molida de pollo',
-        price: 130,
+        link: 'carniceria-doña-eva-chistorra',
+        img: '/images/chistorra-c-cde.jpg',
+        nameProduct: 'Chistorra',
+        price: 140,
         unity: 'kg',
         quantity: 1,
-        store: 'Pollería Doña Eva',
-        description: 'Molida de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
-        category: 'carne-de-pollo',
-        categoryStore: 'polleria-doña-eva'
+        store: 'Carnicería Doña Eva',
+        description: 'Chistorra, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 15,
         link: 'polleria-doña-eva-pierna-con-muslo-de-pollo',
-        img: 'https://www.superama.com.mx/Content/images/products/img_large/0020104300000L2.jpg',
+        img: '/images/pierna-m-p-pde.jpg',
         nameProduct: 'Pierna con muslo de pollo',
-        price: 65,
-        unity: 'kg',
+        price: 22,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pierna con muslo de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Pierna con muslo de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
     {
         id: 16,
         link: 'polleria-doña-eva-molleja-de-pollo',
-        img: 'https://dam.cocinafacil.com.mx/wp-content/uploads/2020/11/mollejas.jpg',
+        img: '/images/molleja-p-pde.jpg',
         nameProduct: 'Molleja de pollo',
-        price: 30,
-        unity: 'kg',
+        price: 3,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
         description: 'Molleja de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
@@ -230,66 +230,339 @@ const products = [
     },
     {
         id: 17,
-        link: 'polleria-doña-eva-cola-de-pollo',
-        img: 'https://www.lacomer.com.mx/superc/img_art/2611015000008_3.jpg',
-        nameProduct: 'Cola de pollo',
-        price: 20,
-        unity: 'kg',
+        link: 'polleria-doña-eva-rabadilla-de-pollo',
+        img: '/images/rabadilla-p-pde.jpg',
+        nameProduct: 'Rabadilla de pollo',
+        price: 5,
+        unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Cola de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'rabadilla de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
     {
         id: 18,
-        link: 'hamburguesas-doña-evo-hamburguesa',
-        img: 'https://cdn.cienradios.com/wp-content/uploads/sites/3/2019/10/hamburguesa.jpg',
-        nameProduct: 'Hamburguesa',
-        price: 25,
-        unity: 'pza',
+        link: 'carniceria-doña-eva-azadura',
+        img: '/images/azadura-c-cde.jpg',
+        nameProduct: 'Azadura',
+        price: 80,
+        unity: 'kg',
         quantity: 1,
-        store: 'Hamburguesas Doña Evo',
-        description: 'Hamburguesa con papas, con carne de cerdo, jitomate, lechuga, queso y mayonesa.',
-        category: 'comida',
-        categoryStore: 'hamburguesas-doña-evo'
+        store: 'Carnicería Doña Eva',
+        description: 'Azadura (carnitas), de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
     },
     {
         id: 19,
-        link: 'hamburguesas-doña-evo-hot-dog',
-        img: 'https://images-gmi-pmc.edge-generalmills.com/03dba6be-540b-41f6-adea-8be7ab899ef8.jpg',
-        nameProduct: 'Hot dog',
-        price: 20,
+        link: 'carniceria-doña-eva-tocino',
+        img: '/images/tocino-c-cde.jpg',
+        nameProduct: 'Tocino',
+        price: 100,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Tocino, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 20,
+        link: 'carniceria-doña-eva-enchilada-de-cerdo',
+        img: '/images/enchilada-c-cde.png',
+        nameProduct: 'Enchilada de cerdo',
+        price: 140,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Enchilada de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 21,
+        link: 'carniceria-doña-eva-maciza-de-cerdo',
+        img: '/images/pierna-s-h-c-cde.jpg',
+        nameProduct: 'Maciza de cerdo',
+        price: 120,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Maciza de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 22,
+        link: 'polleria-doña-eva-mole-rojo',
+        img: '/images/mole-r-pde.jpg',
+        nameProduct: 'Mole rojo',
+        price: 150,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería Doña Eva',
+        description: 'Mole rojo, de la pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 23,
+        link: 'polleria-doña-eva-mole-poblano',
+        img: '/images/mole-po-pde.jpg',
+        nameProduct: 'Mole poblano',
+        price: 160,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería Doña Eva',
+        description: 'Mole poblano, de la pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 24,
+        link: 'polleria-doña-eva-mole-pipian',
+        img: '/images/mole-p-pde.png',
+        nameProduct: 'Mole pipián',
+        price: 160,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería Doña Eva',
+        description: 'Mole pipián, de la pollería Doña Eva, 1/4kg $40, 1kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 25,
+        link: 'carniceria-doña-eva-manteca-de-cerdo',
+        img: '/images/manteca-c-cde.jpg',
+        nameProduct: 'Manteca de cerdo',
+        price: 30,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Manteca de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 26,
+        link: 'carniceria-doña-eva-pierna-española',
+        img: '/images/pierna-e-cde.jpg',
+        nameProduct: 'Pierna española',
+        price: 80,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Pierna española, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 27,
+        link: 'carniceria-doña-eva-surtida-de-cerdo',
+        img: '/images/surtida-c-cde.jpg',
+        nameProduct: 'Surtida de cerdo',
+        price: 100,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Surtida de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 28,
+        link: 'polleria-doña-eva-patas-de-pollo',
+        img: '/images/patas-p-pde.jpg',
+        nameProduct: 'Patas de pollo',
+        price: 2,
         unity: 'pza',
         quantity: 1,
-        store: 'Hamburguesas Doña Evo',
-        description: 'Hot dog con papas, con salchicha de cerdo, jitomate, cebolla y mayonesa.',
+        store: 'Pollería Doña Eva',
+        description: 'Patas de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 29,
+        link: 'polleria-doña-eva-tira-de-pollo',
+        img: '/images/tira-p-pde.jpg',
+        nameProduct: 'Tira de pollo',
+        price: 15,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería Doña Eva',
+        description: 'Tira de pollo, de la pollería Doña Eva, incluye la cabeza, huacal y cola del pollo. Puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 30,
+        link: 'carniceria-doña-eva-chicharron-de-cerdo',
+        img: '/images/chicharron-c-cde.jpg',
+        nameProduct: 'Chicharrón de cerdo',
+        price: 160,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Chicharrón de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 31,
+        link: 'carniceria-doña-eva-longaniza-de-cerdo',
+        img: '/images/longaniza-c-cde.jpg',
+        nameProduct: 'Longaniza de cerdo',
+        price: 140,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Longaniza de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 32,
+        link: 'polleria-doña-eva-ala-de-pollo',
+        img: '/images/ala-p-pde.jpg',
+        nameProduct: 'Ala de pollo',
+        price: 10,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería Doña Eva',
+        description: 'Ala de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-doña-eva'
+    },
+    {
+        id: 33,
+        link: 'carniceria-doña-eva-rellena-de-cerdo',
+        img: '/images/rellena-c-cde.png',
+        nameProduct: 'Rellena de cerdo',
+        price: 80,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Rellena de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 34,
+        link: 'carniceria-doña-eva-chales-de-cerdo',
+        img: '/images/chales-c-cde.jpg',
+        nameProduct: 'Chales de cerdo',
+        price: 80,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Chales de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 35,
+        link: 'carniceria-doña-eva-pierna-con-hueso-de-cerdo',
+        img: '/images/pierna-h-c-cde.jpg',
+        nameProduct: 'Pierna con hueso de cerdo',
+        price: 100,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Pierna con hueso de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 36,
+        link: 'carniceria-doña-eva-lomo-de-cerdo',
+        img: '/images/lomo-c-cde.jpg',
+        nameProduct: 'Lomo de cerdo',
+        price: 100,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Carnicería Doña Eva',
+        description: 'Lomo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'carne-de-cerdo',
+        categoryStore: 'carniceria-doña-eva'
+    },
+    {
+        id: 37,
+        link: 'hot-dogs-resno-hamburguesa-con-tocino',
+        img: '/images/hamburguesa-t-h-hdr.jpg',
+        nameProduct: 'Hamburguesa con tocino',
+        price: 35,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Hot dogs RESNO',
+        description: 'Hamburguesa con tocino. Puede incluir: jitomate, cebolla, chiles, catsup, mostaza, tocino y/o lechuga.',
         category: 'comida',
-        categoryStore: 'hamburguesas-doña-evo'
+        categoryStore: 'hot-dogs-resno'
+    },
+    {
+        id: 38,
+        link: 'hot-dogs-resno-hamburguesa-con-piña',
+        img: '/images/hamburguesa-t-p-hdr.jpg',
+        nameProduct: 'Hamburguesa con piña',
+        price: 35,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Hot dogs RESNO',
+        description: 'Hamburguesa con piña. Puede incluir: jitomate, cebolla, chiles, catsup, mostaza, piña y/o lechuga.',
+        category: 'comida',
+        categoryStore: 'hot-dogs-resno'
+    },
+    {
+        id: 39,
+        link: 'hot-dogs-resno-hot-dog-sencillo',
+        img: '/images/hot-dog-s-h-hdr.jpg',
+        nameProduct: 'Hot dog sencillo',
+        price: 19,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Hot dogs RESNO',
+        description: 'Hot dog sencillo. Puede incluir: jitomate, cebolla, chile, catsup y/o mostaza.',
+        category: 'comida',
+        categoryStore: 'hot-dogs-resno'
+    },
+    {
+        id: 40,
+        link: 'hot-dogs-resno-hot-dog-con-piña',
+        img: '/images/hot-dog-c-p-h-hdr.jpg',
+        nameProduct: 'Hot dog con piña',
+        price: 23,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Hot dogs RESNO',
+        description: 'Hot dog con piña. Puede incluir: jitomate, cebolla, chiles, catsup, mostaza y/o piña.',
+        category: 'comida',
+        categoryStore: 'hot-dogs-resno'
     }
 ];
 
 const stores = [
     {
         id: 1,
-        img: 'https://bichosdecampo.com/wp-content/uploads/2018/03/carnicer%C3%ADa-600x375.jpg',
+        img: '/images/cde-tienda.jpg',
         store: 'Carnicería Doña Eva',
         link: 'carniceria-doña-eva',
         category: 'carne-de-cerdo'
     },
     {
         id: 2,
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8L1ZYbOoowi_W7cbWZOSEnGUS80VGus_BPQ&usqp=CAU',
-        store: 'Hamburguesas Doña Evo',
-        link: 'hamburguesas-doña-evo',
-        category: 'comida'
-    },
-    {
-        id: 3,
-        img: 'https://www.elsoldetoluca.com.mx/incoming/fu4d39-polleria-2.jpg/ALTERNATES/FREE_768/Poller%C3%ADa%20(2).jpg',
+        img: '/images/pde-tienda.jpg',
         store: 'Pollería Doña Eva',
         link: 'polleria-doña-eva',
         category: 'carne-de-pollo'
+    },
+    {
+        id: 3,
+        img: '/images/hdr-tienda.jpg',
+        store: 'Hot dogs RESNO',
+        link: 'hot-dogs-resno',
+        category: 'comida'
     }
 ];
 
@@ -332,26 +605,26 @@ const titles = [
     },
     {
         id: 9,
-        title: 'Hamburguesas Doña Evo',
-        category: 'hamburguesas-doña-evo'
-    },
-    {
-        id: 10,
         title: 'Pollería Doña Eva',
         category: 'polleria-doña-eva'
     },
     {
-        id: 11,
+        id: 10,
         title: 'Términos y condiciones'
     },
     {
-        id: 12,
+        id: 11,
         title: 'Nosotros'
     },
     {
-        id: 13,
+        id: 12,
         title: 'Preguntas frecuentes'
     },
+    {
+        id: 13,
+        title: 'Hot dogs RESNO',
+        category: 'hot-dogs-resno'
+    }
 ];
 
 const links = [
@@ -381,135 +654,108 @@ const places = [
     {
         id: 1,
         place: 'Amayuca',
-        minPrice: 5,
-        maxPrice: 10 
+        minPrice: 5
     },
     {
         id: 2,
         place: 'Jantetelco',
-        minPrice: 5,
-        maxPrice: 10 
+        minPrice: 5
     },
     {
         id: 3,
         place: 'San Gabriel',
-        minPrice: 15,
-        maxPrice: 15 
+        minPrice: 15
     },
     {
         id: 4,
         place: 'Chalca',
-        minPrice: 15,
-        maxPrice: 20 
+        minPrice: 15
     },
     {
         id: 5,
         place: 'Jonacatepec',
-        minPrice: 20,
-        maxPrice: 25 
+        minPrice: 20
     },
     {
         id: 6,
         place: 'Atotonilco',
-        minPrice: 30,
-        maxPrice: 35 
+        minPrice: 30
     },
     {
         id: 7,
         place: 'Tepalcingo',
-        minPrice: 40,
-        maxPrice: 55 
+        minPrice: 40
     },
     {
         id: 8,
         place: 'Amilcingo',
-        minPrice: 10,
-        maxPrice: 15 
+        minPrice: 10
     },
     {
         id: 9,
         place: 'Temoac',
-        minPrice: 20,
-        maxPrice: 25 
+        minPrice: 20
     },
     {
         id: 10,
         place: 'Popotlán',
-        minPrice: 25,
-        maxPrice: 25 
+        minPrice: 25
     },
     {
         id: 11,
         place: 'Zacualpan',
-        minPrice: 30,
-        maxPrice: 30 
+        minPrice: 30 
     },
     {
         id: 12,
         place: 'Tlacotepec',
-        minPrice: 35,
-        maxPrice: 40 
+        minPrice: 35
     },
     {
         id: 13,
         place: 'Tlayca',
-        minPrice: 20,
-        maxPrice: 20 
+        minPrice: 20
     },
     {
         id: 14,
         place: 'Tlahuica',
-        minPrice: 25,
-        maxPrice: 30 
+        minPrice: 25
     },
     {
         id: 15,
         place: 'Tlayecac',
-        minPrice: 40,
-        maxPrice: 40 
+        minPrice: 40
     }
 ];
 
 const information = [
     {
         id: 1,
-        text: 'El precio del envío puede ser menor dependiendo de la cantidad de productos comprados.'
+        text: 'El precio del envío puede ser menor dependiendo de la ubicación entre el repartidor y el cliente, estos precios son tomando de referencia a Amayuca.'
     },
     {
         id: 2,
-        text: 'El precio del envío puede variar dependiendo de la dirección a la que se enviarán los productos.'
+        text: '"Copiar contenido el carrito" copia tus productos y pégalos en nuestra conversación de WhatsApp.'
     },
     {
         id: 3,
-        text: 'Este producto se puede agotar en una hora específica, puedes preguntar si aún está disponible enviando un mensaje directo a nuestras redes sociales.'
+        text: 'El precio del envío puede variar dependiendo de la dirección a la que se enviarán los productos.'
     },
     {
         id: 4,
-        text: 'Al terminar de agregar todos los productos al carrito podrás ver el costo total de tus compras en la sección del carrito.'
+        text: 'Este producto podría agotarse en un horario específico, puedes preguntar si aún está disponible en nuestras redes sociales.'
     },
     {
         id: 5,
-        text: 'El precio puede ser mayor si la distancia del envío es más lejana.'
+        text: 'Al terminar de agregar todos los productos al carrito podrás ver el costo total de tus compras en la sección del carrito.'
     },
     {
         id: 6,
-        text: 'Puedes hacer tu pedido llamando a 735 123 4567 o mandando un Whatsapp al mismo número.'
+        text: 'Puedes hacer tu pedido llamando a 735 244 9749 o mandando un Whatsapp al mismo número.'
     },
     {
         id: 7,
-        text: 'Puedes hacer tu pedido presionando el botón de Whatsapp que está en la parte inferior derecha.'
-    },
-    {
-        id: 8,
         text: 'Si tienes alguna duda puedes preguntar mandando mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
-    },
-    {
-        id: 9,
-        text: 'Los botones de sumar o restar la cantidad de un producto aún están en modo de prueba.'
-    },
-    {
-        id: 10,
-        text: '"Copiar contenido el carrito" copia tus productos y pégalos en nuestra conversación de WhatsApp.'
     }
 ]
 
@@ -536,6 +782,16 @@ const filter = [
     }
 ];
 
+const ads = [
+    {
+        id: 1,
+        slideNum: 'slide 1',
+        link: '/tiendas/carniceria-doña-eva',
+        img: '/images/banner_car_poll_d_eva.jpg',
+        alt: 'Carnicería Doña Eva'
+    }
+];
+
 export { products }
 export { stores }
 export { titles }
@@ -543,4 +799,5 @@ export { links }
 export { places }
 export { information }
 export { filter }
+export { ads }
 export default departments;

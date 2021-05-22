@@ -26,8 +26,9 @@ function Bars() {
             <button className={toggledep ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={handleToggleD}></button>
           </div>
           <div className={toggledep ? "btn-nav-bars-section-on" : "btn-nav-bars-section-off"}>
-            {departments.map(data => (
-              <Link key={data.id} to={`/departamentos/${data.link}`}>{data.department}</Link>
+            {departments.map(dataDepartments => (
+              <Link key={dataDepartments.id} 
+              to={`/departamentos/${dataDepartments.link}`}>{dataDepartments.department}</Link>
             ))}
           </div>
           <div className="box-nav-bars">

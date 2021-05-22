@@ -20,9 +20,10 @@ function Nav() {
             <span className="fas fa-angle-down"></span>
           </button>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            {departments.map(data => (
-              <li key={data.id}>
-                <Link to={`/departamentos/${data.link}`} className="dropdown-item">{data.department}</Link>
+            {departments.map(dataDepartments => (
+              <li key={dataDepartments.id}>
+                <Link to={`/departamentos/${dataDepartments.link}`} 
+                className="dropdown-item">{dataDepartments.department}</Link>
               </li>
             ))}
           </ul>

@@ -4,15 +4,13 @@ import Ad from '../components/ad';
 import SectionDepartments from '../components/sectionDepartments';
 import SectionFood from '../components/sectionFood';
 import SectionStores from '../components/sectionStores';
-import { Helmet } from 'react-helmet';
+import useTitle from '../hooks/useTitle';
 
 function Inicio() {
+  useTitle({ title: 'Inicio' });
 
   return(
     <div className="container-inicio">
-      <Helmet>
-        <title>ORDEEM</title>
-      </Helmet>
       <Ad/>  
       <SectionDepartments/>
       <SectionFood/>

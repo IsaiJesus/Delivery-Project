@@ -2,17 +2,15 @@ import React from 'react';
 import '../styles/nosotros.css';
 import TitleSection from '../components/titleSection';
 import { titles } from '../data/data';
-import { Helmet } from 'react-helmet';
+import useTitle from '../hooks/useTitle';
 
 function Terminos() {
+  useTitle({ title: 'Términos y condiciones' });
 
   return(
     <div className="container-terminos d-flex flex-column align-items-center justify-content-center">
-      <Helmet>
-        <title>Términos y condiciones | ORDEEM</title>
-      </Helmet>
-      {titles.filter(data => data.title === 'Términos y condiciones').map(data => (
-        <TitleSection key={data.id} title={data.title}/>
+      {titles.filter(dataTitles => dataTitles.title === 'Términos y condiciones').map(dataTitles => (
+        <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
       <div className="division-terminos container-xl p-0 my-4">
         <div className="col">
@@ -22,19 +20,19 @@ function Terminos() {
           y pueden variar o cambiar sin previo aviso.</p>
           <p className="mb-1">3. La disponibilidad de los productos anunciados en nuestro servicio dependerá 
           del stock de cada producto en cada tienda.</p>
-          <p className="mb-1">4. Las compras de productos en nuestro servicio pueden ser llamando al número 
-            otorgado a los clientes o escribiendónos un mensaje de WhatsApp al mismo número. En cualquiera de 
-            las dos formas de compra se les pedirán la siguiente información: <br/>
+          <p className="mb-1">4. Las compras de productos en nuestro servicio pueden ser, llamando al número 
+            otorgado a los clientes o escribiéndonos un mensaje de WhatsApp al mismo número. En cualquiera de 
+            las dos formas de compra se les pedirá la siguiente información: <br/>
             a) El nombre o nombres de los productos elegidos. <br/>
-            b) El nombre de la tienda de cada producto <br/>
+            b) El nombre de la tienda de cada producto. <br/>
             c) La cantidad de productos de cada tipo.</p>
-            <p className="mb-1">4.1. En seguida de esto, pediremos datos para el envío de los productos: <br/>
+            <p className="mb-1">4.1. En seguida de lo anterior, pediremos datos para el envío de los productos: <br/>
             a) Nombre completo de la persona que hace el pedido. <br/>
-            b) Número teléfonico para contactar al cliente durante el envío. <br/>
+            b) Número telefónico para contactar al cliente durante el envío. <br/>
             c) La dirección a donde se hará entrega del envío. <br/>
-            d) Cuando el consumidor nos da sus datos para hacer el envío de sus compras acepta los términos y 
+            4.2. Cuando el consumidor nos da sus datos para hacer el envío de sus compras acepta los términos y 
             condiciones de este artículo.</p>
-            <p className="mb-1">5. ORDEEM no pide más datos de los aunciados en este artículo, y estos sólo 
+            <p className="mb-1">5. ORDEEM no pide más datos de los anunciados en este artículo, y estos sólo 
             serán usados con el propósito de que los productos lleguen a la dirección que indica el 
             consumidor que los requiere.</p>
             <p className="mb-1">6. En la primera forma de contacto para hacer uso de nuestro servicio, se le 
@@ -60,22 +58,22 @@ function Terminos() {
             f) Cuando por errores involuntarios en el sistema se lancen promociones o costos no autorizados, 
             en perjuicio del servicio. <br/>
             g) Cuando el usuario agreda física o verbalmente a uno de nuestros usuarios o trabajadores.</p> <br/>
-            <h5 className=" mb-3">Ofertas promociones y descuentos</h5>
-            <p className="mb-1">1. En ocaciones específicas, se mostrarán en nuestros medios, ofertas, 
+            <h5 className=" mb-3">Ofertas, promociones y descuentos</h5>
+            <p className="mb-1">1. En ocasiones específicas, se mostrarán en nuestros medios, ofertas, 
             promociones y descuentos, estos hechos por las tiendas asociadas o incluso el mismo servicio.</p>
             <p className="mb-1">2. Las imágenes, características, especificaciones y precios son específicos 
             y/o temporales, por lo que el usuario puede encontrar información de especificaciones en el 
-            mismo contenido, de lo contrario, el usuario podrá solicitar información de estás promociones, 
-            ofertass y/o descuentos a través de nuestras redes sociales o nuestro WhatssApp.</p> <br/>
+            mismo contenido, de lo contrario, el usuario podrá solicitar información de estas promociones, 
+            ofertas y/o descuentos a través de nuestras redes sociales o nuestro WhatsApp.</p> <br/>
             <h5 className="mb-3">Derechos del contenido</h5>
             <p className="mb-1">1. Las imágenes, logos, fotos y vídeos en nuestro sitio web, redes sociales y en 
-            publicidad están sujetas a derechos de proiedad intelectual, por lo que no podrán ser usados por 
+            publicidad están sujetas a derechos de propiedad intelectual, por lo que no podrán ser usados por 
             un tercero para fines de venta.</p> <br/>
             <h5 className="mb-3">Formas de pago</h5>
             <p className="mb-1">1. La única forma de pago que tenemos hasta el momento es en efectivo, el cobro 
             de los productos se hará después de haber sido entregados al domicilio.</p>
             <p className="mb-1">2. El costo total de los envíos, se calcula con base al precio de los productos 
-            requeridos más el costo del envío, este ultimo se calcula de la siguiente manera: se tomará en 
+            requeridos más el costo del envío, este último se calcula de la siguiente manera: se tomará en 
             cuenta el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto 
             de llegada (la dirección del comprador), el costo subirá $5 cada 1.5 kilómetros, es decir, si el 
             punto de partida y el punto de llegada se encuentra a 1.5 kilómetros, el costo del envío será de 
@@ -95,16 +93,16 @@ function Terminos() {
             a menos de que la tienda donde hayan sido comprados lo permita.</p> <br/>
             <h5 className="mb-3">Devoluciones, cambios y reembolsos</h5>
             <p className="mb-1">1. En caso de que haya sido entregado un producto en mal estado, para solicitar una 
-            devolución cambio o reembolso debe considerar lo siguiente: <br/>
+            devolución, cambio o reembolso debe considerar lo siguiente: <br/>
             a) Si el producto fue entregado en malas condiciones, defectuoso, golpeado, inservible o caducado. 
             Si el producto no es el que fue pedido o no cumple con lo requerido como peso o cantidad. <br/>
             b) Enseguida de asegurarse de que el producto no fue entregado en las condiciones óptimas podrá 
-            contáctarnos para hacer un reclamo, preferiblemente le pediremos el recibo de la compra si lo 
-            solicito para hacer más rápido el procedimiento. Nosotros verificaremos que el pedido no haya 
-            sufrido alteraciones después de haber sido entregado. <br/>
+            contactarnos para hacer un reclamo, le pediremos el recibo de la compra si lo solicito para hacer 
+            más rápido el procedimiento. Nosotros verificaremos que el pedido no haya sufrido alteraciones 
+            después de haber sido entregado. <br/>
             c) Nos pondremos de acuerdo con el comprador y dependiendo de los daños causados, la tienda donde 
-            se compro el producto podrá ofrecerle un cambio, devolución o hasta un reembolso. <br/>
-            d) ORDEEM no se hace cargo de posibles daños, y por consiguiente una reparación de los daños 
+            se compró el producto podrá ofrecerle un cambio, devolución o hasta un reembolso. <br/>
+            d) ORDEEM no se hace responsable de posibles daños, y por consiguiente una reparación de los daños 
             causados a menos que estos hayan sido durante el envío.</p> <br/>
             <h5 className="mb-3">Reglas de conducta</h5>
             <p className="mb-1">1. Todos los usuarios de nuestro servicio, empleados, encargados de tiendas, 

@@ -9,37 +9,37 @@ function Search() {
 
   let history = useHistory();
   const handleClick = () => {
-    products.filter(data => {
-      if(data.nameProduct.toLowerCase() == filter.toLowerCase()){
-        history.push(`/productos/${data.link}`);
+    products.filter(dataProducts => {
+      if(dataProducts.nameProduct.toLowerCase() == filter.toLowerCase()){
+        history.push(`/productos/${dataProducts.link}`);
       }
     })
-    departments.filter(data => {
-      if(data.department.toLowerCase() == filter.toLowerCase()){
-        history.push(`/departamentos/${data.link}`);
+    departments.filter(dataDepartments => {
+      if(dataDepartments.department.toLowerCase() == filter.toLowerCase()){
+        history.push(`/departamentos/${dataDepartments.link}`);
       }
     })
-    stores.filter(data => {
-      if(data.store.toLowerCase() == filter.toLowerCase()){
-        history.push(`/tiendas/${data.link}`);
+    stores.filter(dataStores => {
+      if(dataStores.store.toLowerCase() == filter.toLowerCase()){
+        history.push(`/tiendas/${dataStores.link}`);
       }
     })
   }
   const handleKey = (e) => {
     if(e.key === 'Enter'){
-      products.filter(data => {
-        if(data.nameProduct.toLowerCase() == filter.toLowerCase()){
-          history.push(`/productos/${data.link}`);
+      products.filter(dataProducts => {
+        if(dataProducts.nameProduct.toLowerCase() == filter.toLowerCase()){
+          history.push(`/productos/${dataProducts.link}`);
         }
       })
-      departments.filter(data => {
-        if(data.department.toLowerCase() == filter.toLowerCase()){
-          history.push(`/departamentos/${data.link}`);
+      departments.filter(dataDepartments => {
+        if(dataDepartments.department.toLowerCase() == filter.toLowerCase()){
+          history.push(`/departamentos/${dataDepartments.link}`);
         }
       })
-      stores.filter(data => {
-        if(data.store.toLowerCase() == filter.toLowerCase()){
-          history.push(`/tiendas/${data.link}`);
+      stores.filter(dataStores => {
+        if(dataStores.store.toLowerCase() == filter.toLowerCase()){
+          history.push(`/tiendas/${dataStores.link}`);
         }
       })
     }
@@ -58,12 +58,13 @@ function Search() {
       data-toggle="dropdown" 
       aria-expanded={filter ? true : false}/>
       <ul className={filter ? "ul-search-on dropdown-menu" : "ul-search-off"} aria-labelledby="searchDropdown">
-        {products.map(data => {
+        {products.map(dataProducts => {
           if(filter.length !== ""){
-            if(data.nameProduct.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={data.id}>
-                  <Link to={`/productos/${data.link}`} className="dropdown-item">
-                    <img src={data.img}/>{data.nameProduct}
+            if(dataProducts.nameProduct.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={dataProducts.id}>
+                  <Link to={`/productos/${dataProducts.link}`} className="dropdown-item">
+                    <img src={dataProducts.img}/>
+                    {dataProducts.nameProduct}
                   </Link>
                 </li>;
             }else{
@@ -71,12 +72,12 @@ function Search() {
             }
           }
         })}
-        {departments.map(data => {
+        {departments.map(dataDepartments => {
           if(filter.length !== ""){
-            if(data.department.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={data.id}>
-                  <Link to={`/departamentos/${data.link}`} className="dropdown-item">
-                    <img src={data.img}/><p>{data.department}</p>
+            if(dataDepartments.department.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={dataDepartments.id}>
+                  <Link to={`/departamentos/${dataDepartments.link}`} className="dropdown-item">
+                    <img src={dataDepartments.img}/><p>{dataDepartments.department}</p>
                   </Link>
                 </li>;
             }else{
@@ -84,12 +85,12 @@ function Search() {
             }
           }
         })}
-        {stores.map(data => {
+        {stores.map(dataStores => {
           if(filter.length !== ""){
-            if(data.store.toLowerCase().indexOf(filter.toLowerCase()) > -1){
-              return <li key={data.id}>
-                  <Link to={`/departamentos/${data.link}`} className="dropdown-item">
-                    <img src={data.img}/><p>{data.store}</p>
+            if(dataStores.store.toLowerCase().indexOf(filter.toLowerCase()) > -1){
+              return <li key={dataStores.id}>
+                  <Link to={`/tiendas/${dataStores.link}`} className="dropdown-item">
+                    <img src={dataStores.img}/><p>{dataStores.store}</p>
                   </Link>
                 </li>;
             }else{

@@ -5,7 +5,9 @@ function Whatsapp() {
 
   return(
     <div className="container-whatsapp">
-      <a target="_blanck" href="https://api.whatsapp.com/send?phone=527351884715&amp;text=Envia&nbsp;un&nbsp;mensaje&nbsp;para&nbsp;que&nbsp;te&nbsp;apoyemos." className="fab fa-whatsapp"></a>
+      <a target="_blanck" 
+      className="fab fa-whatsapp" 
+      href="https://api.whatsapp.com/send?phone=527352449749&amp;text=¡Tomemos&nbsp;el&nbsp;pedido!"></a>
     </div>
   );
 }

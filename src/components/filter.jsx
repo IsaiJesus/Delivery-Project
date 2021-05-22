@@ -7,8 +7,8 @@ const Filter = ({filter, initialId, finalId, value, handleChange}) => {
     <div className="container-select">
       <p>Filtrar por:</p>
       <select value={value} onChange={handleChange}>
-        {filter.slice(initialId, finalId).map(data => (
-          <option key={data.id} value={data.category}>{data.text}</option>
+        {filter.slice(initialId, finalId).map(dataFromTiendas => (
+          <option key={dataFromTiendas.id} value={dataFromTiendas.category}>{dataFromTiendas.text}</option>
         ))}
       </select>
     </div>

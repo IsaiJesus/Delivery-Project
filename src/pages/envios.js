@@ -4,24 +4,26 @@ import TitleSection from '../components/titleSection';
 import Alert from '../components/alert';
 import Shipment from '../components/shipment';
 import { titles, places, information } from '../data/data';
-import { Helmet } from 'react-helmet';
+import useTitle from '../hooks/useTitle';
 
 function Envios() {
+  useTitle({ title: 'Envios' });
 
   return(
     <div className="container-envios d-flex flex-column align-items-center justify-content-center">
-      <Helmet>
-        <title>Envios | ORDEEM</title>
-      </Helmet>
-      {titles.filter(data => data.title === 'Costo de envíos').map(data => (
-        <TitleSection key={data.id} title={data.title}/>
+      {titles.filter(dataTitles => dataTitles.title === 'Costo de envíos').map(dataTitles => (
+        <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
-      {information.slice(0, 2).map(data => {
-        return <Alert key={data.id} text={data.text}/>
-      })}
+      {information.filter(dataInformation => 
+        dataInformation.id === 1 ||
+        dataInformation.id === 3).map(dataInformation => (
+          <Alert key={dataInformation.id} text={dataInformation.text}/>
+        ))}
       <div className="division-envios container-xl d-flex flex-column align-items-center justify-content-center p-0 mb-4">
-        {places.map(data => (
-          <Shipment key={data.id} place={data.place} minPrice={data.minPrice} maxPrice={data.maxPrice}/>
+        {places.map(dataPlaces => (
+          <Shipment key={dataPlaces.id} 
+          place={dataPlaces.place} 
+          minPrice={dataPlaces.minPrice}/>
         ))}
       </div>
     </div>

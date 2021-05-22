@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/header';
 import Inicio from './pages/inicio';
@@ -35,9 +35,9 @@ function App() {
         <Route exact path="/carrito" component={Carrito}/>
         <Route exact path="/envios" component={Envios}/>
         <Route exact path="/" component={Inicio}/>
-        <Route path="/departamentos/:departamento" data={products} component={Departamento}/>
-        <Route path="/tiendas/:tienda" data={stores} component={Tienda}/>
-        <Route path="/productos/:producto" data={products} component={Producto}/>
+        <Route path="/departamentos/:departamento" dataProducts={products} component={Departamento}/>
+        <Route path="/tiendas/:tienda" dataStores={stores} component={Tienda}/>
+        <Route path="/productos/:producto" dataProducts={products} component={Producto}/>
         <Route path="*" component={NotFound}/>
       </Switch>
 

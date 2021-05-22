@@ -7,46 +7,43 @@ const reducer = (state, action) => {
   switch (action.type) {
 
     case "ADD": {
-      const newProduct = action.productInCart;
+      const newProduct = action.productSelected;
       const cartContainProduct = state.find(
         product => product.id === newProduct.id
       )
       if(cartContainProduct){
+        /*const position = state.length - 1;
+        state[position].quantity ++;
+        return [...state];
+        return [...state,
+          {...state[position], quantity: state[position].quantity + 1}
+        ];*/
         cartContainProduct.quantity ++;
         return [...state];
       }else{
         return[...state,
-          {...action.productInCart}
+          {...action.productSelected, quantity: 1}
         ];
       }
     } 
 
     case "INCREMENT": {
-      const newProduct = action.productInCart;
-      const cartContainProduct = state.find(
-        product => product.id === newProduct.id
-      )
-      if(cartContainProduct){
-        cartContainProduct.quantity ++;
-        return [...state];
-      }else{
-        return[...state];
-      }
-    } 
+      const position = action.index;
+      state[position].quantity ++;
+      return [...state];
+      /*const position = action.index;
+      return [...state,
+        {...state[position], quantity: state[position].quantity + 1}
+      ];*/
+    }
 
     case "DECREMENT": {
-      const newProduct = action.productInCart;
-      const quitArr = [...state];
-      const cartContainProduct = state.find(
-        product => product.id === newProduct.id
-      )
-      if(cartContainProduct && cartContainProduct.quantity > 1){
-        cartContainProduct.quantity --;
-        return [...state];
-      }else{
-        return[...state];
+      const position = action.index;
+      if(state[position].quantity > 1){
+        state[position].quantity --;
       }
-    } 
+      return [...state];
+    }
 
     case "REMOVE": 
       const quitArr = [...state];

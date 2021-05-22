@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/cards.css';
 import ButtonAdd from './buttonAdd';
 
-const CardProduct = ({productSelected, link, img, nameProduct, price, store}) => {
+const CardProduct = ({productSelected, link, img, nameProduct, price, unity, store}) => {
     
   return ( 
     <div className="card card-product my-1">
@@ -12,7 +12,8 @@ const CardProduct = ({productSelected, link, img, nameProduct, price, store}) =>
             <img src={img} className="card-img-top" alt={nameProduct}/>
             <div className="card-body p-2">
               <p className="card-title text-truncate">{nameProduct}</p>
-              <p className="card-subtitle text-muted">{price.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+              <p className="card-subtitle text-muted">{price.toLocaleString("en", {style: "currency", currency: "USD"})}/
+              {unity}</p>
               <p className="card-text text-truncate">{store}</p>
             </div>
           </Link>

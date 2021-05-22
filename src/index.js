@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import "bootstrap/dist/js/bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import { CartProvider } from './reducerAndContext/cartStates';
+import { CartProvider } from './hooks/cartStates';
 
 ReactDOM.render(
   <React.StrictMode>

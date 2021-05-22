@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/carrito.css';
 import { places, information } from '../data/data';
-import { useCart } from '../reducerAndContext/cartStates';
+import { useCart } from '../hooks/cartStates';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Alert from './alert';
 
 const PriceCart = ({totalPrice, resumen}) => {
@@ -14,8 +15,8 @@ const PriceCart = ({totalPrice, resumen}) => {
       <div className="container-select-envio p-2">
         <p className="m-0 pb-2">Enviar a:</p>
         <select onChange={e => setChecked(e.target.value)}>
-          {places.map(data => (
-            <option key={data.id} value={data.minPrice}>{data.place}</option>
+          {places.map(dataPlaces => (
+            <option key={dataPlaces.id} value={dataPlaces.minPrice}>{dataPlaces.place}</option>
           ))}
         </select>
       </div>
@@ -39,13 +40,14 @@ const PriceCart = ({totalPrice, resumen}) => {
         </div>
       </div>
       <div className="btn-cart d-flex flex-column align-items-center justify-content-center">
-        <button className="copy my-4" 
-        type="button" 
-        data-toggle="modal" 
-        data-target="#exampleModal"
-        onClick={() =>  navigator.clipboard.writeText(resumen + " Total: $" + (totalPrice + parseInt(checked)))}>
-          Copiar contenido del carrito
-        </button>
+        <CopyToClipboard text={resumen + " Total: $" + (totalPrice + parseInt(checked))}>
+          <button className="copy my-4" 
+          type="button" 
+          data-toggle="modal" 
+          data-target="#exampleModal">
+            Copiar contenido del carrito
+          </button>
+        </CopyToClipboard>
         <div className="modal fade p-0" 
         id="exampleModal" 
         tabIndex="-1" 
@@ -67,11 +69,12 @@ const PriceCart = ({totalPrice, resumen}) => {
             </div>
           </div>
         </div>
-        {information.filter(data => data.id === 10).map(data => (
-          <Alert key={data.id} text={data.text}/>
-        ))}
-        {information.slice(4, 9).map(data => (
-          <Alert key={data.id} text={data.text}/>
+        {information.filter(dataInformation => 
+        dataInformation.id === 2 ||
+        dataInformation.id === 3 ||
+        dataInformation.id === 6 ||
+        dataInformation.id === 7).map(dataInformation => (
+          <Alert key={dataInformation.id} text={dataInformation.text}/>
         ))}
       </div>
     </div>

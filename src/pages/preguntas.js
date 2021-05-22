@@ -2,17 +2,15 @@ import React from 'react';
 import '../styles/nosotros.css';
 import TitleSection from '../components/titleSection';
 import { titles } from '../data/data';
-import { Helmet } from 'react-helmet';
+import useTitle from '../hooks/useTitle';
 
 function Preguntas() {
+  useTitle({ title: 'Preguntas frecuentes' });
 
   return(
     <div className="container-terminos d-flex flex-column align-items-center justify-content-center">
-      <Helmet>
-        <title>Preguntas Frecuentes | ORDEEM</title>
-      </Helmet>
-      {titles.filter(data => data.title === 'Preguntas frecuentes').map(data => (
-        <TitleSection key={data.id} title={data.title}/>
+      {titles.filter(dataTitles => dataTitles.title === 'Preguntas frecuentes').map(dataTitles => (
+        <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
       <div className="division-terminos container-xl p-0 mt-3 mb-4">
         <div className="accordion" id="accordion-preguntas">
@@ -36,7 +34,7 @@ function Preguntas() {
                 puedes entrar a comprar desde nuestra página web ordeem.com donde puedes enlistar tus 
                 productos y en la sección del "Carrito" podrás ver el costo total de los productos más el 
                 costo del envío. Si ya tienes tus productos elegidos, puedes hacer tu pedido llamando a 
-                735 123 4567 o mandarnos la lista de tus productos a través del WhatsApp del mismo número, 
+                735 244 9749 o mandarnos la lista de tus productos a través del WhatsApp del mismo número, 
                 te pediremos tu nombre, dirección y un número de teléfono. Si es por llamada teléfonica 
                 nosotros enlistaremos tus productos y te pediremos los datos para contactarte. Los datos 
                 que nos des no serán utilizados más que a la hora de hacer el envío, para más información 
@@ -88,11 +86,11 @@ function Preguntas() {
             data-parent="#accordion-preguntas">
               <div className="card-body">
                 En la sección de "Envíos" podrás encontrar una proximidad del costo del envío a cada localidad 
-                disponible de envío, aunque a la hora de hacer tu pedido te daremos el costo final de tu envío, 
-                el costo del envío se determina desde el punto de partida (el lugar donde se encuentra el 
-                repartidor), hasta el punto de llegada (tu dirección), el costo de envío aumenta $5 cada 1.5 
-                kilómetros desde el punto de partida. Para más información puedes ver la sección de 
-                "Términos y condiciones".
+                disponible de envío tomando como referencia que el punto de partida sea Amayuca, aunque a la 
+                hora de hacer tu pedido te daremos el costo final de tu envío, el costo del envío se determina 
+                desde el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto de 
+                llegada (tu dirección), el costo de envío aumenta $5 cada 1.5 kilómetros desde el punto de 
+                partida. Para más información puedes ver la sección de "Términos y condiciones".
               </div>
             </div>
           </div>
@@ -112,7 +110,7 @@ function Preguntas() {
             aria-labelledby="pregunta-cuatro" 
             data-parent="#accordion-preguntas">
               <div className="card-body">
-                Actualmente nuestra única forma de recibir el pago por nuestro servicio, es un pago en efectivo 
+                Actualmente nuestra única forma de recibir el pago por nuestro servicio es un pago en efectivo 
                 a la hora de hacer la entrega del pedido. Esto es temporal, prontó se aceptarán pagos con 
                 tarjetas y compras a través de la página web. Puedes obtener más información en la sección de 
                 "Términos y condiciones".
@@ -135,10 +133,10 @@ function Preguntas() {
             aria-labelledby="pregunta-cinco" 
             data-parent="#accordion-preguntas">
               <div className="card-body">
-                Si tienes alguna duda, puedes contactarnos en nuestras redes sociales en un mensaje directo, en 
-                Facebook e Instagram nos puedes encontrar como Ordeem, Para temas de un envío, puedes hacerlo 
-                a través de nuestro WhatsApp, 735 123 4567. Si quieres contactarnos para un tema más específico 
-                puedes mandarnos un correo electrónico a ordeem@contacto.com.
+                Si tienes alguna duda, puedes contactarnos en nuestras redes sociales en un mensaje directo, 
+                nos puedes encontrar como Ordeem en facebook y @ordeem_serv en instagram, Para temas de un 
+                envío, puedes hacerlo a través de nuestro WhatsApp al 735 244 9749. Si quieres contactarnos 
+                para un tema más específico puedes mandarnos un correo electrónico a contacto@ordeem.com.
               </div>
             </div>
           </div>
@@ -184,8 +182,8 @@ function Preguntas() {
             data-parent="#accordion-preguntas">
               <div className="card-body">
                 Antes de hacer un reclamo por un producto que pudó haber llegado en mal estado, tienes que 
-                asegurarte de los siguientes puntos: 1. El producto no estuvo en mal estado al momento de 
-                ser entregado, 2. Tuvo algún defecto de fabrica o se encontraba en descomposición en caso de 
+                asegurarte de los siguientes puntos: 1. El producto estaba en mal estado al momento de 
+                ser entregado. 2. Tuvo algún defecto de fabrica o se encontraba en descomposición en caso de 
                 un producto orgánico. Después de verificar esto, Puedes contactar con nosotros para dar una 
                 solución, dependiendo de la gravedad del mal estado del producto, podemos cambiarte el 
                 producto por uno nuevo, sustituirlo por otro producto, o en el ultimo de los casos devolverte 
@@ -193,7 +191,7 @@ function Preguntas() {
                 y la disposición que tenga la tienda donde fue comprado el producto de remediar la situación, 
                 de la misma manera, también nos aseguraremos de que el producto no haya sufrido alguna 
                 alteración después de la entrega. En este caso, no te daremos solución y en un próximo caso 
-                de este tipodaremos menos atención a tu caso. Para más información puedes ver la sección 
+                de este tipo, daremos menos atención a tu caso. Para más información puedes ver la sección 
                 de "Términos y condiciones". 
               </div>
             </div>

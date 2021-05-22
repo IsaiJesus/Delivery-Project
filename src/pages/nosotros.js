@@ -2,17 +2,15 @@ import React from 'react';
 import '../styles/nosotros.css';
 import TitleSection from '../components/titleSection';
 import { titles } from '../data/data';
-import { Helmet } from 'react-helmet';
+import useTitle from '../hooks/useTitle';
 
 function Nosotros() {
+  useTitle({ title: 'Nosotros' });
 
   return(
     <div className="container-terminos d-flex flex-column align-items-center justify-content-center">
-      <Helmet>
-        <title>Nosotros | ORDEEM</title>
-      </Helmet>
-      {titles.filter(data => data.title === 'Nosotros').map(data => (
-        <TitleSection key={data.id} title={data.title}/>
+      {titles.filter(dataTitles => dataTitles.title === 'Nosotros').map(dataTitles => (
+        <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
       <div className="division-terminos container-xl p-0 mb-4">
         <div className="col">

@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import '../styles/littleComponents.css';
-import { useDispatchCart } from '../reducerAndContext/cartStates';
+import { useDispatchCart } from '../hooks/cartStates';
 
 const ButtonAdd = ({productSelected}) => {
   const dispatch = useDispatchCart();
 
-  const addToCart = (productInCart) => {
-    dispatch({ type: "ADD", productInCart });
+  const addToCart = (productSelected) => {
+    dispatch({ type: "ADD", productSelected });
   }
   return ( 
     <Fragment>

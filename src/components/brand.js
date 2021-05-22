@@ -6,7 +6,7 @@ function Brand() {
 
   return(
       <Link to="/" className="navbar-brand">
-        <img width="100" src="/images/tree-logo.png" alt="ORDEEM"/>
+        <img width="100" src="/images-logo/tree-logo.png" alt="ORDEEM"/>
       </Link>
 );
 }
