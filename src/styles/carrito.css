@@ -138,6 +138,19 @@
   background: #0dbb33ed;
 }
 
+.especific p{
+  font-size: 18px;
+}
+
+.especific textarea{
+  max-height: 80px;
+  font-size: 16px;
+}
+
+.especific textarea:focus{
+  outline: none;
+}
+
 /*RESPONSIVE*/
 
 @media(max-width: 767px){

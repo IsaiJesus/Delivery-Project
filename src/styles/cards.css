@@ -112,3 +112,9 @@
     height: 140px;
   }
 }
+
+@media(max-width: 335px){
+  .box-product img{
+    height: 130px;
+  }
+}

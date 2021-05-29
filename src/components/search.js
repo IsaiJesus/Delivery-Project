@@ -24,6 +24,7 @@ function Search() {
         history.push(`/tiendas/${dataStores.link}`);
       }
     })
+    setFilter('');
   }
   const handleKey = (e) => {
     if(e.key === 'Enter'){
@@ -42,6 +43,7 @@ function Search() {
           history.push(`/tiendas/${dataStores.link}`);
         }
       })
+      setFilter('');
     }
   }
 
@@ -62,9 +64,15 @@ function Search() {
           if(filter.length !== ""){
             if(dataProducts.nameProduct.toLowerCase().indexOf(filter.toLowerCase()) > -1){
               return <li key={dataProducts.id}>
-                  <Link to={`/productos/${dataProducts.link}`} className="dropdown-item">
+                  <Link to={`/productos/${dataProducts.link}`} 
+                  className="dropdown-item py-1 px-3" 
+                  onClick={() => setFilter('')}>
                     <img src={dataProducts.img}/>
-                    {dataProducts.nameProduct}
+                    <div className="d-flex flex-column align-items-start text-truncate">
+                      <p className="texto-truncado m-0 text-truncate">{dataProducts.nameProduct}</p>
+                      <p className="text-muted m-0">{dataProducts.price.toLocaleString("en", {style: "currency", currency: "USD"})}/
+                      {dataProducts.unity}</p>
+                    </div>
                   </Link>
                 </li>;
             }else{
@@ -76,8 +84,13 @@ function Search() {
           if(filter.length !== ""){
             if(dataDepartments.department.toLowerCase().indexOf(filter.toLowerCase()) > -1){
               return <li key={dataDepartments.id}>
-                  <Link to={`/departamentos/${dataDepartments.link}`} className="dropdown-item">
-                    <img src={dataDepartments.img}/><p>{dataDepartments.department}</p>
+                  <Link to={`/departamentos/${dataDepartments.link}`} 
+                  className="dropdown-item py-1 px-3"
+                  onClick={() => setFilter('')}>
+                    <img src={dataDepartments.img}/>
+                    <div className="text-truncate">
+                      <p className="text-truncate m-0">{dataDepartments.department}</p>
+                    </div>
                   </Link>
                 </li>;
             }else{
@@ -89,8 +102,13 @@ function Search() {
           if(filter.length !== ""){
             if(dataStores.store.toLowerCase().indexOf(filter.toLowerCase()) > -1){
               return <li key={dataStores.id}>
-                  <Link to={`/tiendas/${dataStores.link}`} className="dropdown-item">
-                    <img src={dataStores.img}/><p>{dataStores.store}</p>
+                  <Link to={`/tiendas/${dataStores.link}`} 
+                  className="dropdown-item py-1 px-3"
+                  onClick={() => setFilter('')}>
+                    <img src={dataStores.img}/>
+                    <div className="text-truncate">
+                      <p className="text-truncate m-0">{dataStores.store}</p>
+                    </div>
                   </Link>
                 </li>;
             }else{

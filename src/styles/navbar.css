@@ -131,10 +131,6 @@
   display: none;
 }
 
-.box-nav-bars .bars-active{
-  color: #0dbb33;
-}
-
 /*NAVBAR*/
 
 .navbar{
@@ -272,10 +268,11 @@
   justify-content: flex-start;
   text-align: center;
   text-decoration: none;
-  text-overflow: ellipsis;
   color: #000;
-  overflow: hidden;
-  white-space: nowrap;
+}
+
+.texto-truncado{
+  max-width: 100%;
 }
 
 .ul-search-on li a img{
@@ -336,6 +333,9 @@
     align-items: center;
     justify-content: center;
   }
+  .container-bars button{
+    font-size: 22px;
+  }
 
   #container-search{
     border-radius: 0;
@@ -368,6 +368,10 @@
 
   .container-cart{
     margin: 0;
+  }
+
+  .container-cart a{
+    font-size: 22px;
   }
 }
 

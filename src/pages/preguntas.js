@@ -30,17 +30,17 @@ function Preguntas() {
             aria-labelledby="pregunta-uno" 
             data-parent="#accordion-preguntas">
               <div className="card-body">
-                Hay varias maneras de hacer compras de tus tiendas favoritas, 
-                puedes entrar a comprar desde nuestra página web ordeem.com donde puedes enlistar tus 
+                Hay varias maneras de hacer compras en ORDEEM, 
+                puedes entrar a comprar desde nuestra página web www.ordeem.com donde puedes enlistar tus 
                 productos y en la sección del "Carrito" podrás ver el costo total de los productos más el 
                 costo del envío. Si ya tienes tus productos elegidos, puedes hacer tu pedido llamando a 
                 735 244 9749 o mandarnos la lista de tus productos a través del WhatsApp del mismo número, 
-                te pediremos tu nombre, dirección y un número de teléfono. Si es por llamada teléfonica 
+                te pediremos tu nombre y dirección. Si es por llamada teléfonica 
                 nosotros enlistaremos tus productos y te pediremos los datos para contactarte. Los datos 
                 que nos des no serán utilizados más que a la hora de hacer el envío, para más información 
                 puedes ver la sección de "Términos y condiciones". Una vez hecho el pedido, iremos por los 
-                productos y te lo enviaremos hasta tu casa, momentos antes de llegar te mandaremos un 
-                WhatsApp o te llamaremos para avisarte que tu pedido está por llegar.
+                productos y te lo enviaremos hasta tu casa, momentos antes de llegar te contactaremos para 
+                avisarte que tu pedido está por llegar.
               </div>
             </div>
           </div>
@@ -89,8 +89,9 @@ function Preguntas() {
                 disponible de envío tomando como referencia que el punto de partida sea Amayuca, aunque a la 
                 hora de hacer tu pedido te daremos el costo final de tu envío, el costo del envío se determina 
                 desde el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto de 
-                llegada (tu dirección), el costo de envío aumenta $5 cada 1.5 kilómetros desde el punto de 
-                partida. Para más información puedes ver la sección de "Términos y condiciones".
+                llegada (tu dirección), el costo de envío es de $6.00, a partir de ese costo, aumentará $6.00 
+                cada 1 kilómetro desde el punto de partida. Para más información puedes ver la sección de 
+                "Términos y condiciones".
               </div>
             </div>
           </div>

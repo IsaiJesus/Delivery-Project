@@ -12,7 +12,7 @@ const CardProduct = ({productSelected, link, img, nameProduct, price, unity, sto
             <img src={img} className="card-img-top" alt={nameProduct}/>
             <div className="card-body p-2">
               <p className="card-title text-truncate">{nameProduct}</p>
-              <p className="card-subtitle text-muted">{price.toLocaleString("en", {style: "currency", currency: "USD"})}/
+              <p className="card-subtitle text-truncate text-muted">{price.toLocaleString("en", {style: "currency", currency: "USD"})}/
               {unity}</p>
               <p className="card-text text-truncate">{store}</p>
             </div>

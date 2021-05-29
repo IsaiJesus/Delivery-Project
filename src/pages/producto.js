@@ -37,7 +37,7 @@ function Producto({dataProducts}) {
               <p className="m-0">{dataProducts.description}</p>
             </div>
             <div className="cantidad-producto w-100 text-center py-3">
-              <p className="m-0">{dataProducts.quantity}{dataProducts.unity}/{(dataProducts.price).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+              <p className="m-0">{dataProducts.quantity} {dataProducts.unity}/{(dataProducts.price).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
             </div>
             <div className="d-flex flex-column align-items-center justify-content-center">
               <ButtonAdd productSelected={dataProducts}/>

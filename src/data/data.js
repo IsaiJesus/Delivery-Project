@@ -16,6 +16,12 @@ const departments = [
         link: 'carne-de-pollo',
         img: '/images/pollo-departamento.jpg',
         department: 'Carne de pollo'
+    },
+    {
+        id: 4,
+        link: 'abarrotes',
+        img: '/images/abarrotes-departamento.jpg',
+        department: 'Abarrotes'
     }
 ];
 
@@ -29,7 +35,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Costilla de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Costilla de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -42,7 +48,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Filete de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Filete de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -55,7 +61,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chuleta fresca de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Chuleta fresca de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -63,12 +69,12 @@ const products = [
         id: 4,
         link: 'carniceria-doña-eva-chuleta-ahumada-de-cerdo',
         img: '/images/chuleta-a-c-cde.jpg',
-        nameProduct: 'Chuleta ahumada de cerdo',
+        nameProduct: 'Chuleta ahumada de cerdo con mas texto',
         price: 110,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chuleta de cerdo ahumada, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Chuleta de cerdo ahumada, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -81,7 +87,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Bistec de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/2 kg hasta los kilogramos que tu quieras.',
+        description: 'Bistec de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/2 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -94,7 +100,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Molida de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Molida de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -107,7 +113,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Codillo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Codillo de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -120,7 +126,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Espinazo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Espinazo de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -133,7 +139,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Manitas de cerdo, de la carnicería Doña Eva, puedes pedir una cantidad de piezas para después ser pesadas y sepas el precio, normalmente 3 piezas equivalen a 1 kilogramo.',
+        description: 'Manitas de cerdo, de la Carnicería Doña Eva, puedes pedir una cantidad de piezas para después ser pesadas y sepas el precio, normalmente 3 piezas equivalen a 1 kilogramo.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -146,7 +152,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pechuga de pollo, de la pollería Doña Eva, el precio de este puede variar por características como el tamaño, puedes pedir desde media pechuga hasta la cantidad que quieras, puedes pedirla con pellejo y/o hueso o sin pellejo y/o hueso.',
+        description: 'Pechuga de pollo, de la Pollería Doña Eva, el precio de este puede variar por características como el tamaño, puedes pedir desde media pechuga hasta la cantidad que quieras, puedes pedirla con pellejo y/o hueso o sin pellejo y/o hueso.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -159,7 +165,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Muslo de pollo, de la pollería Doña Eva, puedes pedir desde mínimo 1 pieza hasta las piezas que tu quieras.',
+        description: 'Muslo de pollo, de la Pollería Doña Eva, puedes pedir desde mínimo 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -172,7 +178,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pollo entero, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'Pollo entero, de la Pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -185,7 +191,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Arrachera, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Arrachera, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -198,7 +204,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chistorra, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Chistorra, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -211,7 +217,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Pierna con muslo de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'Pierna con muslo de pollo, de la Pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -224,7 +230,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Molleja de pollo, de la pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
+        description: 'Molleja de pollo, de la Pollería Doña Eva, 1/2kg $55, 1kg $110. Puedes pedir desde 1/4kg hasta lo que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -237,7 +243,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'rabadilla de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'rabadilla de pollo, de la Pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -250,7 +256,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Azadura (carnitas), de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Azadura (carnitas), de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -263,7 +269,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Tocino, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Tocino, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -276,7 +282,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Enchilada de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Enchilada de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -289,7 +295,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Maciza de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Maciza de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -302,8 +308,8 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Mole rojo, de la pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
-        category: 'carne-de-pollo',
+        description: 'Mole rojo, de la Pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
         categoryStore: 'polleria-doña-eva'
     },
     {
@@ -315,8 +321,8 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Mole poblano, de la pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
-        category: 'carne-de-pollo',
+        description: 'Mole poblano, de la Pollería Doña Eva, 1/4 kg $40, 1/2 kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
         categoryStore: 'polleria-doña-eva'
     },
     {
@@ -328,8 +334,8 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Mole pipián, de la pollería Doña Eva, 1/4kg $40, 1kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
-        category: 'carne-de-pollo',
+        description: 'Mole pipián, de la Pollería Doña Eva, 1/4kg $40, 1kg $80. Puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
         categoryStore: 'polleria-doña-eva'
     },
     {
@@ -341,7 +347,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Manteca de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Manteca de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -354,7 +360,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Pierna española, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Pierna española, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -367,7 +373,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Surtida de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Surtida de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -380,7 +386,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Patas de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'Patas de pollo, de la Pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -393,7 +399,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Tira de pollo, de la pollería Doña Eva, incluye la cabeza, huacal y cola del pollo. Puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'Tira de pollo, de la Pollería Doña Eva, incluye la cabeza, huacal y cola del pollo. Puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -406,7 +412,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chicharrón de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Chicharrón de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -419,7 +425,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Longaniza de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Longaniza de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -432,7 +438,7 @@ const products = [
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
-        description: 'Ala de pollo, de la pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
+        description: 'Ala de pollo, de la Pollería Doña Eva, puedes pedir desde 1 pieza hasta las piezas que tu quieras.',
         category: 'carne-de-pollo',
         categoryStore: 'polleria-doña-eva'
     },
@@ -445,7 +451,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Rellena de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Rellena de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -458,7 +464,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Chales de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Chales de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -471,7 +477,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Pierna con hueso de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Pierna con hueso de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -484,7 +490,7 @@ const products = [
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
-        description: 'Lomo de cerdo, de la carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        description: 'Lomo de cerdo, de la Carnicería Doña Eva, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
         category: 'carne-de-cerdo',
         categoryStore: 'carniceria-doña-eva'
     },
@@ -539,6 +545,370 @@ const products = [
         description: 'Hot dog con piña. Puede incluir: jitomate, cebolla, chiles, catsup, mostaza y/o piña.',
         category: 'comida',
         categoryStore: 'hot-dogs-resno'
+    },
+    {
+        id: 41,
+        link: 'polleria-y-abarroteria-eri-azucar-morena',
+        img: '/images/azucar-m-pyae.jpg',
+        nameProduct: 'Azúcar morena',
+        price: 20,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Azúcar morena, de la Pollería y Abarrotería Eri, puedes pedir desde mínimo 1 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 42,
+        link: 'polleria-y-abarroteria-eri-huevo',
+        img: '/images/huevo-pyae.jpg',
+        nameProduct: 'Huevo',
+        price: 32,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Huevo, de la Pollería y Abarrotería Eri, puedes pedir desde mínimo 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 43,
+        link: 'polleria-y-abarroteria-eri-patas-de-pollo',
+        img: '/images/patas-p-pyae.jpg',
+        nameProduct: 'Patas de pollo',
+        price: 2.5,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Patas de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 44,
+        link: 'polleria-y-abarroteria-eri-pechuga-de-pollo',
+        img: '/images/pechuga-p-pyae.jpg',
+        nameProduct: 'Pechuga de pollo',
+        price: 85,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Pechuga de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 45,
+        link: 'polleria-y-abarroteria-eri-ala-de-pollo',
+        img: '/images/ala-p-pyae.jpg',
+        nameProduct: 'Ala de pollo',
+        price: 10,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Ala de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 46,
+        link: 'polleria-y-abarroteria-eri-pierna-con-muslo-de-pollo',
+        img: '/images/pierna-m-p-pyae.jpg',
+        nameProduct: 'Pierna con muslo de pollo',
+        price: 22,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Pierna con muslo de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras. Muslo de pollo solo a $12.00/pza y pierna de pollo sola a $11.00/pza.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 47,
+        link: 'polleria-y-abarroteria-eri-rabadilla-de-pollo',
+        img: '/images/rabadilla-p-pyae.jpg',
+        nameProduct: 'rabadilla de pollo',
+        price: 6,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Rabadilla de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 48,
+        link: 'polleria-y-abarroteria-eri-huacal-con-cabeza-de-pollo',
+        img: '/images/huacal-c-p-pyae.jpg',
+        nameProduct: 'Huacal con cabeza de pollo',
+        price: 12,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Huacal con cabeza de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras. Huacal solo de pollo a $10.00/pza.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 49,
+        link: 'polleria-y-abarroteria-eri-chiles-en-lata',
+        img: '/images/chiles-l-pyae.jpg',
+        nameProduct: 'Chiles en lata',
+        price: 32,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Chiles jalapeños en lata grande $63.00/pza, chiles jalapeños en lata mediana $32.00/pza, chiles jalapeños en lata chica $12.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 50,
+        link: 'polleria-y-abarroteria-eri-sal-con-ajo',
+        img: '/images/sal-a-pyae.jpg',
+        nameProduct: 'Sal con ajo',
+        price: 20,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Sal con ajo 125 gramos, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 51,
+        link: 'polleria-y-abarroteria-eri-sal',
+        img: '/images/sal-pyae.jpg',
+        nameProduct: 'Sal',
+        price: 13,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Sal, de la Pollería y Abarrotería Eri, puedes pedir desde 1kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 52,
+        link: 'polleria-y-abarroteria-eri-arroz-blanco',
+        img: '/images/arroz-b-pyae.jpg',
+        nameProduct: 'Arroz blanco',
+        price: 20,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Arroz blanco, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 53,
+        link: 'polleria-y-abarroteria-eri-cerillos',
+        img: '/images/cerillos-pyae.jpg',
+        nameProduct: 'Cerillos',
+        price: 6,
+        unity: 'caja',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Cerillos, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras. Paquete de 5 cajas de cerillos a $27.00.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 54,
+        link: 'polleria-y-abarroteria-eri-molleja-de-pollo',
+        img: '/images/molleja-p-pyae.jpg',
+        nameProduct: 'Molleja de pollo',
+        price: 3,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Molleja de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 55,
+        link: 'polleria-y-abarroteria-eri-pechuga-en-bistec-de-pollo',
+        img: '/images/pechuga-b-p-pyae.jpg',
+        nameProduct: 'Pechuga en bistec de pollo',
+        price: 85,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Pechuga en bistec de pollo, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'carne-de-pollo',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 56,
+        link: 'polleria-y-abarroteria-eri-atun',
+        img: '/images/atun-pyae.jpg',
+        nameProduct: 'Atún',
+        price: 20,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Atún 133 gramos, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 57,
+        link: 'polleria-y-abarroteria-eri-pastas',
+        img: '/images/pasta-pyae.jpg',
+        nameProduct: 'Pastas',
+        price: 8,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Pastas, sopa de letras y spaghetti 200 gramos de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 58,
+        link: 'polleria-y-abarroteria-eri-mayonesa',
+        img: '/images/mayonesa-pyae.jpg',
+        nameProduct: 'Mayonesa',
+        price: 33,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Mayonesa chica $20.00/pza, mayonesa mediana $33.00/pza, mayonesa grande $195.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 59,
+        link: 'polleria-y-abarroteria-eri-granos-de-elote',
+        img: '/images/granos-e-pyae.jpg',
+        nameProduct: 'Granos de elote',
+        price: 17,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Granos de elote, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 60,
+        link: 'polleria-y-abarroteria-eri-pan-molido',
+        img: '/images/pan-molido-pyae.jpg',
+        nameProduct: 'Pan molido',
+        price: 18,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Pan molido, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 61,
+        link: 'polleria-y-abarroteria-eri-veladoras',
+        img: '/images/veladoras-pyae.jpg',
+        nameProduct: 'Veladoras',
+        price: 20,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Veladora de vaso $20.00/pza, veladora de papel $12.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 62,
+        link: 'polleria-y-abarroteria-aceites',
+        img: '/images/aceites-pyae.jpg',
+        nameProduct: 'Aceites comestibles',
+        price: 36,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Aceites comestibles, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 63,
+        link: 'polleria-y-abarroteria-eri-jabones-en-polvo',
+        img: '/images/jabon-p-pyae.jpg',
+        nameProduct: 'Jabones en polvo',
+        price: 17,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Jabones en polvo, jabón en polvo Roma $9.00/250g, jabón en polvo Blanca Nieves $17.00/500g, jabón en polvo Roma $35/kg de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 64,
+        link: 'polleria-y-abarroteria-eri-salsas',
+        img: '/images/salsas-pyae.jpg',
+        nameProduct: 'Salsas',
+        price: 14,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Salsa Valentina $12.00/pza, salsa Búfalo $20.00/pza, salsa catsup Del monte $14.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 65,
+        link: 'polleria-y-abarroteria-eri-chiles-secos',
+        img: '/images/chiles-pyae.jpg',
+        nameProduct: 'Chiles secos',
+        price: 130,
+        unity: 'kg',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Chiles secos, chile guajillo $130.00/kg, chile pasilla $150.00/kg, chile morita $120.00/kg, chile ancho $160.00/kg, chile puya $120/kg, de la Pollería y Abarrotería Eri, puedes pedir desde 1/4 kg hasta los kilogramos que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 66,
+        link: 'polleria-y-abarroteria-eri-leches',
+        img: '/images/leches-pyae.jpg',
+        nameProduct: 'Leche',
+        price: 21,
+        unity: 'L',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Leches, leche Sabrolé $11.00/900/ml, leche Nutri $16.00/L, leche Alpura $21.00/L, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 67,
+        link: 'polleria-y-abarroteria-eri-cloros-y-multiusos',
+        img: '/images/cloros-pyae.jpg',
+        nameProduct: 'Cloro y multiusos',
+        price: 27,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Cloro y limpiadores multiusos, cloro Cloralex $13.00/pza, limpiador líquido Fabuloso $27.00/pza, blanqueador Valenciana $10.00/pza, suavizante Downy $27.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
+    },
+    {
+        id: 68,
+        link: 'polleria-y-abarroteria-eri-jabones-en-barra',
+        img: '/images/jabones-b-pyae.jpg',
+        nameProduct: 'Jabones en barra',
+        price: 17,
+        unity: 'pza',
+        quantity: 1,
+        store: 'Pollería y abarrotería Eri',
+        description: 'Jabones en barra, jabón Zote $17.00/pza, jabón Palmolive $14.00/pza, jabón Zest $15.00/pza, de la Pollería y Abarrotería Eri, puedes pedir desde 1 pieza hasta lo que tu quieras.',
+        category: 'abarrotes',
+        categoryStore: 'polleria-y-abarroteria-eri'
     }
 ];
 
@@ -547,8 +917,7 @@ const stores = [
         id: 1,
         img: '/images/cde-tienda.jpg',
         store: 'Carnicería Doña Eva',
-        link: 'carniceria-doña-eva',
-        category: 'carne-de-cerdo'
+        link: 'carniceria-doña-eva'
     },
     {
         id: 2,
@@ -561,8 +930,13 @@ const stores = [
         id: 3,
         img: '/images/hdr-tienda.jpg',
         store: 'Hot dogs RESNO',
-        link: 'hot-dogs-resno',
-        category: 'comida'
+        link: 'hot-dogs-resno'
+    },
+    {
+        id: 4,
+        img: '/images/pyae-tienda.jpg',
+        store: 'Pollería y abarrotería Eri',
+        link: 'polleria-y-abarroteria-eri'
     }
 ];
 
@@ -624,6 +998,16 @@ const titles = [
         id: 13,
         title: 'Hot dogs RESNO',
         category: 'hot-dogs-resno'
+    },
+    {
+        id: 14,
+        title: 'Abarrotes',
+        category: 'abarrotes'
+    },
+    {
+        id: 15,
+        title: 'Pollería y abarrotería Eri',
+        category: 'polleria-y-abarroteria-eri'   
     }
 ];
 
@@ -654,77 +1038,77 @@ const places = [
     {
         id: 1,
         place: 'Amayuca',
-        minPrice: 5
+        minPrice: 6
     },
     {
         id: 2,
         place: 'Jantetelco',
-        minPrice: 5
+        minPrice: 6
     },
     {
         id: 3,
         place: 'San Gabriel',
-        minPrice: 15
+        minPrice: 18
     },
     {
         id: 4,
         place: 'Chalca',
-        minPrice: 15
+        minPrice: 18
     },
     {
         id: 5,
         place: 'Jonacatepec',
-        minPrice: 20
+        minPrice: 24
     },
     {
         id: 6,
         place: 'Atotonilco',
-        minPrice: 30
+        minPrice: 36
     },
     {
         id: 7,
         place: 'Tepalcingo',
-        minPrice: 40
+        minPrice: 48
     },
     {
         id: 8,
         place: 'Amilcingo',
-        minPrice: 10
+        minPrice: 12
     },
     {
         id: 9,
         place: 'Temoac',
-        minPrice: 20
+        minPrice: 24
     },
     {
         id: 10,
         place: 'Popotlán',
-        minPrice: 25
+        minPrice: 30
     },
     {
         id: 11,
         place: 'Zacualpan',
-        minPrice: 30 
+        minPrice: 36
     },
     {
         id: 12,
         place: 'Tlacotepec',
-        minPrice: 35
+        minPrice: 42
     },
     {
         id: 13,
         place: 'Tlayca',
-        minPrice: 20
+        minPrice: 24
     },
     {
         id: 14,
         place: 'Tlahuica',
-        minPrice: 25
+        minPrice: 30
     },
     {
         id: 15,
         place: 'Tlayecac',
-        minPrice: 40
+        minPrice: 48
     }
 ];
 
@@ -759,29 +1143,6 @@ const information = [
     }
 ]
 
-const filter = [
-    {
-        id: 0,
-        text: 'Todo',
-        category: 'all'
-    },
-    {
-        id: 1,
-        text: 'Carne de cerdo',
-        category: 'carne-de-cerdo'
-    },
-    {
-        id: 2,
-        text: 'Carne de pollo',
-        category: 'carne-de-pollo'
-    },
-    {
-        id: 3,
-        text: 'Comida',
-        category: 'comida'
-    }
-];
-
 const ads = [
     {
         id: 1,
@@ -798,6 +1159,5 @@ export { titles }
 export { links }
 export { places }
 export { information }
-export { filter }
 export { ads }
 export default departments;

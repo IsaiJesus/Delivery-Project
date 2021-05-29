@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import departments from '../data/data';
 import '../styles/navbar.css';
 
@@ -22,23 +22,27 @@ function Bars() {
       <div className={togglebars ? "container-nav-bars-on " : "container-nav-bars-off"}>
         <div className="division-nav-bars">
           <div className="box-nav-bars">
-            <NavLink to="/departamentos" id="btn-nav-bars-arrow" activeClassName="bars-active">Departamentos</NavLink>
-            <button className={toggledep ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={handleToggleD}></button>
+            <Link to="/departamentos" 
+            id="btn-nav-bars-arrow" 
+            onClick={handleToggle}>Departamentos</Link>
+            <button className={toggledep ? "fas fa-chevron-up" : "fas fa-chevron-down"} 
+            onClick={handleToggleD}></button>
           </div>
           <div className={toggledep ? "btn-nav-bars-section-on" : "btn-nav-bars-section-off"}>
             {departments.map(dataDepartments => (
               <Link key={dataDepartments.id} 
-              to={`/departamentos/${dataDepartments.link}`}>{dataDepartments.department}</Link>
+              to={`/departamentos/${dataDepartments.link}`}
+              onClick={handleToggle}>{dataDepartments.department}</Link>
             ))}
           </div>
           <div className="box-nav-bars">
-            <Link to="/departamentos/comida">Comida</Link>
+            <Link to="/departamentos/comida" onClick={handleToggle}>Comida</Link>
           </div>
           <div className="box-nav-bars">
-            <NavLink to="/tiendas" activeClassName="bars-active">Tiendas</NavLink>
+            <Link to="/tiendas" onClick={handleToggle}>Tiendas</Link>
           </div>
           <div className="box-nav-bars">
-            <NavLink to="/envios" activeClassName="bars-active">Envíos</NavLink>
+            <Link to="/envios" onClick={handleToggle}>Envíos</Link>
           </div>
         </div>
       </div>

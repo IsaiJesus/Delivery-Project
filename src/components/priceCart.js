@@ -8,7 +8,8 @@ import Alert from './alert';
 const PriceCart = ({totalPrice, resumen}) => {
   const items = useCart();
   const totalQuantity = items.reduce((total, b) => total + b.quantity, 0);
-  const [checked, setChecked] = useState(5);
+  const [checked, setChecked] = useState(6);
+  const [especific, setEspecific] = useState('');
 
   return (
     <div className="box-price-cart p-4 text-center">
@@ -38,9 +39,13 @@ const PriceCart = ({totalPrice, resumen}) => {
           <b>Total</b>
           <p>{(totalPrice + parseInt(checked)).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
         </div>
+        <div className="especific my-3">
+          <p className="mb-1">Especificaciones:</p>
+          <textarea onChange={e => setEspecific(e.target.value)} className="w-100" rows="100"></textarea>
+        </div>
       </div>
       <div className="btn-cart d-flex flex-column align-items-center justify-content-center">
-        <CopyToClipboard text={resumen + " Total: $" + (totalPrice + parseInt(checked))}>
+        <CopyToClipboard text={resumen + " Total: $" + totalPrice + " " + especific}>
           <button className="copy my-4" 
           type="button" 
           data-toggle="modal" 

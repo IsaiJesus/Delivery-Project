@@ -69,19 +69,18 @@ function Terminos() {
             <p className="mb-1">1. Las imágenes, logos, fotos y vídeos en nuestro sitio web, redes sociales y en 
             publicidad están sujetas a derechos de propiedad intelectual, por lo que no podrán ser usados por 
             un tercero para fines de venta.</p> <br/>
-            <h5 className="mb-3">Formas de pago</h5>
+            <h5 className="mb-3">Formas de pago y envíos</h5>
             <p className="mb-1">1. La única forma de pago que tenemos hasta el momento es en efectivo, el cobro 
             de los productos se hará después de haber sido entregados al domicilio.</p>
             <p className="mb-1">2. El costo total de los envíos, se calcula con base al precio de los productos 
             requeridos más el costo del envío, este último se calcula de la siguiente manera: se tomará en 
             cuenta el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto 
-            de llegada (la dirección del comprador), el costo subirá $5 cada 1.5 kilómetros, es decir, si el 
-            punto de partida y el punto de llegada se encuentra a 1.5 kilómetros, el costo del envío será de 
-            $5 y este costo aumentará $5 cada 1.5 kilómetros más.</p>
+            de llegada (la dirección del comprador), el costo subirá $6.00 cada 1 kilómetro, es decir, si el 
+            punto de partida y el punto de llegada se encuentra de 0 kilómetros a 1 kilómetro de distancia, el 
+            costo del envío será de $6.00 y este costo aumentará $6.00 cada 1 kilómetro más.</p>
             <p className="mb-1">3. El costo total es la suma del precio de los productos elegidos, estos van 
-            a depender de cada tienda y cada producto, más el costo del envío.</p> <br/>
-            <h5 className="mb-3">Envíos</h5>
-            <p className="mb-1">1. A la hora de hacer un pedido debe considerar lo siguiente: <br/>
+            a depender de cada tienda y cada producto, más el costo del envío.</p>
+            <p className="mb-1">4. A la hora de hacer un pedido debe considerar lo siguiente: <br/>
             a) El monto total a pagar por el artículo debe ser exacto y en moneda nacional, incluyendo pesos 
             y centavos, el comprador deberá hacer el pago en seguida de haber recibido los productos. <br/>
             b) ORDEEM no está obligado a conservar, resguardar y/o apartar el producto si el mismo no fue 
