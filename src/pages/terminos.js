@@ -28,8 +28,7 @@ function Terminos() {
             c) La cantidad de productos de cada tipo.</p>
             <p className="mb-1">4.1. En seguida de lo anterior, pediremos datos para el envío de los productos: <br/>
             a) Nombre completo de la persona que hace el pedido. <br/>
-            b) Número telefónico para contactar al cliente durante el envío. <br/>
-            c) La dirección a donde se hará entrega del envío. <br/>
+            b) La dirección a donde se hará entrega del envío. <br/>
             4.2. Cuando el consumidor nos da sus datos para hacer el envío de sus compras acepta los términos y 
             condiciones de este artículo.</p>
             <p className="mb-1">5. ORDEEM no pide más datos de los anunciados en este artículo, y estos sólo 
@@ -74,10 +73,10 @@ function Terminos() {
             de los productos se hará después de haber sido entregados al domicilio.</p>
             <p className="mb-1">2. El costo total de los envíos, se calcula con base al precio de los productos 
             requeridos más el costo del envío, este último se calcula de la siguiente manera: se tomará en 
-            cuenta el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto 
-            de llegada (la dirección del comprador), el costo subirá $6.00 cada 1 kilómetro, es decir, si el 
-            punto de partida y el punto de llegada se encuentra de 0 kilómetros a 1 kilómetro de distancia, el 
-            costo del envío será de $6.00 y este costo aumentará $6.00 cada 1 kilómetro más.</p>
+            cuenta el punto de partida (lugar donde se encuentra la tienda en donde se comprarán los productos), 
+            hasta el punto de llegada (la dirección del comprador), el costo subirá $9.00 cada 1 kilómetro, es 
+            decir, si el punto de partida y el punto de llegada se encuentra de 0 kilómetros a 1 kilómetro de 
+            distancia, el costo del envío será de $9.00 y este costo aumentará $9.00 cada 1 kilómetro más.</p>
             <p className="mb-1">3. El costo total es la suma del precio de los productos elegidos, estos van 
             a depender de cada tienda y cada producto, más el costo del envío.</p>
             <p className="mb-1">4. A la hora de hacer un pedido debe considerar lo siguiente: <br/>

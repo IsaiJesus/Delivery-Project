@@ -69,7 +69,7 @@ const products = [
         id: 4,
         link: 'carniceria-doña-eva-chuleta-ahumada-de-cerdo',
         img: '/images/chuleta-a-c-cde.jpg',
-        nameProduct: 'Chuleta ahumada de cerdo con mas texto',
+        nameProduct: 'Chuleta ahumada de cerdo',
         price: 110,
         unity: 'kg',
         quantity: 1,
@@ -1038,84 +1038,69 @@ const places = [
     {
         id: 1,
         place: 'Amayuca',
-        minPrice: 6
+        minPrice: 9
     },
     {
         id: 2,
         place: 'Jantetelco',
-        minPrice: 6
+        minPrice: 9
     },
     {
         id: 3,
         place: 'San Gabriel',
-        minPrice: 18
+        minPrice: 27
     },
     {
         id: 4,
         place: 'Chalca',
-        minPrice: 18
+        minPrice: 27
     },
     {
         id: 5,
         place: 'Jonacatepec',
-        minPrice: 24
-    },
-    {
-        id: 6,
-        place: 'Atotonilco',
         minPrice: 36
     },
     {
+        id: 6,
+        place: 'Amilcingo',
+        minPrice: 18
+    },
+    {
         id: 7,
-        place: 'Tepalcingo',
-        minPrice: 48
+        place: 'Temoac',
+        minPrice: 36
     },
     {
         id: 8,
-        place: 'Amilcingo',
-        minPrice: 12
+        place: 'Popotlán',
+        minPrice: 45
     },
     {
         id: 9,
-        place: 'Temoac',
-        minPrice: 24
+        place: 'Zacualpan',
+        minPrice: 54
     },
     {
         id: 10,
-        place: 'Popotlán',
-        minPrice: 30
+        place: 'Tlacotepec',
+        minPrice: 63
     },
     {
         id: 11,
-        place: 'Zacualpan',
+        place: 'Tlayca',
         minPrice: 36
     },
     {
         id: 12,
-        place: 'Tlacotepec',
-        minPrice: 42
-    },
-    {
-        id: 13,
-        place: 'Tlayca',
-        minPrice: 24
-    },
-    {
-        id: 14,
         place: 'Tlahuica',
-        minPrice: 30
-    },
-    {
-        id: 15,
-        place: 'Tlayecac',
-        minPrice: 48
+        minPrice: 45
     }
 ];
 
 const information = [
     {
         id: 1,
-        text: 'El precio del envío puede ser menor dependiendo de la ubicación entre el repartidor y el cliente, estos precios son tomando de referencia a Amayuca.'
+        text: 'El precio del envío puede ser menor dependiendo de la ubicación entre la tienda y el cliente, estos precios son tomando de referencia a Amayuca.'
     },
     {
         id: 2,
@@ -1127,18 +1112,14 @@ const information = [
     },
     {
         id: 4,
-        text: 'Este producto podría agotarse en un horario específico, puedes preguntar si aún está disponible en nuestras redes sociales.'
-    },
-    {
-        id: 5,
         text: 'Al terminar de agregar todos los productos al carrito podrás ver el costo total de tus compras en la sección del carrito.'
     },
     {
-        id: 6,
+        id: 5,
         text: 'Puedes hacer tu pedido llamando a 735 244 9749 o mandando un Whatsapp al mismo número.'
     },
     {
-        id: 7,
+        id: 6,
         text: 'Si tienes alguna duda puedes preguntar mandando mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
     }
 ]
@@ -1153,6 +1134,29 @@ const ads = [
     }
 ];
 
+const hour = [
+    {
+        id: 1,
+        hour: '08:00 - 17:00',
+        category: 'carniceria-doña-eva'
+    },
+    {
+        id: 2,
+        hour: '08:00 - 17:00',
+        category: 'polleria-doña-eva'
+    },
+    {
+        id: 3,
+        hour: '19:30 - 22:00',
+        category: 'hot-dogs-resno'
+    },
+    {
+        id: 4,
+        hour: '08:00 - 17:00',
+        category: 'polleria-y-abarroteria-eri'
+    }
+];
+
 export { products }
 export { stores }
 export { titles }
@@ -1160,4 +1164,5 @@ export { links }
 export { places }
 export { information }
 export { ads }
+export { hour }
 export default departments;

@@ -8,7 +8,7 @@ import Alert from './alert';
 const PriceCart = ({totalPrice, resumen}) => {
   const items = useCart();
   const totalQuantity = items.reduce((total, b) => total + b.quantity, 0);
-  const [checked, setChecked] = useState(6);
+  const [checked, setChecked] = useState(9);
   const [especific, setEspecific] = useState('');
 
   return (
@@ -45,7 +45,7 @@ const PriceCart = ({totalPrice, resumen}) => {
         </div>
       </div>
       <div className="btn-cart d-flex flex-column align-items-center justify-content-center">
-        <CopyToClipboard text={resumen + " Total: $" + totalPrice + " " + especific}>
+        <CopyToClipboard text={resumen + " Total: $" + totalPrice + ". " + especific}>
           <button className="copy my-4" 
           type="button" 
           data-toggle="modal" 
@@ -75,10 +75,12 @@ const PriceCart = ({totalPrice, resumen}) => {
           </div>
         </div>
         {information.filter(dataInformation => 
-        dataInformation.id === 2 ||
-        dataInformation.id === 3 ||
-        dataInformation.id === 6 ||
-        dataInformation.id === 7).map(dataInformation => (
+        dataInformation.id === 2).map(dataInformation => (
+          <Alert key={dataInformation.id} text={dataInformation.text}/>
+        ))}
+        {information.filter(dataInformation => 
+        dataInformation.id === 1 ||
+        dataInformation.id === 6).map(dataInformation => (
           <Alert key={dataInformation.id} text={dataInformation.text}/>
         ))}
       </div>

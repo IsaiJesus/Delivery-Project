@@ -88,10 +88,10 @@ function Preguntas() {
                 En la sección de "Envíos" podrás encontrar una proximidad del costo del envío a cada localidad 
                 disponible de envío tomando como referencia que el punto de partida sea Amayuca, aunque a la 
                 hora de hacer tu pedido te daremos el costo final de tu envío, el costo del envío se determina 
-                desde el punto de partida (el lugar donde se encuentra el repartidor), hasta el punto de 
-                llegada (tu dirección), el costo de envío es de $6.00, a partir de ese costo, aumentará $6.00 
-                cada 1 kilómetro desde el punto de partida. Para más información puedes ver la sección de 
-                "Términos y condiciones".
+                desde el punto de partida (lugar donde se encuentra la tienda donde se comprarán los productos), 
+                hasta el punto de llegada (tu dirección), el costo de envío es de $9.00, a partir de ese costo, 
+                aumentará $9.00 cada 1 kilómetro desde el punto de partida. Para más información puedes ver la 
+                sección de "Términos y condiciones".
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ function Preguntas() {
             aria-labelledby="pregunta-siete" 
             data-parent="#accordion-preguntas">
               <div className="card-body">
-                Antes de hacer un reclamo por un producto que pudó haber llegado en mal estado, tienes que 
+                Antes de hacer un reclamo por un producto que pudo haber llegado en mal estado, tienes que 
                 asegurarte de los siguientes puntos: 1. El producto estaba en mal estado al momento de 
                 ser entregado. 2. Tuvo algún defecto de fabrica o se encontraba en descomposición en caso de 
                 un producto orgánico. Después de verificar esto, Puedes contactar con nosotros para dar una 

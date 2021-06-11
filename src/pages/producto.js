@@ -22,11 +22,8 @@ function Producto({dataProducts}) {
             <div className="box-img-producto d-flex align-items-center justify-content-center m-3 p-2">
               <img src={dataProducts.img} alt={dataProducts.nameProduct}/>
             </div>
-            {information.filter(dataInformation => dataInformation.id === 4).map(dataInformation => (
-              <Alert key={dataInformation.id} text={dataInformation.text}/>
-            ))}
           </div>
-          <div className="d-flex flex-column align-items-center justify-content-center col p-3">
+          <div className="d-flex flex-column align-items-center justify-content-start col p-3">
             <div className="info-producto w-100 d-flex flex-column pt-0 px-2 pb-2">
               <b className="nombre-producto">{dataProducts.nameProduct}</b>
               <b className="precio-producto">{dataProducts.price.toLocaleString("en", {style: "currency", currency: "USD"})}
@@ -52,9 +49,9 @@ function Producto({dataProducts}) {
                 className="fab fa-instagram m-3"></a>
               </div>
               {information.filter(dataInformation => 
+              dataInformation.id === 4 || 
               dataInformation.id === 5 || 
-              dataInformation.id === 6 || 
-              dataInformation.id === 7).map(dataInformation => (
+              dataInformation.id === 6).map(dataInformation => (
                 <Alert key={dataInformation.id} text={dataInformation.text}/>
               ))}
             </div>
