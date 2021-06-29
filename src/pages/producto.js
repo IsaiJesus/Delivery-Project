@@ -49,9 +49,9 @@ function Producto({dataProducts}) {
                 className="fab fa-instagram m-3"></a>
               </div>
               {information.filter(dataInformation => 
+              dataInformation.id === 3 || 
               dataInformation.id === 4 || 
-              dataInformation.id === 5 || 
-              dataInformation.id === 6).map(dataInformation => (
+              dataInformation.id === 5).map(dataInformation => (
                 <Alert key={dataInformation.id} text={dataInformation.text}/>
               ))}
             </div>

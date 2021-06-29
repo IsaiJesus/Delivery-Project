@@ -8,7 +8,7 @@ import Alert from './alert';
 const PriceCart = ({totalPrice, resumen}) => {
   const items = useCart();
   const totalQuantity = items.reduce((total, b) => total + b.quantity, 0);
-  const [checked, setChecked] = useState(9);
+  const [checked, setChecked] = useState('Amayuca');
   const [especific, setEspecific] = useState('');
 
   return (
@@ -17,7 +17,7 @@ const PriceCart = ({totalPrice, resumen}) => {
         <p className="m-0 pb-2">Enviar a:</p>
         <select onChange={e => setChecked(e.target.value)}>
           {places.map(dataPlaces => (
-            <option key={dataPlaces.id} value={dataPlaces.minPrice}>{dataPlaces.place}</option>
+            <option key={dataPlaces.id} value={dataPlaces.place}>{dataPlaces.place}</option>
           ))}
         </select>
       </div>
@@ -33,11 +33,11 @@ const PriceCart = ({totalPrice, resumen}) => {
         </div>
         <div className="price-list">
           <p>Envío</p>
-          <p>{parseInt(checked).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+          <p>{checked}</p>
         </div>
         <div className="price-list">
           <b>Total</b>
-          <p>{(totalPrice + parseInt(checked)).toLocaleString("en", {style: "currency", currency: "USD"})}</p>
+          <p>{totalPrice.toLocaleString("en", {style: "currency", currency: "USD"})}</p>
         </div>
         <div className="especific my-3">
           <p className="mb-1">Especificaciones:</p>
@@ -45,7 +45,7 @@ const PriceCart = ({totalPrice, resumen}) => {
         </div>
       </div>
       <div className="btn-cart d-flex flex-column align-items-center justify-content-center">
-        <CopyToClipboard text={resumen + " Total: $" + totalPrice + ". " + especific}>
+        <CopyToClipboard text={resumen + " Total: $" + totalPrice + ". " + "Enviar a: " + checked + ". " + especific}>
           <button className="copy my-4" 
           type="button" 
           data-toggle="modal" 
@@ -74,13 +74,10 @@ const PriceCart = ({totalPrice, resumen}) => {
             </div>
           </div>
         </div>
-        {information.filter(dataInformation => 
-        dataInformation.id === 2).map(dataInformation => (
-          <Alert key={dataInformation.id} text={dataInformation.text}/>
-        ))}
-        {information.filter(dataInformation => 
-        dataInformation.id === 1 ||
-        dataInformation.id === 6).map(dataInformation => (
+        {information.filter(dataInformation =>
+        dataInformation.id === 1 || 
+        dataInformation.id === 2 ||
+        dataInformation.id === 5).map(dataInformation => (
           <Alert key={dataInformation.id} text={dataInformation.text}/>
         ))}
       </div>

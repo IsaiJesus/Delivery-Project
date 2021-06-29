@@ -57,7 +57,7 @@ const products = [
         link: 'carniceria-doña-eva-chuleta-de-cerdo',
         img: '/images/chuleta-f-c-cde.jpg',
         nameProduct: 'Chuleta fresca de cerdo',
-        price: 110,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -70,7 +70,7 @@ const products = [
         link: 'carniceria-doña-eva-chuleta-ahumada-de-cerdo',
         img: '/images/chuleta-a-c-cde.jpg',
         nameProduct: 'Chuleta ahumada de cerdo',
-        price: 110,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -83,7 +83,7 @@ const products = [
         link: 'carniceria-doña-eva-bistec-de-cerdo',
         img: '/images/bistec-c-cde.jpg',
         nameProduct: 'Bistec de cerdo',
-        price: 110,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -96,7 +96,7 @@ const products = [
         link: 'carniceria-doña-eva-molida-de-cerdo',
         img: '/images/molida-c-cde.jpg',
         nameProduct: 'Molida de cerdo',
-        price: 110,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -148,7 +148,7 @@ const products = [
         link: 'polleria-doña-eva-pechuga-de-pollo',
         img: '/images/pechuga-p-pde.jpg',
         nameProduct: 'Pechuga de pollo',
-        price: 80,
+        price: 85,
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
@@ -174,7 +174,7 @@ const products = [
         link: 'polleria-doña-eva-pollo-entero',
         img: '/images/pollo-e-pde.jpg',
         nameProduct: 'Pollo entero',
-        price: 160,
+        price: 165,
         unity: 'pza',
         quantity: 1,
         store: 'Pollería Doña Eva',
@@ -265,7 +265,7 @@ const products = [
         link: 'carniceria-doña-eva-tocino',
         img: '/images/tocino-c-cde.jpg',
         nameProduct: 'Tocino',
-        price: 100,
+        price: 120,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -343,7 +343,7 @@ const products = [
         link: 'carniceria-doña-eva-manteca-de-cerdo',
         img: '/images/manteca-c-cde.jpg',
         nameProduct: 'Manteca de cerdo',
-        price: 30,
+        price: 32,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -408,7 +408,7 @@ const products = [
         link: 'carniceria-doña-eva-chicharron-de-cerdo',
         img: '/images/chicharron-c-cde.jpg',
         nameProduct: 'Chicharrón de cerdo',
-        price: 160,
+        price: 200,
         unity: 'kg',
         quantity: 1,
         store: 'Carnicería Doña Eva',
@@ -966,7 +966,7 @@ const titles = [
     },
     {
         id: 6,
-        title: 'Costo de envíos'
+        title: 'Envíos'
     },
     {
         id: 7,
@@ -1037,89 +1037,81 @@ const links = [
 const places = [
     {
         id: 1,
-        place: 'Amayuca',
-        minPrice: 9
+        place: 'Amayuca'
     },
     {
         id: 2,
-        place: 'Jantetelco',
-        minPrice: 9
+        place: 'Jantetelco'
     },
     {
         id: 3,
-        place: 'San Gabriel',
-        minPrice: 27
+        place: 'San Gabriel'
     },
     {
         id: 4,
-        place: 'Chalca',
-        minPrice: 27
+        place: 'Chalcatzingo'
     },
     {
         id: 5,
-        place: 'Jonacatepec',
-        minPrice: 36
+        place: 'Jonacatepec'
     },
     {
         id: 6,
-        place: 'Amilcingo',
-        minPrice: 18
+        place: 'Amilcingo'
     },
     {
         id: 7,
-        place: 'Temoac',
-        minPrice: 36
+        place: 'Temoac'
     },
     {
         id: 8,
-        place: 'Popotlán',
-        minPrice: 45
+        place: 'Popotlán'
     },
     {
         id: 9,
-        place: 'Zacualpan',
-        minPrice: 54
+        place: 'Zacualpan'
     },
     {
         id: 10,
-        place: 'Tlacotepec',
-        minPrice: 63
+        place: 'Tlacotepec'
     },
     {
         id: 11,
-        place: 'Tlayca',
-        minPrice: 36
+        place: 'Fracc. Almendros'
     },
     {
         id: 12,
-        place: 'Tlahuica',
-        minPrice: 45
+        place: 'Fracc. Tlahuica'
+    },
+    {
+        id: 13,
+        place: 'Fracc. Las Llaves'
+    },
+    {
+        id: 14,
+        place: 'Fracc. Mariano M.'
     }
 ];
 
 const information = [
     {
         id: 1,
-        text: 'El precio del envío puede ser menor dependiendo de la ubicación entre la tienda y el cliente, estos precios son tomando de referencia a Amayuca.'
-    },
-    {
-        id: 2,
         text: '"Copiar contenido el carrito" copia tus productos y pégalos en nuestra conversación de WhatsApp.'
     },
     {
-        id: 3,
+        id: 2,
         text: 'El precio del envío puede variar dependiendo de la dirección a la que se enviarán los productos.'
     },
     {
-        id: 4,
+        id: 3,
         text: 'Al terminar de agregar todos los productos al carrito podrás ver el costo total de tus compras en la sección del carrito.'
     },
     {
-        id: 5,
+        id: 4,
         text: 'Puedes hacer tu pedido llamando a 735 244 9749 o mandando un Whatsapp al mismo número.'
     },
     {
-        id: 6,
+        id: 5,
         text: 'Si tienes alguna duda puedes preguntar mandando mensaje directo a nuestras redes sociales, o bien, ver la sección de "Preguntas frecuentes" que se encuentra en el footer.'
     }
 ]

@@ -85,13 +85,13 @@ function Preguntas() {
             aria-labelledby="pregunta-tres" 
             data-parent="#accordion-preguntas">
               <div className="card-body">
-                En la sección de "Envíos" podrás encontrar una proximidad del costo del envío a cada localidad 
-                disponible de envío tomando como referencia que el punto de partida sea Amayuca, aunque a la 
-                hora de hacer tu pedido te daremos el costo final de tu envío, el costo del envío se determina 
-                desde el punto de partida (lugar donde se encuentra la tienda donde se comprarán los productos), 
-                hasta el punto de llegada (tu dirección), el costo de envío es de $9.00, a partir de ese costo, 
-                aumentará $9.00 cada 1 kilómetro desde el punto de partida. Para más información puedes ver la 
-                sección de "Términos y condiciones".
+                En la sección de "Envíos" podrás encontrar los lugares disponibles a donde se hacen envíos.
+                El costo del envío se determina desde el punto de partida (lugar donde se encuentra la tienda 
+                donde se comprarán los productos). No hay una manera determinada de saber el costo de un 
+                envío específico, pero a la hora de confirmar el pedido se te informará de cuál es el costo 
+                del envío y si estás de acuerdo. Habrá algunas formas en las que pueden haber descuentos de envíos
+                o incluso envíos gratis, estos se informarán a través de anuncios en la página y/o nuestras 
+                redes sociales. Para más información puedes ver la sección de "Términos y condiciones".
               </div>
             </div>
           </div>

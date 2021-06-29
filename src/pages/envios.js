@@ -11,12 +11,11 @@ function Envios() {
 
   return(
     <div className="container-envios d-flex flex-column align-items-center justify-content-center">
-      {titles.filter(dataTitles => dataTitles.title === 'Costo de envíos').map(dataTitles => (
+      {titles.filter(dataTitles => dataTitles.title === 'Envíos').map(dataTitles => (
         <TitleSection key={dataTitles.id} title={dataTitles.title}/>
       ))}
       {information.filter(dataInformation => 
-        dataInformation.id === 1 ||
-        dataInformation.id === 3).map(dataInformation => (
+        dataInformation.id === 2).map(dataInformation => (
           <Alert key={dataInformation.id} text={dataInformation.text}/>
         ))}
       <div className="division-envios container-xl d-flex flex-column align-items-center justify-content-center p-0 mb-4">

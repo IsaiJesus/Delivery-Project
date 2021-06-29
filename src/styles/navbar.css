@@ -152,16 +152,7 @@
 
 /*BRAND*/
   
-.navbar-brand{
-  padding: 0;
-  margin: 0;
-  font-family: 'Shrikhand', cursive;
-  color: #0dbb33;
-}
 
-.navbar-brand:hover{
-  color: #0dbb33;
-}
 
 /*NAV*/
 

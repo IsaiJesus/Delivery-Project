@@ -19,32 +19,32 @@ function Terminos() {
           <p className="mb-1">2. Las imágenes, características, especificaciones y precios son ilustrativos 
           y pueden variar o cambiar sin previo aviso.</p>
           <p className="mb-1">3. La disponibilidad de los productos anunciados en nuestro servicio dependerá 
-          del stock de cada producto en cada tienda.</p>
+          del stock de cada tienda.</p>
           <p className="mb-1">4. Las compras de productos en nuestro servicio pueden ser, llamando al número 
             otorgado a los clientes o escribiéndonos un mensaje de WhatsApp al mismo número. En cualquiera de 
             las dos formas de compra se les pedirá la siguiente información: <br/>
             a) El nombre o nombres de los productos elegidos. <br/>
             b) El nombre de la tienda de cada producto. <br/>
             c) La cantidad de productos de cada tipo.</p>
-            <p className="mb-1">4.1. En seguida de lo anterior, pediremos datos para el envío de los productos: <br/>
+          <p className="mb-1">4.1. En seguida de lo anterior, pediremos datos para el envío de los productos: <br/>
             a) Nombre completo de la persona que hace el pedido. <br/>
             b) La dirección a donde se hará entrega del envío. <br/>
             4.2. Cuando el consumidor nos da sus datos para hacer el envío de sus compras acepta los términos y 
             condiciones de este artículo.</p>
-            <p className="mb-1">5. ORDEEM no pide más datos de los anunciados en este artículo, y estos sólo 
+          <p className="mb-1">5. ORDEEM no pide más datos de los anunciados en este artículo, y estos sólo 
             serán usados con el propósito de que los productos lleguen a la dirección que indica el 
             consumidor que los requiere.</p>
-            <p className="mb-1">6. En la primera forma de contacto para hacer uso de nuestro servicio, se le 
+          <p className="mb-1">6. En la primera forma de contacto para hacer uso de nuestro servicio, se le 
             dará la invitación de leer nuestros términos y condiciones con lo que una vez acepte esta 
             invitación una única vez, estará de acuerdo con cada uno de los puntos de este artículo.</p>
-            <p className="mb-1">7. En caso de que un mismo consumidor haga uso más de una vez de nuestro 
+          <p className="mb-1">7. En caso de que un mismo consumidor haga uso más de una vez de nuestro 
             servicio, se le preguntará si los datos dados para el envío pueden ser guardados para ser usados 
             únicamente en futuras compras dentro de nuestro servicio.</p>
-            <p className="mb-1">8. La compraventa únicamente podrá realizarse por personas que tengan 18 años 
+          <p className="mb-1">8. La compraventa únicamente podrá realizarse por personas que tengan 18 años 
             de edad cumplidos o mayores a esta, por lo que las personas menores de 18 años de edad no podrán 
             realizar una compraventa, sino a través de su padre o tutor legal, o quien detente el ejercicio 
             de la patria potestad, guarda y custodia.</p>
-            <p className="mb-1">9. ORDEEM se reserva el derecho de cancelar aquellos pedidos realizados por 
+          <p className="mb-1">9. ORDEEM se reserva el derecho de cancelar aquellos pedidos realizados por 
             el Usuario, en los siguientes supuestos: <br/>
             a) Cuando el usuario viole o no acepte los términos y condiciones. <br/>
             b) Cuando el usuario no haya cubierto el monto exacto de la compra. <br/>
@@ -57,29 +57,28 @@ function Terminos() {
             f) Cuando por errores involuntarios en el sistema se lancen promociones o costos no autorizados, 
             en perjuicio del servicio. <br/>
             g) Cuando el usuario agreda física o verbalmente a uno de nuestros usuarios o trabajadores.</p> <br/>
-            <h5 className=" mb-3">Ofertas, promociones y descuentos</h5>
-            <p className="mb-1">1. En ocasiones específicas, se mostrarán en nuestros medios, ofertas, 
+          <h5 className=" mb-3">Ofertas, promociones y descuentos</h5>
+          <p className="mb-1">1. En ocasiones específicas, se mostrarán en nuestros medios, ofertas, 
             promociones y descuentos, estos hechos por las tiendas asociadas o incluso el mismo servicio.</p>
-            <p className="mb-1">2. Las imágenes, características, especificaciones y precios son específicos 
+          <p className="mb-1">2. Las imágenes, características, especificaciones y precios son específicos 
             y/o temporales, por lo que el usuario puede encontrar información de especificaciones en el 
             mismo contenido, de lo contrario, el usuario podrá solicitar información de estas promociones, 
             ofertas y/o descuentos a través de nuestras redes sociales o nuestro WhatsApp.</p> <br/>
-            <h5 className="mb-3">Derechos del contenido</h5>
-            <p className="mb-1">1. Las imágenes, logos, fotos y vídeos en nuestro sitio web, redes sociales y en 
+          <h5 className="mb-3">Derechos del contenido</h5>
+          <p className="mb-1">1. Las imágenes, logos, fotos y vídeos en nuestro sitio web, redes sociales y en 
             publicidad están sujetas a derechos de propiedad intelectual, por lo que no podrán ser usados por 
             un tercero para fines de venta.</p> <br/>
-            <h5 className="mb-3">Formas de pago y envíos</h5>
-            <p className="mb-1">1. La única forma de pago que tenemos hasta el momento es en efectivo, el cobro 
+          <h5 className="mb-3">Formas de pago y envíos</h5>
+          <p className="mb-1">1. La única forma de pago que tenemos hasta el momento es en efectivo, el cobro 
             de los productos se hará después de haber sido entregados al domicilio.</p>
-            <p className="mb-1">2. El costo total de los envíos, se calcula con base al precio de los productos 
-            requeridos más el costo del envío, este último se calcula de la siguiente manera: se tomará en 
-            cuenta el punto de partida (lugar donde se encuentra la tienda en donde se comprarán los productos), 
-            hasta el punto de llegada (la dirección del comprador), el costo subirá $9.00 cada 1 kilómetro, es 
-            decir, si el punto de partida y el punto de llegada se encuentra de 0 kilómetros a 1 kilómetro de 
-            distancia, el costo del envío será de $9.00 y este costo aumentará $9.00 cada 1 kilómetro más.</p>
-            <p className="mb-1">3. El costo total es la suma del precio de los productos elegidos, estos van 
-            a depender de cada tienda y cada producto, más el costo del envío.</p>
-            <p className="mb-1">4. A la hora de hacer un pedido debe considerar lo siguiente: <br/>
+          <p className="mb-1">2. El costo total de los envíos, se calcula con base al precio de los productos 
+            requeridos más el costo del envío, este último se calcula dependiendo del punto de partida (lugar 
+            donde se encuentra la tienda en donde se comprarán los productos), hasta el punto de llegada (la 
+            dirección del comprador), el precio mínimo de envío es de $8.00 y el costo del mismo subirá conforme
+            mayor distancia haya entre el punto de partida y el punto de llegada.</p>
+          <p className="mb-1">3. El costo total es la suma del precio de los productos elegidos (estos van 
+            a depender de cada tienda y cada producto), más el costo del envío.</p>
+          <p className="mb-1">4. A la hora de hacer un pedido debe considerar lo siguiente: <br/>
             a) El monto total a pagar por el artículo debe ser exacto y en moneda nacional, incluyendo pesos 
             y centavos, el comprador deberá hacer el pago en seguida de haber recibido los productos. <br/>
             b) ORDEEM no está obligado a conservar, resguardar y/o apartar el producto si el mismo no fue 
@@ -89,8 +88,8 @@ function Terminos() {
             d) En caso de cancelación de pedido, deberá comunicarse con el servicio lo más pronto posible, 
             en caso de que el producto o productos ya hayan sido comprados no podrá hacer una cancelación, 
             a menos de que la tienda donde hayan sido comprados lo permita.</p> <br/>
-            <h5 className="mb-3">Devoluciones, cambios y reembolsos</h5>
-            <p className="mb-1">1. En caso de que haya sido entregado un producto en mal estado, para solicitar una 
+          <h5 className="mb-3">Devoluciones, cambios y reembolsos</h5>
+          <p className="mb-1">1. En caso de que haya sido entregado un producto en mal estado, para solicitar una 
             devolución, cambio o reembolso debe considerar lo siguiente: <br/>
             a) Si el producto fue entregado en malas condiciones, defectuoso, golpeado, inservible o caducado. 
             Si el producto no es el que fue pedido o no cumple con lo requerido como peso o cantidad. <br/>
@@ -102,8 +101,8 @@ function Terminos() {
             se compró el producto podrá ofrecerle un cambio, devolución o hasta un reembolso. <br/>
             d) ORDEEM no se hace responsable de posibles daños, y por consiguiente una reparación de los daños 
             causados a menos que estos hayan sido durante el envío.</p> <br/>
-            <h5 className="mb-3">Reglas de conducta</h5>
-            <p className="mb-1">1. Todos los usuarios de nuestro servicio, empleados, encargados de tiendas, 
+          <h5 className="mb-3">Reglas de conducta</h5>
+          <p className="mb-1">1. Todos los usuarios de nuestro servicio, empleados, encargados de tiendas, 
             incluyendo clientes (compradores), deberán seguir las siguientes reglas: <br/>
             a) Actuar con respeto, honestidad y servicio a cualquier persona. <br/>
             b) Las tiendas se comprometen a cumplir con sus obligaciones impuestas junto con nuestro servicio. <br/>
@@ -115,7 +114,7 @@ function Terminos() {
             servicio. <br/>
             d) En caso del incumplimiento de alguno de estos términos y condiciones por parte de nuestro 
             servicio serán discutidos con los inconformes y/o involucrados.</p> <br/>
-            <h5 className="mb-1">Al hacer uso de nuestros servicios, compras, envíos, contactos, sitio web, 
+          <h5 className="mb-1">Al hacer uso de nuestros servicios, compras, envíos, contactos, sitio web, 
             redes sociales, formas de contacto, trato con empleados, aceptas todos nuestros Términos y 
             Condiciones publicados en este artículo, y/o, en caso de que se haya hecho un acuerdo, con el 
             contenido publicado en dicho acuerdo. <br/> 
