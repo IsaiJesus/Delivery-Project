@@ -32,12 +32,12 @@ function Preguntas() {
               <div className="card-body">
                 Hay varias maneras de hacer compras en ORDEEM, 
                 puedes entrar a comprar desde nuestra página web www.ordeem.com donde puedes enlistar tus 
-                productos y en la sección del "Carrito" podrás ver el costo total de los productos más el 
-                costo del envío. Si ya tienes tus productos elegidos, puedes hacer tu pedido llamando a 
-                735 244 9749 o mandarnos la lista de tus productos a través del WhatsApp del mismo número, 
-                te pediremos tu nombre y dirección. Si es por llamada teléfonica 
-                nosotros enlistaremos tus productos y te pediremos los datos para contactarte. Los datos 
-                que nos des no serán utilizados más que a la hora de hacer el envío, para más información 
+                productos y en la sección del "Carrito" podrás ver el costo total de los productos para 
+                después darnos los datos para el envío y saber el costo del envío. Si ya tienes tus productos 
+                elegidos, puedes hacer tu pedido llamando a 735 244 9749 o mandarnos la lista de tus productos 
+                a través del WhatsApp del mismo número, te pediremos tu nombre y dirección. Si es por llamada 
+                teléfonica nosotros enlistaremos tus productos y te pediremos los datos para contactarte. Los 
+                datos que nos des no serán utilizados más que a la hora de hacer el envío, para más información 
                 puedes ver la sección de "Términos y condiciones". Una vez hecho el pedido, iremos por los 
                 productos y te lo enviaremos hasta tu casa, momentos antes de llegar te contactaremos para 
                 avisarte que tu pedido está por llegar.
@@ -244,7 +244,8 @@ function Preguntas() {
                 puedes enviarnos un mensaje directo en nuestras redes sociales, donde te daremos información 
                 básica de nuestra forma de trabajar, después de eso, si te interesa, te daremos información a 
                 través de nuestro correo electrónico de nuestros términos, políticas y condiciones de nuestro 
-                servicio para estar dentro de nuestro sitio web y nuestras redes sociales.
+                servicio para estar dentro de nuestro sitio web y nuestras redes sociales, y que de esta forma 
+                tus productos se den a conocer más y tengas mayores ventas de los mismos.
               </div>
             </div>
           </div>
@@ -265,12 +266,12 @@ function Preguntas() {
             data-parent="#accordion-preguntas">
               <div className="card-body">
                 Si quieres trabajar con nosotros puede haber distintas maneras de hacerlo, primero, si hay 
-                disponibilidad en un campo requerido, que pueden ser desde repartidor, diseñador o 
-                administrador, puede que publiquemos en el sitio o nuestras redes sociales que buscamos a 
-                alguien que cumpla con nuestros requisitos para uno de estos campos, pero de cualquier manera, 
-                puedes preguntarnos a nuestras redes sociales. Si hay disponibilidad de un campo, te 
-                pediremos información para saber si cumples con nuestros requerimientos de la forma de 
-                trabajo, y, posteriormente te daremos a conocer nuestra forma de trabajo. 
+                disponibilidad en un campo requerido, que pueden ser desde repartidor o administrador, puede 
+                que publiquemos en el sitio o nuestras redes sociales que buscamos a alguien que cumpla con 
+                nuestros requisitos para uno de estos campos, pero de cualquier manera, puedes preguntarnos a 
+                nuestras redes sociales. Si hay disponibilidad de un campo, te pediremos información para saber 
+                si cumples con nuestros requerimientos de la forma de trabajo, y, posteriormente te daremos a 
+                conocer nuestra forma de trabajo. 
               </div>
             </div>
           </div>

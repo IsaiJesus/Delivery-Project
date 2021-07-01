@@ -27,24 +27,21 @@ function Terminos() {
             b) El nombre de la tienda de cada producto. <br/>
             c) La cantidad de productos de cada tipo.</p>
           <p className="mb-1">4.1. En seguida de lo anterior, pediremos datos para el envío de los productos: <br/>
-            a) Nombre completo de la persona que hace el pedido. <br/>
+            a) Nombre de la persona que hace el pedido. <br/>
             b) La dirección a donde se hará entrega del envío. <br/>
             4.2. Cuando el consumidor nos da sus datos para hacer el envío de sus compras acepta los términos y 
             condiciones de este artículo.</p>
           <p className="mb-1">5. ORDEEM no pide más datos de los anunciados en este artículo, y estos sólo 
             serán usados con el propósito de que los productos lleguen a la dirección que indica el 
             consumidor que los requiere.</p>
-          <p className="mb-1">6. En la primera forma de contacto para hacer uso de nuestro servicio, se le 
-            dará la invitación de leer nuestros términos y condiciones con lo que una vez acepte esta 
-            invitación una única vez, estará de acuerdo con cada uno de los puntos de este artículo.</p>
-          <p className="mb-1">7. En caso de que un mismo consumidor haga uso más de una vez de nuestro 
+          <p className="mb-1">6. En caso de que un mismo consumidor haga uso más de una vez de nuestro 
             servicio, se le preguntará si los datos dados para el envío pueden ser guardados para ser usados 
             únicamente en futuras compras dentro de nuestro servicio.</p>
-          <p className="mb-1">8. La compraventa únicamente podrá realizarse por personas que tengan 18 años 
+          <p className="mb-1">7. La compraventa únicamente podrá realizarse por personas que tengan 18 años 
             de edad cumplidos o mayores a esta, por lo que las personas menores de 18 años de edad no podrán 
             realizar una compraventa, sino a través de su padre o tutor legal, o quien detente el ejercicio 
             de la patria potestad, guarda y custodia.</p>
-          <p className="mb-1">9. ORDEEM se reserva el derecho de cancelar aquellos pedidos realizados por 
+          <p className="mb-1">8. ORDEEM se reserva el derecho de cancelar aquellos pedidos realizados por 
             el Usuario, en los siguientes supuestos: <br/>
             a) Cuando el usuario viole o no acepte los términos y condiciones. <br/>
             b) Cuando el usuario no haya cubierto el monto exacto de la compra. <br/>
