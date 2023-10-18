@@ -1,0 +1,31 @@
+.container-notfound{
+  padding-top: 100px;
+  height: 100vh;
+  background: rgb(0, 0, 30);
+}
+
+.notfound-info{
+  color: #FFF;
+}
+
+.notfound-info a{
+  border-radius: 30px;
+  text-decoration: none;
+  border: 1px solid #0dbb33;
+  color: #0dbb33;
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.notfound-info a:hover{
+  background: #0dbb33;
+  color: #FFF;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 767px){
+  .container-notfound{
+    padding-top: 136px;
+  }
+}

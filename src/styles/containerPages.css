@@ -1,0 +1,15 @@
+.container-page{
+    padding-top: 100px;
+}
+  
+.division-page{
+  width: 95%;
+}
+  
+/*RESPONSIVE*/
+  
+@media(max-width: 767px){
+  .container-page{
+    padding-top: 136px;
+  }
+}

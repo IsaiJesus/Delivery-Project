@@ -1,0 +1,144 @@
+/*CARRITO*/
+
+.container-carrito{
+  padding-top: 100px;
+}
+
+.division-carrito{
+  width: 95%;
+}
+
+/*NOTCART*/
+
+.box-not-cart{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.box-not-cart i{
+  padding: 30px;
+  font-size: 4rem;
+  color: #0dbb33;
+}
+
+.box-not-cart h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+.box-not-cart p{
+  font-size: 20px;
+  text-align: center;
+}
+
+/*PRODUCTCART*/
+
+.box-pro-cart{
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.img-pro-cart img{
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+}
+
+.cantidad-pro-cart input{
+  height: 30px;
+  width: 60px;
+  border: 1px solid #000;
+  text-indent: 22px;
+  font-size: 16px;
+  outline: none;
+}
+
+.btn-quantity{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #0dbb33;
+  color: #0dbb33;
+  background: none;
+}
+
+.btn-quantity:hover{ 
+  background: #0dbb33;
+  color: #FFF;
+}
+
+.trash-pro-cart{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.trash-pro-cart button{
+  font-size: 18px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.trash-pro-cart button:hover{
+  color: #0dbb33;
+}
+
+/*PRICECART*/
+
+.box-price-cart{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.box-price-cart h2{
+  font-size: 23px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.price-list{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-list p{
+  margin: 0;
+  font-size: 17px;
+  padding: 10px 0px;
+}
+
+.copy{
+  background: #0dbb33;
+  color: #FFF;
+  padding: 8px 20px;
+  border: none;
+}
+
+.copy:hover{
+  background: #0dbb33ed;
+}
+
+.especific p{
+  font-size: 19px;
+}
+
+.especific textarea{
+  max-height: 80px;
+  font-size: 16px;
+}
+
+.especific textarea:focus{
+  outline: none;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 767px){
+  .container-carrito{
+    padding-top: 136px;
+  }
+
+  .trash-pro-cart button{
+    padding-bottom: 10px;
+  }
+}

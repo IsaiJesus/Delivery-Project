@@ -1,0 +1,115 @@
+/*BUTTON-ADD*/ 
+
+.btn-add{
+  color: #0dbb33;
+  background: #FFF;
+  border: 1px solid #0dbb33;
+  border-radius: 0;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+  
+.btn-add:focus{
+  box-shadow: none;
+}
+    
+.btn-add:hover{
+  background: #0dbb33;
+  color: #FFF;
+}
+  
+/*modal*/
+  
+.modal-header{
+  border: none;
+}
+  
+.modal-footer{
+  border: none;
+}
+
+/*ALERT*/
+
+.box-alert{
+  margin: 2px 0px;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+  
+.fa-info-circle{
+  font-size: 20px;
+  padding-right: 5px;
+  color: #0dcaf0;
+}
+
+.fa-clock{
+  font-size: 22px;
+  padding-right: 5px;
+  color: #0466c8;
+}
+
+.text-hour{
+  font-size: 22px;
+}
+  
+.box-alert p{
+  text-align: center;
+  margin: 0;
+}
+
+/*WHATS-APP*/
+
+.container-whatsapp{
+  position: fixed;
+  background: #00BB2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  padding: 9px 11px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container-whatsapp a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: #FFF;
+}
+
+/*BUTTON-LINK*/
+
+/*button-green*/
+
+.btn-green{
+  color: #FFF;
+  background: #0dbb33;
+  border-radius: 0;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+  
+.btn-green:hover{
+  background: #0dbb33de;
+  color: #FFF;
+}
+
+/*TITLE*/
+
+.title{
+  margin: 1rem 0px;   
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 35px;
+  background: #FFF;
+  color: #0dbb33;
+}

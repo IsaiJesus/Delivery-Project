@@ -1,0 +1,33 @@
+.container-terminos{
+  padding-top: 100px;
+}
+  
+.division-terminos{
+  width: 95%;
+}
+
+/*PREGUNTAS-Y-FRECUENTES*/
+
+.card-header button{
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card-header button:hover{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #0dbb33;
+}
+
+.card-header button:focus{
+  box-shadow: none;
+  text-decoration: none;
+}
+  
+/*RESPONSIVE*/
+  
+@media(max-width: 767px){
+  .container-terminos{
+    padding-top: 136px;
+  }
+}
